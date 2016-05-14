@@ -5,14 +5,26 @@ class BeatsPage
 
   setup: ->
     @beats = @container.find ".beat"
+    @soundcloud_template ||= $("#soundcloud_player_template").html()
     @setup_embeds()
 
   setup_embeds: ->
     return unless @beats
-    template = $("#soundcloud_player_template").html()
-
     for beat in @beats
-      $beat = $ beat
+      @setup_embed $ beat
+
+    @container.on "click", ".beat", (e) =>
+      $el = $ e.currentTarget
+      @setup_embed $el
+
+  setup_embed: ($beat) ->
+    return if $beat.find("iframe").length
+
+    id = $beat.data("soundcloud_id")
+    $beat.append "<div class='soundcloud_placeholder'><img src=\"../assets/images/beats/placeholder_#{id}.jpg\" /></div>"
+
+    $beat.one "click", (e) =>
+      $beat = $ e.currentTarget
       id = $beat.data("soundcloud_id")
-      player = template.replace("{{track_id}}", id)
-      $beat.append player
+      player = @soundcloud_template.replace("{{track_id}}", id)
+      $beat.find(".soundcloud_placeholder").replaceWith player
