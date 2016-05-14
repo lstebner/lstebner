@@ -1,8 +1,9 @@
 ul
-    - i = 0
-    while i < 6
-        - i += 1 
-        li(class=(i == 2 ? 'selected' : ''))
-            a(href="#") 
+    // 0 index is the slug for the url
+    // 1 index is the label
+    - items = [["home", "Home/About"], ["beats", "Beats"], ["work", "Work"]]
+    for item, i in items
+        li
+            a(href="#" + item[0]) 
                 span.icon &gt;
-                | item #{i}
+                = item[1]
