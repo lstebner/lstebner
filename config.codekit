@@ -61,6 +61,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/avatar.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 124153,
+		"inputAbbreviatedPath": "\/assets\/images\/avatar.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/avatar.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/beats\/placeholder_259673304.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
