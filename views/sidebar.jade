@@ -2,7 +2,7 @@ ul
     - i = 0
     while i < 6
         - i += 1 
-        li
+        li(class=(i == 2 ? 'selected' : ''))
             a(href="#") 
                 span.icon &gt;
                 | item #{i}

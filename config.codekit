@@ -48,6 +48,61 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/beats\/placeholder_259673304.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 136927,
+		"inputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_259673304.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_259673304.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/beats\/placeholder_260659062.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 115516,
+		"inputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_260659062.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_260659062.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/beats\/placeholder_261876252.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 131454,
+		"inputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_261876252.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_261876252.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/beats\/placeholder_262953898.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112075,
+		"inputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_262953898.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_262953898.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/beats\/placeholder_263968031.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 125190,
+		"inputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_263968031.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/beats\/placeholder_263968031.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/less\/beats.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,

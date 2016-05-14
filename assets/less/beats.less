@@ -1,9 +1,48 @@
 #beats_page {
-    iframe {
+    iframe, .soundcloud_placeholder {
         margin-top: 12px;
     }
 
+    .soundcloud_placeholder {
+        position: relative;
+        width: 100%;
+        max-height: 300px;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:after {
+            content: "Load track...";
+            font-size: 24px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, .6);
+            opacity: 0;
+            padding: 30px;
+            text-align: center;
+            box-sizing: border-box;
+            color: #333;
+            font-weight: 100;
+            .transition(opacity .3s);
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
     .beat {
+        position: relative;
+
         &:after {
             content: "";
             display: block;
