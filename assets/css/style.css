@@ -1,3 +1,8 @@
+.unselectable {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
 body {
   padding: 0;
   margin: 0;
@@ -16,12 +21,29 @@ p,
 form {
   margin: 0 8px;
 }
+#body_content {
+  left: 18%;
+  right: 0;
+  overflow: auto;
+  padding: 30px;
+}
 #sidebar,
 #body_content {
   position: fixed;
   top: 0;
   bottom: 0;
   box-sizing: border-box;
+}
+.tags_list ul {
+  padding: 0;
+  list-style-type: none;
+}
+.tags_list ul li {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 2px;
+  background-color: #ccc;
+  cursor: pointer;
 }
 #sidebar {
   left: 0;
@@ -69,9 +91,17 @@ form {
 #sidebar ul li:hover .icon {
   opacity: 1;
 }
+#beats_page iframe {
+  margin-top: 12px;
+}
+#beats_page .beat:after {
+  content: "";
+  display: block;
+  width: 88%;
+  height: 1px;
+  background-color: rgba(200, 200, 200, 0.6);
+  margin: 30px auto;
+}
 #body_content {
-  left: 18%;
-  right: 0;
-  overflow: auto;
-  padding: 30px;
+  background-color: #f6f6f6;
 }
