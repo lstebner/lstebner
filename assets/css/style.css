@@ -22,7 +22,7 @@ form {
   margin: 0 8px;
 }
 #body_content {
-  left: 18%;
+  left: 22%;
   right: 0;
   overflow: auto;
   padding: 30px;
@@ -47,7 +47,7 @@ form {
 }
 #sidebar {
   left: 0;
-  width: 18%;
+  width: 22%;
   overflow-y: auto;
   overflow-x: hidden;
   border-right: 2px solid rgba(100, 100, 100, 0.5);
