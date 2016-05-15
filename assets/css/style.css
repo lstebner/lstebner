@@ -44,6 +44,7 @@ form {
   border-radius: 2px;
   background-color: #ccc;
   cursor: pointer;
+  margin-right: 6px;
 }
 #sidebar {
   left: 0;
@@ -73,8 +74,6 @@ form {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url("../assets/images/avatar.jpg");
-  background-size: cover;
   vertical-align: middle;
   margin-right: 8px;
 }
