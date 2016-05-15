@@ -5,9 +5,10 @@ h1
 ul
     // 0 index is the slug for the url
     // 1 index is the label
-    - items = [["home", "Home"], ["beats", "Beats"]]
+    - items = [["home", "Home", "/"], ["beats", "Beats"]]
     for item, i in items
         li(class=(page == item[0] ? 'selected' : ''))
-            a(href="#" + item[0]) 
+            - href = item.length > 2 ? item[2] : "/" + item[0]
+            a(href=href) 
                 span.icon &gt;
                 = item[1]

@@ -100,8 +100,11 @@ form {
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   background-color: #fff;
-  padding: 30px;
   cursor: pointer;
+}
+#sidebar ul li a {
+  display: block;
+  padding: 30px;
 }
 #sidebar ul li .icon {
   float: right;
