@@ -2,29 +2,64 @@ http = require("http")
 dispatcher = require("httpdispatcher")
 pug = require("pug")
 less = require("less")
+coffee = require("coffee-script")
 _ = require("underscore")
 fs = require("fs")
 port = 3014
 
 class AssetServer
+  less_opts: { compress: false, paths: ["./assets/less"] }
+  coffee_opts: {}
   constructor: (@root_dir="#{__dirname}", @res) ->
 
-  # ideally these both do something better than just read the path
-  # they're given...
   serve_stylesheet: (path) ->
     console.log "AssetServer::stylesheet #{path}"
+
+    path = path.replace /css/g, "less"
     @res.writeHead "200", "Content-Type: text/css"
-    @res.end fs.readFileSync "#{@root_dir}#{path}"
+    contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
+    less.render contents, @less_opts, (e, output) =>
+      @res.end output.css
+
+  serve_coffeescript: (path) ->
+    console.log "AssetServer::coffeescript #{path}"
+    path = path.replace /\.js/, ".coffee"
+    @res.writeHead "200", "Content-Type: text/javascript"
+    contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
+    
+    @res.end coffee.compile @process_replacements contents
 
   serve_javascript: (path) ->
     console.log "AssetServer::javascript #{path}"
     @res.writeHead "200", "Content-Type: text/javascript"
-    @res.end fs.readFileSync "#{@root_dir}#{path}"
+    contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
+    @res.end contents
 
   serve_image: (path) ->
     console.log "AssetServer::image #{path}"
     @res.writeHead "200", "Content-Type: text/#{path.substr(path.lastIndexOf('.'))}"
     @res.end fs.readFileSync "#{@root_dir}#{path}"
+
+  process_replacements: (contents) ->
+    matches = contents.match /#(\s+|)\{\{(prepend|append|insert):([a-zA-Z0-9\-_\/]+)\}\}/g
+    replacements = {}
+
+    # nothing to do here
+    return contents unless matches && matches.length
+
+    # process all the matches
+    for match in matches
+      unless replacements.hasOwnProperty(match)
+        action = match.match /(prepend|append|insert):/
+        file = match.match /:([a-zA-Z0-9\-_\/]+)/
+        filename = "#{__dirname}/assets/coffee/#{file[1]}.coffee"
+        file_contents = @process_replacements fs.readFileSync filename, "UTF-8"
+        replacements[match] = action: action[1], file: file[1], contents: file_contents
+
+    for key, val of replacements
+      contents = contents.replace new RegExp(key, "g"), val.contents
+
+    contents
 
 class View
   constructor: (name, @res, @data={}) ->
@@ -46,11 +81,13 @@ handleRequest = (req, res) ->
   asset_server = new AssetServer("#{__dirname}/assets/", res)
 
   if url.match(/css\/[a-zA-Z\/]+\.css/)
-    asset_server.serve_stylesheet url, res
-  else if url.match(/(coffee|lib)\/[a-zA-Z\/\.\-_0-9]+\.js/)
-    asset_server.serve_javascript url, res
+    return asset_server.serve_stylesheet url, res
+  else if url.match(/coffee\/[a-zA-Z\/\.\-_0-9]+\.js/)
+    return asset_server.serve_coffeescript url, res
+  else if url.match(/lib\/[a-zA-Z\/\.\-_0-9]+\.js/)
+    return asset_server.serve_javascript url, res
   else if url.match(/images\/[a-zA-Z\/\.\-_0-9]+\.(jpg|png)/)
-    asset_server.serve_image url, res
+    return asset_server.serve_image url, res
   else
     dispatcher.dispatch req, res
 

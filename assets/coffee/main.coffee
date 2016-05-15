@@ -1,5 +1,5 @@
-# @codekit-prepend "nav"
-# @codekit-prepend "beats"
+# {{prepend:nav}}
+# {{prepend:beats}}
 
 class LazyBackgrounds
   @load: (container) ->
