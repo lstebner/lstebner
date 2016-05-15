@@ -21,7 +21,7 @@ class BeatsPage
     return if $beat.find("iframe").length
 
     id = $beat.data("soundcloud_id")
-    $beat.append "<div class='soundcloud_placeholder'><img src=\"../assets/images/beats/placeholder_#{id}.jpg\" /></div>"
+    $beat.append "<div class='soundcloud_placeholder'><img src=\"../images/beats/placeholder_#{id}.jpg\" /></div>"
 
     $beat.one "click", (e) =>
       $beat = $ e.currentTarget
