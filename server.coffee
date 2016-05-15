@@ -14,7 +14,6 @@ class AssetServer
 
   serve_stylesheet: (path) ->
     console.log "AssetServer::stylesheet #{path}"
-
     path = path.replace /css/g, "less"
     @res.writeHead "200", "Content-Type: text/css"
     contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
@@ -57,7 +56,17 @@ class AssetServer
         replacements[match] = action: action[1], file: file[1], contents: file_contents
 
     for key, val of replacements
-      contents = contents.replace new RegExp(key, "g"), val.contents
+      # if append or prepend then remove the comment line
+      if val.action.indexOf("pend") > -1
+        contents = contents.replace new RegExp(key, "g"), "" 
+
+      if val.action == "append"
+        contents = contents + val.contents
+      else if val.action == "prepend"
+        contents = val.contents + contents
+      # insert in place
+      else
+        contents = contents.replace new RegExp(key, "g"), val.contents
 
     contents
 

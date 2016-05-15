@@ -1,5 +1,5 @@
-# {{prepend:nav}}
-# {{prepend:beats}}
+# {{insert:nav}}
+# {{insert:beats}}
 
 class LazyBackgrounds
   @load: (container) ->
@@ -14,3 +14,4 @@ $ ->
   document.nav = new Nav("#sidebar")
   document.beats = new BeatsPage("#beats_page")
   LazyBackgrounds.load document.body
+
