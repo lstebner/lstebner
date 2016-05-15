@@ -26,6 +26,18 @@ class AssetServer
     @res.writeHead "200", "Content-Type: text/#{path.substr(path.lastIndexOf('.'))}"
     @res.end fs.readFileSync "#{@root_dir}#{path}"
 
+class View
+  constructor: (name, @res, @data={}) ->
+    @filename = "#{__dirname}/views/#{name}.pug"
+
+  write_head: (status) ->
+    @res.writeHead "#{status}", "Content-Type: text/plain"
+
+  render: ->
+    @write_head 200
+    html = pug.renderFile @filename, @data
+    @res.end html
+
 
 handleRequest = (req, res) ->
   console.log "url hit: #{req.url}"
@@ -54,9 +66,12 @@ dispatcher.setStatic "assets"
 server = http.createServer handleRequest
 
 dispatcher.onGet "/", (req, res) ->
-  res.writeHead "200", "Content-Type: text/plain"
-  html = pug.renderFile "#{__dirname}/views/beats.pug", {}
-  res.end html
+  view = new View "index", res, page: "home"
+  view.render()
+
+dispatcher.onGet "/beats", (req, res) ->
+  view = new View "beats", res, page: "beats"
+  view.render()
 
 server.listen port, ->
   console.log "Server started on port #{port}"
