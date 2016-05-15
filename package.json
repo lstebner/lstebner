@@ -10,6 +10,7 @@
     "pug": "*",
     "underscore": "*",
     "underscore.string": "*",
-    "less": "*"
+    "less": "*",
+    "coffee-script": "*"
   }
 }
