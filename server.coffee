@@ -5,7 +5,7 @@ less = require("less")
 coffee = require("coffee-script")
 _ = require("underscore")
 fs = require("fs")
-port = 3014
+port = 3020
 
 class AssetServer
   less_opts: { compress: false, paths: ["./assets/less"] }
