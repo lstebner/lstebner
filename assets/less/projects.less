@@ -1,0 +1,103 @@
+#projects_page {
+    ul {
+        max-width: 720px;
+        list-style-type: none;
+
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+        }
+
+        >li{
+            position: relative;
+            background: no-repeat center center;
+            background-size: cover;
+            height: 420px;
+            width: 96%;
+            float: left;
+            opacity: 1;
+            cursor: pointer;
+            transition: opacity .7s, background-color .8s;
+            -webkit-transition:opacity .7s, background-color .8s;
+            -moz-transition: opacity .7s, background-color .8s;
+            margin: 30px 2%;
+            box-shadow: 0 0 16px 0px #303030;
+
+            &.archive{
+                display: none;
+            }
+
+            .topbar, .bottombar{
+                opacity: 0;
+                .transition(opacity .4s);
+                left: 0;
+                right: 0;
+                padding: 20px;
+                background-color: rgb(250, 250, 250);
+                color: #404040;
+            }
+
+            .topbar{
+                position: absolute;
+                top: 0;
+            }
+
+            .project_link{
+                color: inherit;
+                text-decoration: none;
+                float: right;
+                display: none;
+
+                &:hover{
+                    color: #0a61ca;
+                }
+            }
+
+            .project_title{
+                margin: 0;    
+            }
+
+            .bottombar{
+                position: absolute;
+                bottom: 0;
+            }
+
+            .technologies{
+                .pill{
+                    display: inline-block;
+                    border: 1px solid #404040;
+                    border-radius: 6px;
+                    padding: 4px 8px;
+                    color: #404040;
+                    margin-right: 12px;
+                }
+            }
+
+            &:hover{
+                .topbar, .bottombar{
+                    opacity: 1;
+                }
+
+                .topbar{
+                    border-bottom: 1px solid #fafafa;
+                }
+
+                .bottombar{
+                    border-top: 1px solid #fafafa;
+                }
+            }
+        }
+
+        &:hover{
+            >li{
+                opacity: .65;
+            }
+        }
+
+        >li:hover{
+            opacity: 1;
+        }
+    }
+}
