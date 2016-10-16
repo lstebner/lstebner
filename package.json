@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "httpdispatcher": "*",
-    "pug": "*",
+    "pug": "2.0.0-beta6",
     "underscore": "*",
     "underscore.string": "*",
     "less": "*",
