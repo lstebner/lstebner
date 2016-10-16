@@ -2,14 +2,14 @@
 @import "mixins";
 @import "reset";
 
-#body_content {
+#body_content.has_sidebar {
     left: @sidebar_width;
     right: 0;
     overflow: auto;
     padding: 30px;
 }
 
-#sidebar, #body_content { 
+#sidebar, #body_content.has_sidebar { 
     position: fixed;
     top: 0;
     bottom: 0;
@@ -22,6 +22,24 @@ h1, h2, h3 {
 
 h4, h5, h6 {
     font-weight: 300;
+}
+
+p, ul {
+    margin: 12px 8px;
+    max-width: 380px;
+}
+
+ul {
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: #08f;
+    }
 }
 
 .tags_list {
@@ -42,8 +60,13 @@ h4, h5, h6 {
 
 @import "index";
 @import "sidebar";
+@import "topbar";
 @import "beats";
+@import "audioplayer";
 
-#body_content {
+#body_content, body {
+    padding: 18px;
     background-color: #f6f6f6;
+    font-size: 14px;
+    color: #111;
 }

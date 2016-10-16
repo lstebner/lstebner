@@ -7,6 +7,10 @@ _ = require("underscore")
 fs = require("fs")
 port = 3020
 
+config =
+  sidebar_enabled: false
+  topbar_enabled: true
+
 class AssetServer
   less_opts: { compress: false, paths: ["./assets/less"] }
   coffee_opts: {}
@@ -78,8 +82,13 @@ class View
     @res.writeHead "#{status}", "Content-Type: text/plain"
 
   render: ->
+    @data.config = config
+
     @write_head 200
-    html = pug.renderFile @filename, @data
+    try
+      html = pug.renderFile @filename, @data
+    catch e
+      console.log JSON.stringify("pug render error:", e)
     @res.end html
 
 
@@ -110,6 +119,26 @@ handleRequest = (req, res) ->
 dispatcher.setStatic "assets"
 
 server = http.createServer handleRequest
+
+routes_to_pages = [
+  ["/", { view: "index", page: "home" }]
+  ["/beats", "beats"]
+]
+
+setup_pages = ->
+  for route, i in routes_to_pages
+    path = route[0]
+    pathdata = route[1]
+    console.log "setup:", path, pathdata
+    # dispatcher.onGet path, (req, res) ->
+    #   view = if typeof pathdata == "object"
+    #     new View pathdata.view, res, page: pathdata.name
+    #   else
+    #     new View pathdata, res, page: pathdata 
+
+    #   view.render()
+
+setup_pages()
 
 dispatcher.onGet "/", (req, res) ->
   view = new View "index", res, page: "home"

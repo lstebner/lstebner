@@ -6,11 +6,19 @@ html
         block headblock
 
     body
-        #sidebar
-            block sidebar
-                include sidebar
+        - body_classes = []
 
-        #body_content
+        if config.sidebar_enabled
+            - body_classes.push("has_sidebar")
+            #sidebar
+                block sidebar
+                    include sidebar
+
+        include topbar
+
+        include audioplayer
+
+        #body_content(class=body_classes.join(" "))
             block content
 
         block templates
