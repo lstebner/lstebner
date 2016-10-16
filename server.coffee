@@ -137,6 +137,15 @@ projects_data = [
     }
 ]
 
+beats_data = [
+    {
+        soundcloud_id: 266619722
+        title: "Tellt he world"
+        tags: ["piano", "upbeat"]
+        description: "weekly beat beat"
+    }
+]
+
 
 config =
   sidebar_enabled: false
@@ -215,6 +224,7 @@ class View
   render: ->
     @data.config = config
     @data.projects = projects_data.sort (obj, obj2) -> obj.order > obj2.order
+    @data.beats = beats_data
 
     @write_head 200
     try

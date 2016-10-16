@@ -2,75 +2,15 @@ extends index
 
 block content
     #beats_page
-        .beat(data-soundcloud_id="266619722")
-            .title Tell the World
-            .tags_list
-                ul
-                    li piano
-                    li upbeat
+        for beat in beats
+            .beat(data-soundcloud_id=beat.soundcloud_id)
+                .title= beat.title
+                .tags_list
+                    ul
+                        for tag in beat.tags
+                            li= tag
 
-            .description Wrote this beat for weekly beats 2016
-
-
-        .beat(data-soundcloud_id="265351033")
-            .title Droll
-            .tags_list
-                ul
-                    li friday the 13th
-
-            .description Wrote this beat for weekly beats 2016
-
-        .beat(data-soundcloud_id="263968031")
-            .title Heavy Translucence
-            .tags_list
-                ul
-                    li friday the 13th
-                    li ios beat
-                    li imaschine 2
-                    li beatmaker 2
-
-            .description Wrote this beat for weekly beats 2016
-
-        .beat(data-soundcloud_id="262953898")
-            .title Great Depths and Great Heights
-            .tags_list
-                ul
-                    li instrumentals
-                    li hip hop beat
-                    li ios beat
-                    li imaschine 2
-
-            .description
-
-
-        .beat(data-soundcloud_id="261876252")
-            .title Sunday Catwalk
-            .tags_list
-                ul
-                    li instrumental
-                    li chill
-                    li smooth
-                    li imaschine 2
-            .description
-
-        .beat(data-soundcloud_id="260659062")
-            .title High Ball Glass
-            .tags_list
-                ul
-                    li instrumental
-                    li hip hop beat
-                    li smooth
-                    li chill
-                    li imaschine 2
-            .description
-
-        .beat(data-soundcloud_id="259673304")
-            .title Trouble
-            .tags_list
-                ul
-                    li instrumental
-                    li hazard
-            .description
+                .description= beat.description
 
 
 block templates
