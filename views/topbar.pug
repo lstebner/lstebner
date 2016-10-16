@@ -1,10 +1,10 @@
 .topbar
   ul.tabs
-    li.tab
-      a(href="#home") home 
-    li.tab
-      a(href="#beats") beats 
-    li.tab
-      a(href="#projects") projects
-    li.tab 
-      a(href="#contact") contact
+    li.tab(class=(page == 'home' ? 'selected' : ''))
+      a(href="/") home 
+    li.tab(class=(page == 'beats' ? 'selected' : ''))
+      a(href="/beats") beats 
+    li.tab(class=(page == 'projects' ? 'selected' : ''))
+      a(href="/projects") projects
+    li.tab(class=(page == 'contact' ? 'selected' : ''))
+      a(href="/contact") contact
