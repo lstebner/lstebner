@@ -2,12 +2,15 @@ extends index
 
 block content
   #projects_page
+    p.center_block Most of these projects are "archived" now and no longer are actively running websites. I will be updating this page in the near future with more screenshots and details of these older sites since they can no longer be visited.
+
     ul
       for project in projects
         li(data-project=project.slug, style="background-image:url(/images/projects/"+project.slug+"-cover.jpg);").project_tile
           .topbar
             a(href=project.full_url, class="project_link")= project.display_url
             h3.project_title= project.title 
+            .description= project.description
 
           .bottombar
             .technologies
