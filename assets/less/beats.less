@@ -1,12 +1,50 @@
 #beats_page {
+    margin-top: 60px;
     max-width: 720px;
+
+    ul {
+        max-width: none;
+    }
 
     iframe, .soundcloud_placeholder {
         margin-top: 12px;
     }
 
+    .audioplayer {
+        position: fixed;
+        top: 14px;
+        right: 14px;
+        z-index: 1;
+
+        .title {
+            text-align: center;
+            color: #080808;
+        }
+    }
+
     .title {
         font-size: 18px;
+
+        .play_icon {
+            @size: 8px;
+            display: inline-block;
+            width: 0; 
+            height: 0; 
+            border-top: @size solid transparent;
+            border-bottom: @size solid transparent;
+            border-left: (@size+4px) solid #383838; 
+            margin-right: 8px;
+            transition: border-left-color .3s;
+        }
+
+        &:hover {
+            color: @hover_color;
+            cursor: pointer;
+
+            .play_icon {
+                border-left-color: @hover_color;
+            }
+        }
     }
 
     .soundcloud_placeholder {
