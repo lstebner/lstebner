@@ -123,7 +123,7 @@ projects_data = [
 
 beats_data = [
   {
-    path: "https://s3-us-west-1.amazonaws.com/beatlabio/drop/fatsbeat101416_2.mp3",
+    path: "https://s3-us-west-1.amazonaws.com/beatlabio/drop/fatsbeat101416_3.mp3",
     title: "What you say Fats?",
     tags: ["sampled", "chopped", "mpc1000", "vinyl", "jazz", "showtunes"],
     description: "This beat was chopped from the Fats Waller record Ain't Misbehavin', recorded in 1929. The very beginning of the beat has a spoken intro and I instantly felt his personality and that he had to be represented on the beat. The main reason I bought this record to begin with was the assumption of jazzy piano's, so grabbing those was a given. Quite pleased with the result!",
@@ -141,14 +141,32 @@ beats_data = [
     order: 0,
     date: "10/01/2016"
   }, {
-    path: "https://s3-us-west-1.amazonaws.com/beatlabio/drop/qroshbeat102016_2.mp3",
-    title: "QRosh on lead",
-    tags: ["weekly beats", "sampled", "moody", "chill"],
-    description: "The heart of this beat was sampled from a fellow weekly beats participant, Q-Rosh. He has a ton of great sounding guitars on his beats and I chose this one to work with http://weeklybeats.com/#/q-rosh/music/active-gift.",
+    path: "https://s3-us-west-1.amazonaws.com/beatlabio/drop/qroshbeat102016_4.mp3",
+    title: "Active Lazy",
+    tags: ["weekly beats", "sampled", "moody", "chill", "guitars"],
+    description: "The heart of this beat was sampled from a fellow weekly beats participant, Q-Rosh. He plays some incredible sounding guitars and I really wanted to capture some of that atmosphere to use for myself. I sample from a few different songs that he had written to create this track.",
     duration: 0,
     soundcloud_url: false,
     order: 0,
     date: "10/20/2016"
+  }, {
+    path: "https://s3-us-west-1.amazonaws.com/beatlabio/drop/cassbeat.mp3",
+    title: "Cass Beat",
+    tags: ["cassette", "found", "mpc1000", "sampled"],
+    description: "I sorta came up on this beat by chance because I took some cassettes from a free bin at a record shop which I was planning to use to just record over, but I decided to see what was on one first. It sounded like some latin radio music, I'm not sure what or when it was from. But it was perfect, so I took about 15 seconds of it in to my MPC and came up with this beat.",
+    duration: 0,
+    soundcloud_url: false,
+    order: 0,
+    date: "10/21/2016"
+  }, {
+    path: "https://s3-us-west-1.amazonaws.com/beatlabio/drop/spbeat.mp3",
+    title: "SP Sauce",
+    tags: ["mpc1000", "sp202", "lofi"],
+    description: "I came up with the basic drum pattern for this beat using iMaschine 2 while I was commuting home by train one night. Then I put it in to a pad on my SP202 and filled a couple banks out with lofi keys. After playing with this for awhile I came up with some other sounds to use and eventually ported these sounds in to my MPC to be able to save the sequences. They got altered along the way to until I had this result.",
+    duration: 0,
+    soundcloud_url: false,
+    order: 0,
+    date: "10/21/2016"
   }
 ];
 
