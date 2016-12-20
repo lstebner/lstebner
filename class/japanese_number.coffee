@@ -20,6 +20,13 @@ module.exports = class JapaneseNumber
     8000: "はっせん"
     10000: "まん"
 
+  @batch: (min=0, max=10000, amount=100) ->
+    data = []
+    for i in [0...amount]
+      num = new JapaneseNumber Math.floor(Math.random() * max + min)
+      data.push [num.number, num.number_japanese]
+    data
+
   constructor: (@number) ->
     @number_japanese = @convert @number
 

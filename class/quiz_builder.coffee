@@ -1,6 +1,6 @@
 Quiz = require("./quiz.js")
 JapaneseNumber = require("./japanese_number.js")
-dictionary_data = require("./dictionary.js")
+Dictionary = require("./dictionary.js")
 
 module.exports = class QuizBuilder
   @build: (@opts={}, opts={}) ->
@@ -10,9 +10,9 @@ module.exports = class QuizBuilder
       # special case
       if key == "japanese_numbers"
         {min, max, amount} = @opts
-        @opts.question_data = dictionary_data.japanese_numbers min, max, amount
-      else if dictionary_data[key]?
-        @opts = question_data: dictionary_data[key]
+        @opts.question_data = JapaneseNumber.batch min, max, amount
+      else if val = Dictionary.lookup(key)
+        @opts = question_data: val
 
     new Quiz @opts
 
