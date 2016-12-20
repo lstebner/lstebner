@@ -5,6 +5,7 @@ AssetServer = require("./class/asset_server.js")
 View = require("./class/view.js")
 JapaneseNumber = require("./class/japanese_number.js")
 QuizBuilder = require("./class/quiz_builder.js")
+dictionary_data = require("./class/dictionary.js")
 port = 3020
 
 beats_data = [
@@ -100,8 +101,8 @@ dispatcher.onGet "/memoree", (req, res) ->
   view = new View "memoree", res, page: "memoree", config: config
   data = 
     memoree_data: JSON.stringify 
-      "characters.katakana": dictionary_data.characters.katakana
-      "characters.hiragana": dictionary_data.characters.hiragana
+      "characters.katakana": dictionary_data["characters.katakana"]
+      "characters.hiragana": dictionary_data["characters.hiragana"]
       "genki.1": dictionary_data.genki_1
       "genki.2": dictionary_data.genki_2
       "genki.3": dictionary_data.genki_3
