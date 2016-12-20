@@ -26,19 +26,18 @@
         .avatarize(30px);
     }
 
-    ul {
+    .nav {
         list-style-type: none;
         padding: 0;
         margin: 0;
 
         li {
             .transition(background-color .3s);
-            background-color: #fff;
             cursor: pointer;
 
             a {
                 display: block;
-                padding: 30px;
+                padding: 14px;
             }
 
             .icon {
@@ -67,6 +66,23 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+
+    .audioplayer {
+        .title {
+            margin: 0 0 14px;
+        }
+
+        .beat .play {
+            float: right;
+            display: none;
+            color: #fff;
+            text-shadow: none;
+        }
+
+        .beat:hover .play{
+            display: inline-block;
         }
     }
 }
