@@ -1,0 +1,12 @@
+#latest_beats.page(data-name="latest_beats")
+    for beat in beats
+        .beat(data-file=beat.path, data-title=beat.title)
+            .title
+                span.play_icon
+                = beat.title
+            .tags_list
+                ul
+                    for tag in beat.tags
+                        li= tag
+
+            .description= beat.description

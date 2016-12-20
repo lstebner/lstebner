@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  .quiz
+    .toolbar
+      select(name="quiz_type")
+        option(value="math") Math
+        option(value="characters.hiragana") Hiragana
+        option(value="characters.katakana") Katakana
+        option(value="genki.1") Japanese Vocab 1
+        option(value="genki.2") Japanese Vocab 2
+        option(value="genki.3") Japanese Vocab 3
+        option(value="time") Time (Japanese)
+        option(value="japanese_numbers") Numbers (Japanese)
+      label Change Quiz Type:
+    textarea(style="display:none;").quiz_data= quiz_data
+    .cur_question
+    .progress
+
+block templates
+  script(type="text/template")#quiz-template.
+    <div class="question"><%=question%></div>
+    <ul class="answers">
+      <% for (c in choices){ %>
+        <li class="choice" data-value="<%=choices[c]%>"><%=choices[c]%></li>
+      <% } %>
+    </ul>
+
+  script(type="text/template")#quiz-complete-template.
+    <h3>Complete!</h3>
+    <p><%=num_correct%>/<%=num_total%> (<%=correct_percent%>%) correct</p>
+    <p><a href="#" class="reset_btn">Take another quiz</a></p>
+
+    <ul class="missed_questions">
+      <li class="header">Missed:</li>
+      <% if (missed_questions.length){ %>
+        <% _.each(missed_questions, function(question){ %>
+          <li><%=question.question.replace("?", "<span class='answer'>"+question.answer+"</span>")%> </li>
+        <% }); %>
+      <% } else { %>
+        <li>none!</li>
+      <% } %>
+    </ul>
+
+

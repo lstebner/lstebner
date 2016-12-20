@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  include memoree/index
+  textarea(style="display:none;")#memoree_data= memoree_data
+
+block headblock
+  link(type="text/css", rel="stylesheet", href="/memoree/css/style.css")
+
+block jsblock
+  script(type="text/javascript", src="/memoree/coffee/memoree.js")
