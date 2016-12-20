@@ -60,7 +60,7 @@ module.exports = class AssetServer
       unless replacements.hasOwnProperty(match)
         action = match.match /(prepend|append|insert):/
         file = match.match /:([a-zA-Z0-9\-_\/]+)/
-        filename = "#{__dirname}/assets/coffee/#{file[1]}.coffee"
+        filename = "#{__dirname.replace(/class/, 'assets')}/coffee/#{file[1]}.coffee"
         file_contents = @process_replacements fs.readFileSync filename, "UTF-8"
         replacements[match] = action: action[1], file: file[1], contents: file_contents
 
