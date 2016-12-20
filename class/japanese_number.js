@@ -24,20 +24,39 @@ module.exports = JapaneseNumber = (function() {
     10000: "まん"
   };
 
+  JapaneseNumber.batch = function(min, max, amount) {
+    var data, i, j, num, ref;
+    if (min == null) {
+      min = 0;
+    }
+    if (max == null) {
+      max = 10000;
+    }
+    if (amount == null) {
+      amount = 100;
+    }
+    data = [];
+    for (i = j = 0, ref = amount; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
+      num = new JapaneseNumber(Math.floor(Math.random() * max + min));
+      data.push([num.number, num.number_japanese]);
+    }
+    return data;
+  };
+
   function JapaneseNumber(number) {
     this.number = number;
     this.number_japanese = this.convert(this.number);
   }
 
   JapaneseNumber.prototype.convert = function(num) {
-    var division, divisions, i, len, remain, str, times;
+    var division, divisions, j, len, remain, str, times;
     str = "";
     if (JapaneseNumber.lookup[num]) {
       str += JapaneseNumber.lookup[num];
     } else {
       divisions = [10000, 1000, 100, 10];
-      for (i = 0, len = divisions.length; i < len; i++) {
-        division = divisions[i];
+      for (j = 0, len = divisions.length; j < len; j++) {
+        division = divisions[j];
         if (num > division) {
           times = Math.floor(num / division);
           if (JapaneseNumber.lookup[division * times] != null) {
