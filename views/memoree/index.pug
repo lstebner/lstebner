@@ -1,0 +1,14 @@
+#memoree
+  include partials/toolbar
+
+  .card_zone
+
+script(type="text/template")#dictionary_menu_template
+  h1 Choose the dictionaries to use
+  ul
+    for dict in ["Hiragana", "Katakana", "Colors", "Fruits"]
+      li
+        a(href="#").checkbox_btn= dict
+
+  a(href="#").submit_btn Apply and Reset
+

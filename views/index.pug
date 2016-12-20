@@ -1,30 +1,7 @@
 extends layout
 
 block content
-  .page(data-name="home")
-    h1 luke stebner
-
-    p hello! my name is Luke and I have been building websites now for over ten years. in the past two years I also started writing beats. although I am employed full time, I am available for hire for your project!
-
-    p| I am interested in revamping existing websites, helping you build a custom website, consulting about your website or, creating music for whatever project you have going on. you can <a href="mailto:luke.stebner+contact@gmail.com">get in contact with me via email</a>, just be sure to make the subject clear so I don't miss it.
-
-    p 
-      em acronyms/softwares: 
-      | JavaScript, HTML, CSS, Ruby on Rails, NodeJS, PHP, Pug Templates, SASS, LESS, Sublime Text, Vim, Photoshop, iTerm, Git, Command Line, Responsive Sites, MongoDB, MySQL, Active Record
-
-    p
-      em beat gear: 
-      | SP202, DR202, MPC1000, Logic Pro, iPad digital synths/drum machines, Tascam 4-track porta studio, Tascam digital recorder
-
-    ul
-      li| <a href="http://github.com/lstebner">github.com/lstebner</a>
-      li| <a href="http://soundcloud.com/ahhsumx">soundcloud.com/ahhsumx</a>
-      li| <a href="http://twitter.com/ahhsumx">twitter.com/ahhsumx</a>
-
-
-    .latest
-      ul
-        li.header new stuff
-        li something
-        li and something
-        li else or such
+  //- include news
+  include posts
+  //- include latest_beats
+  include japan
