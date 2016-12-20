@@ -1,6 +1,6 @@
-#posts {
+.posts {
   .post {
-    @padding: 30px;
+    @padding: 20px;
 
     position: relative;
     width: 720px;
@@ -9,6 +9,19 @@
     border: 1px solid #d8d8d8;
     border-radius: 2px;
     background-color: #fafafa;
+    margin: 14px 0;
+
+    img {
+      box-sizing: border-box;
+      max-width: 90%;
+      margin: 14px 0;
+      border: 1px solid #f8f8f8;
+      border-radius: 3px;
+
+      &.zoomable {
+        cursor: zoom-in;
+      }
+    }
 
     .title {
       font-weight: 500;
@@ -25,6 +38,63 @@
       margin-top: 14px;
       border-left: 3px solid #d8d8d8;
       padding-left: 14px;
+    }
+
+    .main_cover {
+      float: right;
+      max-width: 200px;
+      cursor: zoom-in;
+
+      img {
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+    }
+
+    &::after {
+      content: "--";
+      display: block;
+      height: 0;
+      overflow: hidden;
+      clear: both;
+    }
+
+    .show_all_translations {
+      float: right;
+    }
+
+    .vocab_list {
+      width: 96%;
+      max-width: none;
+      list-style-type: none;
+
+      li {
+        clear: both;
+        width: 100%;
+        margin: 20px 0;
+        border-bottom: 1px solid #f8f8f8;
+
+        span {
+          float: right;
+          visibility: hidden;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          span {
+            visibility: visible;
+          }
+        }
+      }
+
+      &.show_all_translations {
+        li{
+          span {
+            visibility: visible;
+          }
+        }
+      }
     }
   }
 }
