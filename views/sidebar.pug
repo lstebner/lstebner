@@ -2,13 +2,58 @@ h1
     .avatar
         img(src="/images/avatar.jpg")
     span Luke Stebner
-ul
-    // 0 index is the slug for the url
-    // 1 index is the label
-    - items = [["home", "Home", "/"], ["beats", "Beats"], ["jrule", "JRule"]]
-    for item, i in items
-        li(class=(page == item[0] ? 'selected' : ''))
-            - href = item.length > 2 ? item[2] : "/" + item[0]
-            a(href=href) 
-                span.icon &gt;
-                = item[1]
+ul.nav
+    li
+        a(href="/").nav_link
+            span.icon &gt;
+            | Home
+
+    li
+        a(href="/beats").nav_link
+            span.icon &gt;
+            | Beats
+
+    li
+        a(href="/recipes").nav_link
+            span.icon &gt;
+            | Recipes 
+
+    //- li
+    //-     a(href="/resume").nav_link
+    //-         span.icon &gt;
+    //-         | Resume
+
+    li
+        a(href="/vocab").nav_link
+            span.icon &gt;
+            | Vocab
+
+    li
+        a(href="/quiz").nav_link
+            span.icon &gt;
+            | Quiz
+    //- li
+        a(href="#latest_beats").nav_link
+            span.icon &gt; 
+            | Latest Beats
+
+        .audioplayer
+            ul.playlist
+                - playlist = [[1, "one"], [2, "two"]]
+                for beat in playlist
+                    - location = beat[0]
+                    - label = beat[1]
+                    li(data-beat=location).beat
+                        span.play play
+                        .label= label
+
+    //- li
+        a(href="#japan").nav_link
+            span.icon &gt; 
+            | Japan
+
+    li
+        a(href="/memoree").nav_link
+            span.icon &gt; 
+            | Memoree
+

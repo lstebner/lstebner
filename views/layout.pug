@@ -2,6 +2,7 @@ doctype html
 html
     head
         link(type="text/css", rel="stylesheet", href="/css/style.css")
+        meta(charset="utf-8")
 
         block headblock
 
@@ -14,7 +15,10 @@ html
                 block sidebar
                     include sidebar
 
-        include topbar
+        if config.topbar_enabled
+            - body_classes.push("has_topbar")
+            block topbar 
+                include topbar
 
         #body_content(class=body_classes.join(" "))
             block content
