@@ -1,5 +1,6 @@
 # {{insert:nav}}
-# {{insert:beats}}
+# {{insert:timeline}}
+# {{insert:quiz}}
 
 class LazyBackgrounds
   @load: (container) ->
@@ -12,6 +13,5 @@ class LazyBackgrounds
 
 $ ->
   document.nav = new Nav("#sidebar")
-  document.beats = new BeatsPage("#beats_page")
   LazyBackgrounds.load document.body
 
