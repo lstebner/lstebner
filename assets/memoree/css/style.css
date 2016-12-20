@@ -1,0 +1,255 @@
+#memoree {
+  font-size: 13px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#memoree h1,
+#memoree h2,
+#memoree h3,
+#memoree h4,
+#memoree h5,
+#memoree h6 {
+  margin: 10px 0;
+  font-weight: normal;
+}
+#memoree p {
+  margin: 6px 0;
+}
+#memoree a,
+#memoree a:hover {
+  text-decoration: none;
+}
+#memoree .btn {
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #b0c3e3;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+}
+#memoree .btn:hover {
+  background-color: #658ac8;
+  color: #fff;
+}
+#memoree .outline_btn {
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #b0c3e3;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  background-color: #fff;
+  border: 1px solid #b0c3e3;
+  color: #658ac8;
+}
+#memoree .outline_btn:hover {
+  background-color: #658ac8;
+  color: #fff;
+}
+#memoree .card_zone {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  bottom: 80px;
+  left: 80px;
+  border: 1px solid #d8d8d8;
+  padding: 10px;
+  margin: auto;
+  border-radius: 4px;
+}
+#memoree .card_zone .card {
+  position: relative;
+  border: 1px solid #555;
+  margin: 0.2%;
+  padding: 1%;
+  display: inline-block;
+  width: 13.1%;
+  height: 10%;
+  text-align: center;
+  background-color: #ccc;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  vertical-align: top;
+  border-radius: 3px;
+  font-size: 18px;
+  background-image: url(../images/sayagata-400px.png);
+}
+#memoree .card_zone .card span {
+  visibility: hidden;
+  position: relative;
+  top: 50%;
+  display: block;
+  line-height: 1.5em;
+  margin-top: -0.75em;
+}
+#memoree .card_zone .card.uncover {
+  background-color: #fff;
+  background-image: none;
+}
+#memoree .card_zone .card.match {
+  background-color: #fafafa;
+  color: #ddd;
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#memoree .card_zone .card.miss {
+  background-color: #f99;
+  background-image: none;
+}
+#memoree .card_zone .card.uncover span,
+#memoree .card_zone .card.match span,
+#memoree .card_zone .card.miss span {
+  visibility: visible;
+}
+#memoree.alt .card_zone .card:not(.miss):not(.match):not(.uncover) {
+  background-image: url(../images/asanoha-400px.png);
+}
+#memoree .complete .card_zone {
+  background-color: #9f9;
+}
+#memoree .complete .card_zone .card.match {
+  color: #333;
+  border-color: #333;
+}
+#memoree #toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 20px 80px;
+  box-sizing: border-box;
+}
+#memoree #toolbar .reset_btn,
+#memoree #toolbar .controls {
+  float: right;
+}
+#memoree #toolbar .controls {
+  padding: 8px 28px 0 0;
+}
+#memoree #toolbar .stats {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 8px;
+}
+#memoree .overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#memoree .menu_btn {
+  display: block;
+  padding: 8px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+}
+#memoree .menu_btn:hover {
+  background-color: #fafafa;
+  color: #000;
+}
+#memoree .menu_btn.selected {
+  background-color: #ddd;
+  color: #555;
+}
+#memoree .menu_btn a {
+  color: inherit;
+}
+#memoree .menu {
+  position: relative;
+  z-index: 1000;
+  top: 100px;
+  bottom: 100%;
+  margin: auto;
+  max-height: 80%;
+  max-width: 200px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#memoree .menu h1 {
+  font-size: 18px;
+  text-align: center;
+}
+#memoree .menu ul {
+  margin: 0;
+  padding: 0;
+}
+#memoree .menu ul li {
+  display: block;
+  padding: 8px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+}
+#memoree .menu ul li:hover {
+  background-color: #fafafa;
+  color: #000;
+}
+#memoree .menu ul li.selected {
+  background-color: #ddd;
+  color: #555;
+}
+#memoree .menu ul li a {
+  color: inherit;
+}
+#memoree .submit_btn {
+  display: block;
+  padding: 8px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+}
+#memoree .submit_btn:hover {
+  background-color: #fafafa;
+  color: #000;
+}
+#memoree .submit_btn.selected {
+  background-color: #ddd;
+  color: #555;
+}
+#memoree .submit_btn a {
+  color: inherit;
+}
