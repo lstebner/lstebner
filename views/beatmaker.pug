@@ -1,0 +1,54 @@
+extends layout
+
+block headblock
+  link(type="text/css", rel="stylesheet", href="/beatmaker/css/style.css")
+
+block jsblock
+  script(type="text/javascript", src="/beatmaker/coffee/main.js")
+
+block content
+    #metronome
+        .bpm 88
+        .btn_group
+            .btn.start_btn Start
+            .btn.stop_btn Stop
+        .btn_group
+            .btn.decrease_tempo_btn Slower 
+            .btn.increase_tempo_btn Faster 
+
+    #sequencer
+        - rows = 16, row = 0
+        while row < rows
+            .row
+                .row_label= row.toString()
+                - measures = 4
+                - beats_per_measure = 8
+                - i = 0
+                - index = 0
+                while i < measures
+                    - k = 0
+                    while k < beats_per_measure
+                        .beat(data-sound=row, data-measure=i, data-beat=k, data-index=index)
+                        - k += 1
+                        - index += 1
+
+                    - i += 1
+
+            - row += 1
+
+
+    #pads.pads_container
+        - ids = [12, 13, 14, 15, 8, 9, 10, 11, 4, 5, 6, 7, 0, 1, 2, 3]
+        for id in ids
+            .pad(data-id=id)
+                span.pad_id= id
+
+    #soundboard.pads_container
+        - amount = 48
+        - i = 0
+
+        while i < amount
+            .pad(data-id=i)
+                span.pad_id= i
+                span.name
+            - i += 1

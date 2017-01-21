@@ -10,6 +10,7 @@ module.exports = Quiz = (function() {
     this.opts = opts != null ? opts : {};
     this.opts = _.extend({
       name: "",
+      format: "recall",
       type: "",
       num_questions: 20,
       num_choices: 4,
@@ -23,18 +24,23 @@ module.exports = Quiz = (function() {
 
   Quiz.prototype.data = function() {
     return {
-      questions: this.questions
+      questions: this.questions,
+      format: this.opts.format
     };
   };
 
   Quiz.prototype.setup = function() {
-    var all_choices, c, choice, i, j, k, l, len, m, random_choices, ref, ref1, ref2, results, v;
-    if (this.opts.type === "math") {
-      this.setup_math_questions(this.opts.math_opts);
-    }
     if (!this.opts.question_data) {
-      return console.info("no question data, type '" + this.opts.type + "' (ok if expected)");
+      if (process.env.NODE_ENV !== "test") {
+        console.info("no question data, type '" + this.opts.type + "' (ok if expected)");
+      }
+      return;
     }
+    return this.setup_questions();
+  };
+
+  Quiz.prototype.setup_questions = function() {
+    var all_choices, c, choice, i, j, k, l, len, m, random_choices, ref, ref1, ref2, results, v;
     all_choices = [];
     ref = this.opts.question_data;
     for (j = 0, len = ref.length; j < len; j++) {
@@ -64,7 +70,7 @@ module.exports = Quiz = (function() {
         }
       });
       results.push(this.questions.push({
-        question: choice[0] + "=?",
+        question: (choice[0] + "=?").replace("==", "="),
         answer: "" + choice[1],
         choices: random_choices
       }));
@@ -79,21 +85,12 @@ module.exports = Quiz = (function() {
     }
     selected_idx = Math.floor(Math.random() * this.opts.question_data.length);
     if (unique) {
-      while (_.indexOf(this.selected_choices, selected_idx) > -1) {
+      while ((_.indexOf(this.selected_choices, selected_idx) > -1) && this.selected_choices.length < this.opts.question_data.length - 1) {
         selected_idx = Math.floor(Math.random() * this.opts.question_data.length);
       }
       this.selected_choices.push(selected_idx);
     }
     return this.opts.question_data[selected_idx];
-  };
-
-  Quiz.prototype.setup_math_questions = function(math_opts) {
-    var generator;
-    if (math_opts == null) {
-      math_opts = {};
-    }
-    generator = new MathGenerator(math_opts);
-    return this.questions = generator.generate();
   };
 
   return Quiz;

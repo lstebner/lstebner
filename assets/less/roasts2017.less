@@ -1,0 +1,47 @@
+.roast_info {
+  .about, .images_container {
+    display: block;
+    box-sizing: border-box;
+    padding: 14px;
+  }
+
+  .about {
+    float: left;
+    width: 40%;
+    padding-top: 0;
+  }
+
+  .images_container {
+    float: right;
+    clear: right;
+    width: 60%;
+
+    img {
+      max-width: 100%;
+      margin-bottom: 14px;
+      border-radius: 2px;
+    }
+  }
+
+  .roast_date {
+    float: right;
+    color: #a6a6a6;
+    font-weight: 100;
+  }
+
+  .origin {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 14px 0;
+  }
+
+  &::after {
+    content: "";
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+  }
+}

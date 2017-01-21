@@ -1,0 +1,7 @@
+.roast_info .roast_date {
+  float: right;
+  color: #cacaca;
+}
+.roast_info .origin {
+  font-weight: bold;
+}

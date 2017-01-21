@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .waveform
+
+block jsblock
+  script(type="text/javascript", src="/lib/wavesurfer.js")
+  script(type="text/javascript").
+    $(function(){
+      document.waveform = new document.Waveform(".waveform");
+    });

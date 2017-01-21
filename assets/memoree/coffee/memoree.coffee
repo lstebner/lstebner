@@ -98,7 +98,7 @@ class Memoree.Main
   set_dictionary: (name) ->
     # same dictionary that's already loaded
     return unless name != @opts.dictionary
-    valid_dicts = ["characters.hiragana", "characters.katakana", "foods", "colors", "time", "japanese_numbers"]
+    valid_dicts = ["characters.hiragana", "characters.katakana", "foods", "colors", "time", "japanese_numbers", "addition_basic", "subtraction_basic", "multiplication"]
     # unavailable dictionary
     return unless _.indexOf(valid_dicts, name) > -1
     @opts.dictionary = name
@@ -134,8 +134,6 @@ class Memoree.Main
         new_data = dict[key]
         dict_data = _.union dict_data, new_data
 
-      console.log "data", dict_data
-
     dict_data
 
   load_deck: ->
@@ -161,10 +159,10 @@ class Memoree.Main
       else
         w[1]
 
-      card = "<div class='card' data-id='#{idx}'><span>#{word}</span></div>"
+      card = "<div class='card' data-id='#{idx}' data-match_val='#{match}'><span>#{word}</span></div>"
       @cards.push card
 
-      match = "<div class='card' data-id='#{idx}m'><span>#{match}</span></div>"
+      match = "<div class='card' data-id='#{idx}m' data-match_val='#{match}'><span>#{match}</span></div>"
       @cards.push match
 
     cards = if @opts.shuffle then _.shuffle(@cards) else @cards
@@ -196,11 +194,13 @@ class Memoree.Main
   check_uncovered_cards: ->
     $uncovered = @container.find(".card.uncover")
     return console.log('not enough uncovered cards') unless $uncovered.length == 2
-    ids = for c in $uncovered
-      id = $(c).data("id") 
-      id
+    ids = []
+    match_vals = []
+    for c in $uncovered
+      ids.push $(c).data("id") 
+      match_vals.push $(c).data("match_val")
 
-    matched = @is_match ids[0], ids[1]
+    matched = @is_match ids[0], ids[1], match_vals[0], match_vals[1]
     new_classes = if matched
       @matched_cards++
       @stats.matched++
@@ -218,8 +218,11 @@ class Memoree.Main
     @uncovered_cards = 0
     matched
 
-  is_match: (id1, id2) ->
-    id2 == "#{id1}m" || id1 == "#{id2}m"
+  is_match: (id1, id2, match_val1, match_val2) ->
+    ismatch = id2 == "#{id1}m" || id1 == "#{id2}m"
+    return true if ismatch
+    return false if @opts.dont_allow_match_val
+    match_val1 == match_val2
 
   finished: ->
     console.log "all cards matched!"

@@ -1,0 +1,9 @@
+extends posts/post_layout
+
+block date
+  | #{questions.length} problems
+
+block content
+  ul.math_questions(class=(questions.length < 20 ? "block_list" : ""))
+    for q in questions
+      li= q.question

@@ -7,16 +7,23 @@ module.exports = class AssetServer
   coffee_opts: {}
   constructor: (@root_dir="#{__dirname.replace(/class/, 'assets')}", @res) ->
 
-  serve_stylesheet: (path) ->
-    console.log "AssetServer::stylesheet #{path}"
+  serve_stylesheet: (path, path_is_raw_less=false) ->
+    console.log "AssetServer::stylesheet #{path}" unless process.env.NODE_ENV == "test"
     path = path.replace /css/g, "less"
     @res.writeHead "200", "Content-Type: text/css"
-    contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
+    if path_is_raw_less
+      contents = path
+    else
+      try
+        contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
+      catch e
+        return @do404()
+
     less.render contents, @less_opts, (e, output) =>
       @res.end output.css
 
   serve_coffeescript: (path) ->
-    console.log "AssetServer::coffeescript #{path}"
+    console.log "AssetServer::coffeescript #{path}" unless process.env.NODE_ENV == "test"
     path = path.replace /\.js/, ".coffee"
     @res.writeHead "200", "Content-Type: text/javascript"
     try
@@ -26,27 +33,45 @@ module.exports = class AssetServer
       try
         contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
       catch err
-        console.log "tried to find #{path} (or coffee alternative) and neither existed"
-        contents = "0"
-    
-    @res.end coffee.compile @process_replacements contents
+        console.log "tried to find #{path} (or coffee alternative) and neither existed" unless process.env.NODE_ENV == "test"
+        return @do404()
+
+    contents = coffee.compile @process_replacements contents
+    @res.end contents
 
   serve_javascript: (path) ->
-    console.log "AssetServer::javascript #{path}"
+    console.log "AssetServer::javascript #{path}" unless process.env.NODE_ENV == "test"
     @res.writeHead "200", "Content-Type: text/javascript"
-    contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
+    try
+      contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
+    catch e
+      return @do404()
     @res.end contents
 
   serve_image: (path) ->
-    console.log "AssetServer::image #{path}"
-    @res.writeHead "200", "Content-Type: text/#{path.substr(path.lastIndexOf('.'))}"
+    console.log "AssetServer::image #{path}" unless process.env.NODE_ENV == "test"
+    @res.writeHead "200", "Content-Type: text/#{path.substr(path.lastIndexOf('.') + 1)}"
     try
-        contents = fs.readFileSync "#{@root_dir}#{path}"
+      contents = fs.readFileSync "#{@root_dir}#{path}"
     catch e
-        # ...
-        console.log "AssetServer::image #{path} !! file not found"
+      # ...
+      console.log "AssetServer::image #{path} !! file not found" unless process.env.NODE_ENV == "test"
+      return @do404()
     
     @res.end contents || false
+
+  serve_audio: (path) ->
+    console.log "AssetServer::audio #{path}" unless process.env.NODE_ENV == "test"
+    @res.writeHead "200", "Content-Type: audio/mpeg"
+    try
+      contents = fs.readFileSync "#{@root_dir}#{path}"
+    catch e
+      return @do404()
+    @res.end contents
+
+  do404: ->
+    @res.writeHead "404", "Content-Type: text/plain"
+    @res.end "your classic 404, not found"
 
   process_replacements: (contents) ->
     matches = contents.match /#(\s+|)\{\{(prepend|append|insert):([a-zA-Z0-9\-_\/]+)\}\}/g
@@ -60,7 +85,8 @@ module.exports = class AssetServer
       unless replacements.hasOwnProperty(match)
         action = match.match /(prepend|append|insert):/
         file = match.match /:([a-zA-Z0-9\-_\/]+)/
-        filename = "#{__dirname.replace(/class/, 'assets')}/coffee/#{file[1]}.coffee"
+        # filename = "#{__dirname.replace(/class/, 'assets')}/coffee/#{file[1]}.coffee"
+        filename = "#{@root_dir}/coffee/#{file[1]}.coffee"
         file_contents = @process_replacements fs.readFileSync filename, "UTF-8"
         replacements[match] = action: action[1], file: file[1], contents: file_contents
 

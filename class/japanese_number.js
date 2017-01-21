@@ -44,12 +44,15 @@ module.exports = JapaneseNumber = (function() {
   };
 
   function JapaneseNumber(number) {
-    this.number = number;
+    this.number = number != null ? number : 0;
     this.number_japanese = this.convert(this.number);
   }
 
   JapaneseNumber.prototype.convert = function(num) {
     var division, divisions, j, len, remain, str, times;
+    if (num == null) {
+      num = this.number;
+    }
     str = "";
     if (JapaneseNumber.lookup[num]) {
       str += JapaneseNumber.lookup[num];
@@ -85,7 +88,7 @@ module.exports = JapaneseNumber = (function() {
 
   JapaneseNumber.prototype.set = function(number) {
     this.number = number;
-    return this.convert();
+    return this.number_japanese = this.convert();
   };
 
   return JapaneseNumber;

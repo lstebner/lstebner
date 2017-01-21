@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .posts
+    .post.print_hide
+      h3 Here are a bunch of randomly generated math problems that are printer friendly. Refresh the page to get new ones and print all you want. Great for daily brain training (15-20 minutes/day).
+
+    for questions in math_questions
+      include math_problems

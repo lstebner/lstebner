@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .conversions
+    .toolbar
+      label Convert (from) to (to)
+      select(name="conversion")
+        // coffee to js, less to css, yaml to json, md to html
+        option(value="coffee_to_js") Coffee to JS
+        option(value="yaml_to_json") YAML to JSON
+        option(value="less_to_css") LESS to CSS
+        option(value="pug_to_html") PUG to HTML
+        option(value="md_to_html") Markdown to HTML
+
+      button(name="convert_btn").convert_btn Convert
+      button(name="clear_btn").clear_btn Clear
+
+    .convert_from
+      textarea(name="input", placeholder="Type or paste stuff here and then press the Convert button above or select a type")
+
+    .convert_to
+      textarea(name="output", placeholder="Press Convert (above)")
+
+    .about Handy convertors to go from shorthand to vanilla. Press 'cmd+enter' while typing in the left textarea for a shortcut to convert. For more information about each...
+      a(href="http://coffeescript.org/", rel="nofolllow", target="_blank") Coffeescript
+      |  &middot; 
+      a(href="http://lesscss.org/", rel="nofollow", target="_blank") LESS
+      |  &middot; 
+      a(href="https://pugjs.org/api/getting-started.html", rel="nofollow", target="_blank") PUG
+      |  &middot; 
+      a(href="https://daringfireball.net/projects/markdown/", rel="nofollow", target="_blank") Markdown
+      |  &middot; 
+      a(href="http://yaml.org/", rel="nofollow", target="_blank") YAML
+
+block jsblock
+  script(type="text/javascript").
+    $(function(){
+      document.conversions = new document.Conversions(".conversions");
+    });

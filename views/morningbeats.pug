@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .full_width.morningbeats
+    .player
+      audio(controls, preload="auto", autobuffer=true)
+        source(src="", type="audio/mpeg")
+
+    h1 Morning* Beats
+
+    p "Morning Beats" are what I call the beats I write on my phone while I commute to and from work. I started doing this in 2015 when I wanted to spend more time making beats, but found the most "free time" during my commute. 
+
+    p I really love creating sample based beats and hope you check those out, but working within the limits of a phone has its own challenges which I also enjoy. This is the result of that labor. I've even taken some of these sounds in to my sample based beats. If you're intrested in the apps I use, they are BeatMaker2, iMaschine2 and SampleTank. There are many great synths for tablets too, but that's a different story. Enjoy.
+
+    for beat in morningbeats
+      a(href="#" + beat.filename)= beat.name
+      if beat.notes.length
+        p= beat.notes

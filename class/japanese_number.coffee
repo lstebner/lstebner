@@ -27,10 +27,10 @@ module.exports = class JapaneseNumber
       data.push [num.number, num.number_japanese]
     data
 
-  constructor: (@number) ->
+  constructor: (@number=0) ->
     @number_japanese = @convert @number
 
-  convert: (num) ->
+  convert: (num=@number) ->
     str = ""
     if JapaneseNumber.lookup[num]
       str += JapaneseNumber.lookup[num]
@@ -55,5 +55,5 @@ module.exports = class JapaneseNumber
   japanese: -> @number_japanese
 
   set: (@number) ->
-    @convert()
+    @number_japanese = @convert()
 

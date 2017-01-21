@@ -16,6 +16,17 @@
     box-sizing: border-box;
 }
 
+@media print {
+    #body_content.has_sidebar {
+        position: relative;
+        left: 0;
+    }
+
+    .print_hide {
+        display: none !important;
+    }
+}
+
 h1, h2, h3 {
     font-weight: 400;
 }
@@ -29,16 +40,23 @@ p, ul {
     max-width: 380px;
 }
 
+.full_width {
+    p, ul {
+        max-width: 100%;
+    }
+}
+
 ul {
     padding-left: 16px;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
     cursor: pointer;
+    color: #0037dd;
 
     &:hover {
-        color: #08f;
+        text-decoration: underline;
     }
 }
 
@@ -59,6 +77,8 @@ a {
     }
 }
 
+@import "lightbox";
+@import "animation";
 @import "index";
 @import "sidebar";
 @import "topbar";
@@ -67,6 +87,11 @@ a {
 @import "projects";
 @import "posts";
 @import "quiz";
+@import "typing";
+@import "beats2017";
+@import "roasts2017";
+@import "photostream";
+@import "conversions";
 
 #body_content, body {
     padding: 18px;

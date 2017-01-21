@@ -1,0 +1,49 @@
+.typing {
+  @color_correct: #0f0;
+  @color_incorrect: #f00;
+
+  position: relative;
+  max-width: 500px;
+  margin: 40px auto;
+  font-size: 16px;
+
+  .paragraph, .input {
+    border: 1px solid #d1d1d1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 14px 0;
+
+    &.correct {
+      border-color: @color_correct;
+    }
+
+    &.incorrect {
+      border-color: @color_incorrect;
+    }
+  } 
+
+  .paragraph span {
+    display: inline-block;
+    padding: 1px 3px;
+
+    &.correct {
+      background-color: @color_correct;
+    }
+
+    &.incorrect {
+      background-color: @color_incorrect;
+    }
+
+    &.highlight {
+      background-color: #088;
+      color: #fff;
+    }      
+  }
+
+  .input  {
+    resize: none; 
+    padding: 7px;
+    font-size: inherit;
+  }
+}

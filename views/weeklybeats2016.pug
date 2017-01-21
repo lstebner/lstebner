@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  - beat_src_base = config.weeklybeats2016_loc_root
+  - beat_ext = ".mp3"
+  .full_width.beatswall#weeklybeats2016
+    .player
+      audio(controls, preload="auto", autobuffer=true)
+        source(src="", type="audio/mpeg")
+
+    h1 Weekly Beats 2016
+    p Weekly beats was a project me and many others particpated in throughout 2016. At first, I didn't plan on taking it that seriously (and I actually missed the first deadline since it wasn't timezone specific...), but by the end I had learned way more than I thought I would about creating music. I was also encouraged by many people's kind words and a variety of tools that came my way throughout the year. 
+
+    p For 2017, I'm continuing to write beats, but this time with a more focused mind. This is a collection of the 41 beats I ended up submitting for Weekly Beats 2016. They vary vastly in style and quality as some were written on my iPhone while commuting and others while I was learning how to use my MPC1000 and how to sample vinyl. 
+
+    ul.weeks
+      for beat in beats
+        - classes = ["on"]
+        - href = beat_src_base + beat[1] + beat_ext
+        - title = beat[0]
+
+        li(data-week=i, data-beat_url=href, class=classes.join(" ")).week #{title}
+          span.vinyl
+            a(href="#").play_btn
+
+block jsblock
+  script(type="text/javascript").
+    $(function(){
+      document.weeklybeats2016 = new document.BeatsWall("#weeklybeats2016");
+    });

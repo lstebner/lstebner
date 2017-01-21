@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  - root_url = config.photostream_loc_root
+  .photostream
+    p Photos, mostly just from day to day life. Lots of cats for some reason...
+
+    for img in photos
+      - slug_title = img[0].replace(/ /g, '_')
+      .photo(id=slug_title)
+        .title
+          a(href="#" + slug_title)= img[0]
+        img(src=root_url + img[1], title=img[0])

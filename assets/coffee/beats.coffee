@@ -46,3 +46,6 @@ class BeatsPage
       id = $beat.data("soundcloud_id")
       player = @soundcloud_template.replace("{{track_id}}", id)
       $beat.find(".soundcloud_placeholder").replaceWith player
+
+
+

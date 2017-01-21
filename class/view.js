@@ -7,13 +7,26 @@ pug = require("pug");
 
 module.exports = View = (function() {
   function View(name, res, data) {
+    var base, base1;
     this.res = res;
     this.data = data != null ? data : {};
+    if ((base = this.data).status == null) {
+      base.status = 200;
+    }
+    if ((base1 = this.data).content_type == null) {
+      base1.content_type = "text/plain";
+    }
     this.filename = (__dirname.replace(/class/, 'views')) + "/" + name + ".pug";
   }
 
-  View.prototype.write_head = function(status) {
-    return this.res.writeHead("" + status, "Content-Type: text/plain");
+  View.prototype.write_head = function(status, content_type) {
+    if (status == null) {
+      status = this.data.status;
+    }
+    if (content_type == null) {
+      content_type = this.data.content_type;
+    }
+    return this.res.writeHead("" + status, "Content-Type: " + content_type);
   };
 
   View.prototype.render = function(moredata) {
@@ -22,13 +35,17 @@ module.exports = View = (function() {
       moredata = {};
     }
     this.data = _.extend(this.data, moredata);
-    console.log("render", this.filename);
-    this.write_head(200);
+    if (process.env.NODE_ENV !== "test") {
+      console.log("render", this.filename);
+    }
+    this.write_head();
     try {
       html = pug.renderFile(this.filename, this.data);
     } catch (error) {
       e = error;
-      console.log("pug render error:", JSON.stringify(e));
+      if (process.env.NODE_ENV !== "test") {
+        console.log("pug render error:", JSON.stringify(e));
+      }
     }
     return this.res.end(html);
   };
