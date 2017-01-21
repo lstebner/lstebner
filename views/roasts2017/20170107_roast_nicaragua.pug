@@ -1,0 +1,20 @@
+extends roast_template
+
+block origin
+  | Nicaragua Acopio Suyatal
+
+block roast_date
+  |  2017/01/07
+
+block vendor_description
+  p Sweet Maria's describes this coffee as "Balanced bittersweetness, malt sugar, roasted nut tones, cocoa nib-like finish, subtle rind-like acidity". I believe they also had this listed as an "everyday drinker", which is a property I look for in coffee as someone who likes to drink a lot, daily. 
+
+block roast_notes
+  p I roasted this coffee in my Gene Cafe roaster. I did a 221g batch, aiming for just before second crack. The roast took about 13 and a half minutes and I could just hear second crack, but neither stages were very strong. I think the air temperature was a bit too cold for a great roast.
+  p I let it rest overnight and brewed drip style the next day, as I always do. The resulting cup was very well balanced, if not a bit light. Definitely a daily drinker, but not quite enough personality for me. I have another batch to roast which I hope will come to temperature quicker and have a stronger first crack so we can taste more of those nutty tones. A few more cups to drink in the mean time.
+
+block roast_images
+  - img_root = "https://s3.amazonaws.com/lukestebner-blog/52roasts2017/"
+  - images = ["weeklyroasts17_01-green.jpg", "weeklyroasts17_01-roasted.jpg"]
+  for image in images
+    img(src=img_root + image).roast_image

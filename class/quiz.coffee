@@ -5,6 +5,8 @@ module.exports = class Quiz
   constructor: (@opts={}) ->
     @opts = _.extend
       name: ""
+      # formats: multiple_choice, recall
+      format: "recall"
       type: ""
       num_questions: 20
       num_choices: 4
@@ -19,13 +21,21 @@ module.exports = class Quiz
   data: ->
     {
       questions: @questions
+      format: @opts.format
     }
 
   setup: ->
-    if @opts.type == "math"
-      @setup_math_questions @opts.math_opts
+    unless @opts.question_data
+      console.info("no question data, type '#{@opts.type}' (ok if expected)") unless process.env.NODE_ENV == "test"
+      return
 
-    return console.info("no question data, type '#{@opts.type}' (ok if expected)") unless @opts.question_data
+    @setup_questions()
+
+    # switch @opts.format
+    #   when "multiple_choice"
+    #   when "recall"
+
+  setup_questions: ->
     all_choices = []
     for v in @opts.question_data
       all_choices.push v[0]
@@ -41,18 +51,16 @@ module.exports = class Quiz
       random_choices.sort (a) -> if Math.random() * 6 > 3 then 1 else -1
 
       @questions.push
-        question: "#{choice[0]}=?"
+        question: "#{choice[0]}=?".replace("==", "=")
         answer: "#{choice[1]}"
         choices: random_choices
 
   random_choice: (unique=true) ->
     selected_idx = Math.floor(Math.random() * @opts.question_data.length)
     if unique
-      while(_.indexOf(@selected_choices, selected_idx) > -1)
+      while(_.indexOf(@selected_choices, selected_idx) > -1) && @selected_choices.length < @opts.question_data.length - 1
         selected_idx = Math.floor(Math.random() * @opts.question_data.length)
       @selected_choices.push selected_idx
     @opts.question_data[selected_idx]
 
-  setup_math_questions: (math_opts={}) ->
-    generator = new MathGenerator(math_opts)
-    @questions = generator.generate()
+

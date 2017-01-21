@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  - roast_image_base = config.roasts_img_loc_root
+
+  .full_width#roasts2017
+    h1 52 Roasts 2017
+    p 52 Roasts 2017 is a poorly named 52 week coffee roasting streak. It's a direct clone of 52 Beats 2017, which is also a rip-off so... anyways. I did a bad job at keeping up with roasting coffee last year so this year I'll be sure to roast at least 52 times! By the end of the year I will have roasted around 26 pounds of coffee and saved loads of money. I'll do some additional posts throughout the year about coffee roasting and how I got into it, but on this page you'll find a summary of the 52 Roasts as we progress through the year. Click on the roasted coffees to get more info.
+
+    ul.weeks
+      - for (var i = 1; i <= 52; i++)
+        - classes = []
+        - img_path = false
+        - roast_name = undefined
+
+        if i <= config.roasts52_week && i <= roasts.length
+          - classes.push("on")
+          - roast_name = roasts[i - 1][0]
+          - img_path = roast_image_base + roasts[i - 1][1]
+        else
+          - classes.push("off")
+
+        li(data-week=i, class=classes.join(" "), data-roast_name=roast_name).week week #{i}
+          img.roast_img(style=(img_path ? "background-image:url(" + img_path + ")" : ""))
+
+block templates
+  script(type="text/template")#roast_lightbox_template
+    .lightbox
+      //- a(href="#close").close_btn x
+      .content
+
+  script(type="text/template")#20170107_roast_nicaragua_template
+    include roasts2017/20170107_roast_nicaragua
+
+  script(type="text/template")#20170115_roast_nicaragua_2_template
+    include roasts2017/20170115_roast_nicaragua_2
+
+block jsblock
+  script(type="text/javascript").
+    $(function(){
+      document.roasts2017 = new document.Roasts2017("#roasts2017");
+    });

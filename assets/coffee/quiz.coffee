@@ -2,22 +2,24 @@ class Quiz
   constructor: (container, @opts={}) ->
     @container = $ container
     @used_types = []
-    unless @opts.type?
-      @opts.type = @container.find("[name=quiz_type]").val()
-      @used_types.push @opts.type
-    @data = {}
     @setup()
     @render()
 
   setup: ->
-    @template = _.template $("#quiz-template").html()
+    # formats: multiple_choice, recall
+    @data = state: "setup"
+    @opts.format ?= @container.find("[name=quiz_format]").val()
+    @template = _.template $("#quiz-#{@opts.format}-template").html()
     @complete_template = _.template $("#quiz-complete-template").html()
     @$cur_question = @container.find(".cur_question")
     @$progress = @container.find(".progress")
     @all_data = JSON.parse @container.find(".quiz_data").val()
-    console.log @all_data
     @data.quiz_data = @all_data[@opts.type]
-    @data.state = "setup"
+
+    unless @opts.type?
+      @opts.type = @container.find("[name=quiz_type]").val()
+      @set_quiz_type @opts.type
+
     @setup_events()
     @setup_question(0)
 
@@ -26,15 +28,57 @@ class Quiz
     @setup_question(0)
 
   setup_events: ->
+    @container.unbind()
+    
+    # shared events
+    @container.on "click", ".reset_btn", (e) =>
+      e.preventDefault()
+      @set_quiz_type @opts.type
+      @reset()
+
+    @container.on "change", "[name=quiz_format]", (e) =>
+      new_format = $(e.currentTarget).val()
+      return if new_format == @opts.format
+      @opts.format = new_format
+      @reset()
+      @setup()
+      @render()
+
+    @container.on "change", "[name=quiz_type]", (e) =>
+      new_type = $(e.currentTarget).val()
+      return if new_type == @opts.type
+      @set_quiz_type new_type
+
+    switch @opts.format
+      when "recall"
+        @setup_recall_events()
+
+      when "multiple_choice"
+        @setup_multiple_choice_events()
+
+  set_quiz_type: (new_type) ->
+    @opts.type = new_type
+
+    if _.indexOf(@used_types, @opts.type) > -1
+      @used_types = []
+      $.ajax
+        type: "get"
+        url: "/a/quizdata"
+        dataType: "json"
+        success: (res) =>
+          @used_types.push @opts.type
+          @all_data = res
+          @reset()
+    else
+      @used_types.push @opts.type
+      @reset()
+
+  setup_multiple_choice_events: ->
     @container.on "click", ".choice", (e) =>
       e.preventDefault()
       return if $(e.current).data("disabled")
       $(e.currentTarget).data("disabled", true)
       @choice_selected e.currentTarget
-
-    @container.on "click", ".reset_btn", (e) =>
-      e.preventDefault()
-      @reset()
 
     @container.on "quiz:choice_selected:correct", =>
       @correct_selection()
@@ -42,33 +86,31 @@ class Quiz
     @container.on "quiz:choice_selected:incorrect", =>
       @incorrect_selection()
 
-    @container.on "change", "[name=quiz_type]", (e) =>
-      new_type = $(e.currentTarget).val()
-      return if new_type == @opts.type
-      @opts.type = new_type
-
-      if _.indexOf(@used_types, @opts.type) > -1
-        @used_types = []
-        $.ajax
-          type: "get"
-          url: "/a/quizdata"
-          dataType: "json"
-          success: (res) =>
-            @used_types.push @opts.type
-            @all_data = res
-            @reset()
+  setup_recall_events: ->
+    @container.on "submit", "form", (e) =>
+      e.preventDefault()
+      user_answer = @container.find(".input").val()
+      is_correct = @check_answer user_answer
+      if is_correct
+        @correct_selection()
       else
-        @used_types.push @opts.type
-        @reset()
+        @incorrect_selection()
+
+    @container.on "click", ".skip_btn", (e) =>
+      e.preventDefault()
+      @skip_question()
+      false
+
+  check_answer: (ans) ->
+    ans.toString() == @cur_question().answer.toString()
 
   cur_question: ->
     @data.quiz_data.questions[@data.question_idx]
 
   choice_selected: (el) ->
     $el = $ el
-    question = @cur_question()
 
-    result = if question.answer.toString() == $el.data('value').toString()
+    result = if @check_answer $el.data('value').toString()
       "correct"
     else
       "incorrect"
@@ -92,6 +134,7 @@ class Quiz
     else
       @render_question()
     @render_progress()
+    @container.find(".input").focus() if @opts.format == "recall"
 
   render_question: ->
     @$cur_question.html @template @data
@@ -131,26 +174,30 @@ class Quiz
   correct_selection: ->
     unless @data.quiz_data.questions[@data.question_idx].result?
       @data.quiz_data.questions[@data.question_idx].result = 1
+    @container.removeClass("incorrect_answer").addClass("correct_answer")
 
     setTimeout =>
       @progress_quiz()
-      # @container.find(".choice").show().removeClass("correct incorrect")
     , 400
 
   incorrect_selection: ->
+    @container.removeClass("correct_answer").addClass("incorrect_answer")
     @data.quiz_data.questions[@data.question_idx].result = 0
-    setTimeout =>
-      @container.find(".incorrect").addClass("hide")
-    , 600
 
-    if @container.find(".choice").length == 1
-      @reveal_answer()
+    if @opts.format == "multiple_choice"
+      setTimeout =>
+        @container.find(".incorrect").addClass("hide")
+      , 600
+
+      if @container.find(".choice").length == 1
+        @reveal_answer()
 
   reveal_answer: ->
     # todo: something else here? 
     @setup_question @data.question_idx + 1
 
   progress_quiz: ->
+    @container.removeClass "correct_answer incorrect_answer"
     if @data.question_idx == @data.quiz_data.questions.length - 1
       @test_complete()
     else
@@ -162,6 +209,14 @@ class Quiz
     @data.question_idx += 1
     @data.state = "complete"
     @render()
+
+  skip_question: ->
+    question = @cur_question()
+    @container.find(".input").val(question.answer)
+    @incorrect_selection()
+    setTimeout =>
+      @progress_quiz()
+    , 900
 
 $ ->
   if $(".quiz").length

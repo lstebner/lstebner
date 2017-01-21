@@ -1,6 +1,11 @@
 # {{insert:nav}}
 # {{insert:timeline}}
 # {{insert:quiz}}
+# {{insert:typing}}
+# {{insert:beats2017}}
+# {{insert:roasts2017}}
+# {{insert:waveform}}
+# {{insert:conversions}}
 
 class LazyBackgrounds
   @load: (container) ->

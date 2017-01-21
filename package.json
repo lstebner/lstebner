@@ -3,14 +3,24 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "supervisor start server.js",
+    "startf": "forever start server.js",
+    "test": "NODE_ENV=test mocha test/"
   },
   "dependencies": {
+    "coffee-script": "*",
+    "express": "^4.14.0",
     "httpdispatcher": "*",
+    "less": "*",
     "pug": "2.0.0-beta6",
     "underscore": "*",
     "underscore.string": "*",
-    "less": "*",
-    "coffee-script": "*"
+    "js-yaml": "*",
+    "marked": "*"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "sinon": "*",
+    "expect.js": "*"
   }
 }

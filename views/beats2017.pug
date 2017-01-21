@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  - beat_src_base = config["52beats_loc_root"]
+  .full_width.beatswall#beats2017
+    .player
+      audio(controls, preload="auto", autobuffer=true)
+        source(src="", type="audio/mpeg")
+
+    h1 52 Beats 2017
+    p Inspired by 
+      a(href="http://weeklybeats.com/#/ahhsumx", target="_blank") weeklybeats2016
+      |  and unoriginally named, I am participating in a project this year called "52 Beats 2017". This is an extension of weeklybeats to me as I'll be continuing to create a beat every week. Last year I didn't really know what I would create, so it ended up evolving several times throughout the year. Now that I have an MPC and a taste of creating sample based beats, I want to focus on creating hip hop style beats with heavy use of drum machines, samples and original recordings. So that's what 52 beats 2017 is all about. You can listen to the results of my work below. Check back for something new every Sunday evening! 
+
+    ul.weeks
+      - for (var i = 1; i <= 52; i++)
+        - classes = []
+        - href = undefined 
+        if i <= config.beats52_week
+          - href = beat_src_base + beats[i - 1]
+          - classes.push("on")
+        else
+          - classes.push("off")
+
+        li(data-week=i, data-beat_url=href, class=classes.join(" ")).week week #{i}
+          span.vinyl
+            a(href="#").play_btn
+
+block jsblock
+  script(type="text/javascript").
+    $(function(){
+      document.beats2017 = new document.BeatsWall("#beats2017");
+    });

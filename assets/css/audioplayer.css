@@ -1,0 +1,15 @@
+.audioplayer {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  border-radius: 3px;
+}
+.audioplayer div {
+  display: inline-block;
+}
+.audioplayer .button_row {
+  display: block;
+  text-align: center;
+}

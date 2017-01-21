@@ -5,6 +5,13 @@
 
   text-align: center;
   font-size: 18px;
+  max-width: 720px;
+  margin: 0 auto;
+
+  h3 {
+    clear: both;
+    margin-top: 14px;
+  }
 
   p, ul {
     max-width: 100%;
@@ -12,6 +19,7 @@
 
   .question {
     font-size: 28px;
+    padding-top: 28px;
     margin-bottom: 28px;
     font-weight: 100;
     clear: both;
@@ -117,6 +125,8 @@
   }
 
   .toolbar {
+    height: 18px;
+
     label {
       float: right;
       font-size: 13px;
@@ -125,6 +135,51 @@
 
     select {
       float: right;
+      margin-right: 14px;
+
+      &:first-child {
+        margin-right: 0;
+      }
     }
+  }
+
+  .input {
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: .1em;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 420px;
+  }
+
+  .skip_btn {
+    position: relative;
+    margin: 14px auto;
+    display: block;
+  }
+
+  &.correct_answer {
+    .input {
+      background-color: @color_correct;
+    }
+  }
+
+  &.incorrect_answer {
+    .input {
+      background-color: @color_incorrect;
+    }
+  }
+
+  .about {
+    position: relative;
+    margin: 84px auto 14px;
+    border-top: 1px solid #d8d8d8;
+    width: 480px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 14px;
+    font-size: 14px;
   }
 }

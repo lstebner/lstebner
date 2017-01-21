@@ -1,0 +1,248 @@
+---
+config:
+  audio_assets_enabled: false
+  sidebar_enabled: true 
+  topbar_enabled: false 
+  beats52_week: 2
+  roasts52_week: 2
+  52beats_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52beats2017/"
+  weeklybeats2016_loc_root: "https://s3.amazonaws.com/lukestebner-blog/weekly_beats_2016/2016-ahhsumx_weeklybeats-2016_"
+  roasts_img_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52roasts2017/"
+  photostream_loc_root: "https://s3.amazonaws.com/lukestebner-blog/photostream/"
+52beatsdata:
+  - "mpcbeat170107.mp3"
+  - "mpcbeat170112_1.mp3"
+52roastsdata:
+  - 
+    - "20170107_roast_nicaragua"
+    - "weeklyroasts17_01-roasted.jpg"
+  - 
+    - "20170115_roast_nicaragua_2"
+    - "weeklyroasts17_02-roasted.jpg"
+weeklybeats2016data:
+  - 
+    - "Arcadia"
+    - "2_arcadia"
+  - 
+    - "Hill Top Zone"
+    - "3_hill-top-zone"
+  - 
+    - "Kuro"
+    - "4_kuro"
+  - 
+    - "Orange Matter"
+    - "6_orange-matter"
+  - 
+    - "Analog"
+    - "7_analog"
+  - 
+    - "No More Lemons"
+    - "8_no-more-lemons"
+  - 
+    - "Bounced"
+    - "9_bounced"
+  - 
+    - "Drifting in Orbit"
+    - "10_drifting-in-orbit"
+  - 
+    - "Circular Selcric"
+    - "11_circular-selcric"
+  - 
+    - "Background Music #2"
+    - "12_background-music-002"
+  - 
+    - "Terrible Title Beat"
+    - "13_terrible-title-beat"
+  - 
+    - "Down to the Wire"
+    - "14_down-to-the-wire"
+  - 
+    - "Ducks in Line"
+    - "15_ducks-in-line"
+  - 
+    - "High Ball Glass"
+    - "16_high-ball-glass"
+  - 
+    - "Sunday Catwalk"
+    - "17_sunday-catwalk"
+  - 
+    - "Great Depths"
+    - "18_great-depths"
+  - 
+    - "Heavy Translucence"
+    - "19_heavy-translucence"
+  - 
+    - "Droll"
+    - "20_droll"
+  - 
+    - "Tell the World"
+    - "21_tell-the-world"
+  - 
+    - "Traversing the Countryside"
+    - "22_traversing-the-countryside"
+  - 
+    - "Timeless Harmony"
+    - "23_timeless-harmony"
+  - 
+    - "Two, to, too, 2, tu"
+    - "24_two-to-too-2-tu"
+  - 
+    - "Collecting Notes"
+    - "25_collecting-notes"
+  - 
+    - "Jam Week"
+    - "26_jam-week"
+  - 
+    - "Impending"
+    - "27_impending"
+  - 
+    - "Hello"
+    - "28_hello"
+  - 
+    - "Still
+    - but ongoing"
+    - "34_still-but-ongoing"
+  - 
+    - "Boneheads"
+    - "35_boneheads"
+  - 
+    - "Found Things"
+    - "36_found-things"
+  - 
+    - "Requiem 242"
+    - "38_requiem-242"
+  - 
+    - "Flipped Together"
+    - "39_flipped-together"
+  - 
+    - "SP Sauce"
+    - "41_sp-sauce"
+  - 
+    - "Q-Rosh Sous Chef"
+    - "42_q-rosh-in-the-kitchen"
+  - 
+    - "Mallows"
+    - "43_mallows"
+  - 
+    - "Try not to attrack attention"
+    - "46_try-not-to-attract-attention"
+  - 
+    - "Single"
+    - "47_single"
+  - 
+    - "Overwritten Regularly"
+    - "48_overwritten-regularly"
+  - 
+    - "Waste not, Want not"
+    - "49_waste-not-want-not"
+  - 
+    - "All Heresay"
+    - "50_all-heresay"
+  - 
+    - "Busta Bust"
+    - "51_busta-bust"
+  - 
+    - "Closing Out"
+    - "53_closing-out"
+  -
+    - "20170107_roast_nicaragua"
+    - "weeklyroasts17_01-roasted.jpg"
+  - 
+    - "20170115_roast_nicaragua_2"
+    - "weeklyroasts17_02-roasted.jpg"
+photostreamdata:
+  -  
+    - "Archer and Yuma Set Sail"
+    - "archer_and_yuma_set_sail.jpg"
+  - 
+    - "Japan Train in the Tokyo Suburbs"
+    - "japan_train.jpg"
+  - 
+    - "Tent City People Basically Have My Couch"
+    - "tent_city_people_have_my_couch.jpg"
+  - 
+    - "Archer Cat Sunbathing"
+    - "archer_cat_sunbathing.jpg"
+  - 
+    - "Lazy Archercat"
+    - "lazy_archercat.jpg"
+  - 
+    - "Vegan Ramen in Tokyo"
+    - "vegan_ramen_japan.jpg"
+  - 
+    - "Archer Cat Sunbathing Again"
+    - "archer_cat_sunbathing2.jpg"
+  - 
+    - "Some Meatless Food I Made"
+    - "meatless_meal.jpg"
+  - 
+    - "Latest Vinyl Ripping Station"
+    - "vinyl_ripping_station.jpg"
+  - 
+    - "Archer Cat"
+    - "archer_on_back_of_chair.jpg"
+  - 
+    - "MPC10000 and SP-202"
+    - "mpc1000_and_sp202.jpg"
+  - 
+    - "Welsch Cookies"
+    - "welsch_cookies.jpg"
+  - 
+    - "Caltrain Station"
+    - "caltrain_san_mateo.jpg"
+  - 
+    - "On Top of Diablo"
+    - "mt_diablo_rock.jpg"
+  - 
+    - "Backyard Sky"
+    - "what_a_sky.jpg"
+  - 
+    - "Cats Hanging Out Together (rare!)"
+    - "cats_together_(rAre).jpg"
+  - 
+    - "View from Mt. Diablo"
+    - "mt_diablo_view.jpg"
+  - 
+    - "Yuma Cat"
+    - "yuma_cat2.jpg"
+  - 
+    - "Dehydrator"
+    - "dehydrator.jpg"
+  - 
+    - "Nagano, Japan"
+    - "nagano_japan.jpg"
+  - 
+    - "Yumacat Sunbathing"
+    - "yuma_cat_sunbathing.jpg"
+  - 
+    - "Fried Potato"
+    - "fried_potato.jpg"
+  - 
+    - "Pumpkin Gnome"
+    - "pumpkin_gnome.jpg"
+  - 
+    - "Oh Yuma"
+    - "yuma_hangin_on.jpg"
+  - 
+    - "Fujisan"
+    - "fujisan_from_shinkansen.jpg"
+  - 
+    - "Shinkansen"
+    - "shinkansen.jpg"
+  - 
+    - "Yuma in a Box"
+    - "yuma_in_box.jpg"
+  - 
+    - "It's TV's Fault"
+    - "its_tvs_fault.jpg"
+  - 
+    - "Found Vintage Speaker"
+    - "tape_reader_speaker.jpg"
+  - 
+    - "Yuma on the Couch"
+    - "yuma_on_couch.jpg"
+morningbeats: 
+  -
+    filename: "whatever.mp3"
+    name: "Whatever Song"
+    notes: "Written whenever, about whatever."

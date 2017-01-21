@@ -4,27 +4,45 @@ block content
   .quiz
     .toolbar
       select(name="quiz_type")
-        option(value="math") Math
+        option(value="addition_basic") Addition
+        option(value="subtraction_basic") Subtraction
+        option(value="multiplication") Multiplication
         option(value="characters.hiragana") Hiragana
         option(value="characters.katakana") Katakana
         option(value="genki.1") Japanese Vocab 1
         option(value="genki.2") Japanese Vocab 2
         option(value="genki.3") Japanese Vocab 3
+        option(value="genki.4") Japanese Vocab 4
+        option(value="genki.5") Japanese Vocab 5
         option(value="time") Time (Japanese)
         option(value="japanese_numbers") Numbers (Japanese)
       label Change Quiz Type:
+      select(name="quiz_format")
+        option(value="multiple_choice") Choices
+        option(value="recall") Recall
+      label Quiz Format
     textarea(style="display:none;").quiz_data= quiz_data
     .cur_question
     .progress
 
+    .about
+      p There are currently two formats available, Choices and Recall. In Choices you are given options to select the answer from and in Recall you must type the answer in to an input. There are also many Quiz Types which vary the content quizzed on; most are related to Japanese... suggestions welcomed. When you change a setting the Quiz will refresh and restart with the new settings. 
+
 block templates
-  script(type="text/template")#quiz-template.
+  script(type="text/template")#quiz-multiple_choice-template.
     <div class="question"><%=question%></div>
     <ul class="answers">
       <% for (c in choices){ %>
         <li class="choice" data-value="<%=choices[c]%>"><%=choices[c]%></li>
       <% } %>
     </ul>
+
+  script(type="text/template")#quiz-recall-template.
+    <div class="question"><%=question%></div>
+    <form class="answer_form">
+      <input type="text" name="answer" class="input" />
+      <a href="#" class="skip_btn">skip</a>
+    </form>
 
   script(type="text/template")#quiz-complete-template.
     <h3>Complete!</h3>
@@ -35,7 +53,10 @@ block templates
       <li class="header">Missed:</li>
       <% if (missed_questions.length){ %>
         <% _.each(missed_questions, function(question){ %>
-          <li><%=question.question.replace("?", "<span class='answer'>"+question.answer+"</span>")%> </li>
+          <li>
+            <%=question.question.replace(/[?=]/g, '')%> =
+            <span class='answer'><%=question.answer%></span>
+          </li>
         <% }); %>
       <% } else { %>
         <li>none!</li>
