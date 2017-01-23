@@ -36,15 +36,15 @@ handleRequest = (req, res) ->
   asset_server = new AssetServer("#{__dirname}/assets/", res)
 
   if url.match(/css\/[a-zA-Z\/]+\.css/)
-    return asset_server.serve_stylesheet url, res
+    return asset_server.serve_stylesheet url
   else if url.match(/coffee\/[a-zA-Z\/\.\-_0-9]+\.js/)
-    return asset_server.serve_coffeescript url, res
+    return asset_server.serve_coffeescript url
   else if url.match(/lib\/[a-zA-Z\/\.\-_0-9]+\.js/)
-    return asset_server.serve_javascript url, res
+    return asset_server.serve_javascript url
   else if url.match(/images\/[a-zA-Z\/\.\-_0-9]+\.(jpg|png)/)
-    return asset_server.serve_image url, res
+    return asset_server.serve_image url
   else if url.match(/audio\/[a-zA-Z\/\.\-_0-9]+\.(aiff|mp3|wav)/) && config.audio_assets_enabled
-    return asset_server.serve_audio url, res
+    return asset_server.serve_audio url
   else
     result = dispatcher.dispatch req, res
     console.log 'dispatch result', result

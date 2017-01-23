@@ -11,8 +11,9 @@ module.exports = class AssetServer
     console.log "AssetServer::stylesheet #{path}" unless process.env.NODE_ENV == "test"
     path = path.replace /css/g, "less"
     @res.writeHead "200", "Content-Type: text/css"
+    
     if path_is_raw_less
-      contents = path
+      return @res.end path
     else
       try
         contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
