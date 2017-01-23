@@ -3,7 +3,7 @@ config:
   audio_assets_enabled: false
   sidebar_enabled: true 
   topbar_enabled: false 
-  beats52_week: 2
+  beats52_week: 3
   roasts52_week: 2
   52beats_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52beats2017/"
   weeklybeats2016_loc_root: "https://s3.amazonaws.com/lukestebner-blog/weekly_beats_2016/2016-ahhsumx_weeklybeats-2016_"
@@ -12,6 +12,7 @@ config:
 52beatsdata:
   - "mpcbeat170107.mp3"
   - "mpcbeat170112_1.mp3"
+  - "mpcbeat170122_1.mp3"
 52roastsdata:
   - 
     - "20170107_roast_nicaragua"
