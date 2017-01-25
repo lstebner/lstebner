@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .full_width.bsides#bsides
+    .player
+      audio(controls, preload="auto", autobuffer=true)
+        source(src="", type="audio/mpeg")
+
+    h1 B-Sides
+
+    p
+      em Hey! I just created this page to toss some other beats on to, I know it's kinda ugly, but I'll fix it at some point. Click the names of beats to listen to them. More beats and more notes coming soon
+
+    p These are various beats I've made that didn't quite make the weekly beats or 52 beats cut. Many of them are written on iOS apps just to pass the time commuting, others are sample based and and built in Logic or on my MPC1000. Enjoy.
+
+    for beat in beats
+      .beat(data-beat_url= config.bsides_loc_root + beat.filename)
+        a(href="#" + beat.filename)= beat.name
+        if beat.notes.length
+          p= beat.notes
+
+block jsblock
+  script(type="text/javascript").
+    $(function(){
+      document.bsides = new document.BeatsWall("#bsides");
+    });

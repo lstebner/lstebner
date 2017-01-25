@@ -142,8 +142,8 @@ dispatcher.onGet "/resume", (req, res) ->
   view = new View "resume", res, page: "resume", config: config
   view.render()
 
-dispatcher.onGet "/morningbeats", (req, res) ->
-  view = new View "morningbeats", res, page: "morningbeats", config: config, morningbeats: sitedata.morningbeats
+dispatcher.onGet "/bsides", (req, res) ->
+  view = new View "bsides", res, page: "bsides", config: config, beats: sitedata.bsides_beats
   view.render()
 
 # dispatcher.onGet "/beatmaker", (req, res) ->

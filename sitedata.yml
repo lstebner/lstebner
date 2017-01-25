@@ -7,6 +7,7 @@ config:
   roasts52_week: 2
   52beats_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52beats2017/"
   weeklybeats2016_loc_root: "https://s3.amazonaws.com/lukestebner-blog/weekly_beats_2016/2016-ahhsumx_weeklybeats-2016_"
+  bsides_loc_root: "https://s3.amazonaws.com/lukestebner-blog/bsides/"
   roasts_img_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52roasts2017/"
   photostream_loc_root: "https://s3.amazonaws.com/lukestebner-blog/photostream/"
 52beatsdata:
@@ -242,8 +243,32 @@ photostreamdata:
   - 
     - "Yuma on the Couch"
     - "yuma_on_couch.jpg"
-morningbeats: 
+bsides_beats: 
   -
-    filename: "whatever.mp3"
-    name: "Whatever Song"
-    notes: "Written whenever, about whatever."
+    filename: "forgotbeat091616.mp3"
+    name: "Forgot Beat 16/09/16"
+    notes: "Started this beat one day, forgot about it, found it, finished it up. Written entirely in Beatmaker 2 for iOS."
+  -
+    filename: "foundbeat091016_12.mp3"
+    name: "Found Beat 16/09/10"
+    notes: "Another one I started one day and forgot about"
+  -
+    filename: "morningbeat091616.mp3"
+    name: "Morning Beat 16/09/16"
+    notes: ""
+  -
+    filename: "morningbeat170120_1.mp3"
+    name: "Morning Beat 17/01/20"
+    notes: ""
+  -
+    filename: "mpcbeat101216_4.mp3"
+    name: "MPC Beat 16/10/12"
+    notes: ""
+  -
+    filename: "mpcbeat120616-112316_2.mp3"
+    name: "MPC Beat 16/12/06"
+    notes: ""
+  -
+    filename: "mpcbeat170114_2b.mp3"
+    name: "MPC Beat 17/01/14"
+    notes: ""

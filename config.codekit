@@ -600,17 +600,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/coffee\/beatswall.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/coffee\/beatswall.js",
-		"outputAbbreviatedPath": "\/assets\/coffee\/min\/beatswall-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/assets\/coffee\/conversions.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,

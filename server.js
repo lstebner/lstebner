@@ -235,12 +235,12 @@ dispatcher.onGet("/resume", function(req, res) {
   return view.render();
 });
 
-dispatcher.onGet("/morningbeats", function(req, res) {
+dispatcher.onGet("/bsides", function(req, res) {
   var view;
-  view = new View("morningbeats", res, {
-    page: "morningbeats",
+  view = new View("bsides", res, {
+    page: "bsides",
     config: config,
-    morningbeats: sitedata.morningbeats
+    beats: sitedata.bsides_beats
   });
   return view.render();
 });
