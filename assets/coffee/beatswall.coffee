@@ -5,7 +5,7 @@ class BeatsWall
     @setup_events()
 
   setup_events: ->
-    @container.on "click", ".week.on", (e) =>
+    @container.on "click", ".week.on, .beat[data-beat_url]", (e) =>
       e.preventDefault()
       $el = $ e.currentTarget
 

@@ -1,0 +1,1 @@
+(function(){var n;n=function(){function n(){}return n.load=function(n){return $(n).find("[data-lazy_background]").each(function(){return $(this).css({backgroundImage:"url("+$(this).data("lazy_background")+")",backgroundSize:"cover",backgroundRepeat:"no-repeat"})})},n}(),$(function(){return document.nav=new Nav("#sidebar"),n.load(document.body)})}).call(this);

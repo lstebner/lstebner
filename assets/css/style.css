@@ -962,6 +962,7 @@ a:visited:hover {
 }
 .beatswall .player {
   float: right;
+  cursor: pointer;
 }
 .roast_info .about,
 .roast_info .images_container {

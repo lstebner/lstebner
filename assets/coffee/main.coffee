@@ -2,7 +2,7 @@
 # {{insert:timeline}}
 # {{insert:quiz}}
 # {{insert:typing}}
-# {{insert:beats2017}}
+# {{insert:beatswall}}
 # {{insert:roasts2017}}
 # {{insert:waveform}}
 # {{insert:conversions}}

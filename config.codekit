@@ -587,17 +587,28 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/coffee\/beats2017.coffee": {
+	"\/assets\/coffee\/beatswall.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/coffee\/beats2017.coffee",
+		"inputAbbreviatedPath": "\/assets\/coffee\/beatswall.coffee",
 		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/assets\/coffee\/beats2017.js",
+		"outputAbbreviatedPath": "\/assets\/coffee\/beatswall.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/coffee\/beatswall.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/coffee\/beatswall.js",
+		"outputAbbreviatedPath": "\/assets\/coffee\/min\/beatswall-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/coffee\/conversions.coffee": {
@@ -624,6 +635,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/coffee\/main.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/coffee\/main.js",
+		"outputAbbreviatedPath": "\/assets\/coffee\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/coffee\/nav.coffee": {
@@ -2668,7 +2690,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/beats2017.less": {
+	"\/assets\/less\/beatswall.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -2676,8 +2698,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/beats2017.less",
-		"outputAbbreviatedPath": "\/assets\/css\/beats2017.css",
+		"inputAbbreviatedPath": "\/assets\/less\/beatswall.less",
+		"outputAbbreviatedPath": "\/assets\/css\/beatswall.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3376,6 +3398,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
+		},
+	"\/server.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/server.js",
+		"outputAbbreviatedPath": "\/min\/server-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/test\/asset_server_test.coffee": {
 		"createSourceMap": 0,
