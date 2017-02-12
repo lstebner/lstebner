@@ -495,6 +495,21 @@ a:visited:hover {
 .audioplayer .playlist li {
   padding: 4px;
 }
+.player {
+  margin-left: 8px;
+}
+.player .now_playing_title {
+  line-height: 32px;
+  vertical-align: top;
+  margin-right: 14px;
+  background-color: #fff;
+  padding: 6px 12px;
+  font-style: italic;
+}
+.player .now_playing_title::before {
+  content: "Now Playing: ";
+  vertical-align: top;
+}
 #projects_page .center_block {
   box-sizing: border-box;
   max-width: 720px;
@@ -1070,6 +1085,10 @@ a:visited:hover {
   clear: both;
   margin: 14px 10%;
   text-align: center;
+}
+ol {
+  margin-left: -10px;
+  display: inline-block;
 }
 #body_content,
 body {

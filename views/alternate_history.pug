@@ -15,7 +15,7 @@ block content
       for beat in beats
         li.beat(data-beat_url= config.alternate_history_loc_root + beat.filename)
           - name = beat.name.length ? beat.name : beat.filename
-          a(href="#" + beat.filename)= name
+          a(href="#" + beat.filename).track_name= name
           if beat.notes.length
             p= beat.notes
 
