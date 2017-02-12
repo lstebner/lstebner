@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .full_width.playlist.alternate_history#alternate_history
+    h1 Alternate History
+    p Alternate History is a 2017 beats project I'm doing where I take beats I have written and combine them with acapella's from the world's greatest rappers to create new music. Some of these beats are from the 2017 beats project and some are bi-products. Mostly all sampled sounds though and some drum machines/virtual instruments. Note: these tracks contain explicit lyrical content.
+
+    p Disclaimer: I didn't write or record any of the acapella's and I just do this for fun.
+
+    .player
+      audio(controls, preload="auto", autobuffer=true)
+        source(src="", type="audio/mpeg")
+
+    ol
+      for beat in beats
+        li.beat(data-beat_url= config.alternate_history_loc_root + beat.filename)
+          - name = beat.name.length ? beat.name : beat.filename
+          a(href="#" + beat.filename)= name
+          if beat.notes.length
+            p= beat.notes
+
+block jsblock
+  script(type="text/javascript").
+    $(function(){
+      document.alternate_history = new document.BeatsWall("#alternate_history");
+    });

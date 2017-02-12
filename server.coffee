@@ -146,6 +146,10 @@ dispatcher.onGet "/bsides", (req, res) ->
   view = new View "bsides", res, page: "bsides", config: config, beats: sitedata.bsides_beats
   view.render()
 
+dispatcher.onGet "/alternate_history", (req, res) ->
+  view = new View "alternate_history", res, page: "alternate_history", config: config, beats: sitedata.alternatehistory_beats
+  view.render()
+
 # dispatcher.onGet "/beatmaker", (req, res) ->
 #   view = new View "beatmaker", res, page: "beatmaker", config: config
 #   view.render()
@@ -156,6 +160,10 @@ dispatcher.onGet "/typing", (req, res) ->
 
 dispatcher.onGet "/conversions", (req, res) ->
   view = new View "conversions", res, page: "conversions", config: config
+  view.render()
+
+dispatcher.onGet "/about", (req, res) ->
+  view = new View "about", res, page: "about", config: config
   view.render()
 
 dispatcher.onPost "/ok/convert", (req, res) ->

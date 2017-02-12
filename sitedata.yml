@@ -3,17 +3,20 @@ config:
   audio_assets_enabled: false
   sidebar_enabled: true 
   topbar_enabled: false 
-  beats52_week: 3
+  beats52_week: 5
   roasts52_week: 2
   52beats_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52beats2017/"
   weeklybeats2016_loc_root: "https://s3.amazonaws.com/lukestebner-blog/weekly_beats_2016/2016-ahhsumx_weeklybeats-2016_"
   bsides_loc_root: "https://s3.amazonaws.com/lukestebner-blog/bsides/"
+  alternate_history_loc_root: "https://s3.amazonaws.com/lukestebner-blog/alternate_history/"
   roasts_img_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52roasts2017/"
   photostream_loc_root: "https://s3.amazonaws.com/lukestebner-blog/photostream/"
 52beatsdata:
   - "mpcbeat170107.mp3"
   - "mpcbeat170112_1.mp3"
   - "mpcbeat170122_1.mp3"
+  - "morningbeat170126_1.mp3"
+  - "ftc132beat_2.mp3"
 52roastsdata:
   - 
     - "20170107_roast_nicaragua"
@@ -21,6 +24,55 @@ config:
   - 
     - "20170115_roast_nicaragua_2"
     - "weeklyroasts17_02-roasted.jpg"
+alternatehistory_beats:
+  -
+    filename: afternoonbeat170203fteminem_1.mp3
+    name: "Closet"
+    notes: "ft Eminem"
+  -
+    filename: afternoonbeat170205ftjayz_2.mp3
+    name: "On My Mind"
+    notes: "ft Jay Z"
+  -
+    filename: eveningbeat170126redandmeth_1.mp3
+    name: "Off the Top"
+    notes: "ft Redman and Method Man"
+  -
+    filename: eveningbeat170127withbig_2.mp3
+    name: "Coupes"
+    notes: "ft Notorious B.I.G."
+  -
+    filename: eveningbeat170130withwayne_2.mp3
+    name: "Rewind"
+    notes: "ft Lil Wayne"
+  -
+    filename: ftc132beatftbigandmeth_2.mp3
+    name: "Ame"
+    notes: "ft Method Man and Notorious B.I.G."
+  -
+    filename: ftc133ftcommon.wav
+    name: "Cornered"
+    notes: "ft Common"
+  -
+    filename: morningbeat170126plusmos_1.mp3
+    name: "Learn How to Add"
+    notes: "ft Mos Def"
+  -
+    filename: morningbeat170129withtip_1.mp3
+    name: "Luigi's"
+    notes: "ft Q-Tip and Busta Rhymes"
+  -
+    filename: morningbeat170202ftpun.wav
+    name: "Alleys"
+    notes: "ft Big Pun"
+  -
+    filename: morningbeat170203fttribe_1.mp3
+    name: "On Point"
+    notes: "ft A Tribe Called Quest"
+  -
+    filename: morningbeat170205ftbigpun_3.wav
+    name: "Knockin"
+    notes: "ft Big Pun"
 weeklybeats2016data:
   - 
     - "Arcadia"

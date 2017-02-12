@@ -245,6 +245,16 @@ dispatcher.onGet("/bsides", function(req, res) {
   return view.render();
 });
 
+dispatcher.onGet("/alternate_history", function(req, res) {
+  var view;
+  view = new View("alternate_history", res, {
+    page: "alternate_history",
+    config: config,
+    beats: sitedata.alternatehistory_beats
+  });
+  return view.render();
+});
+
 dispatcher.onGet("/typing", function(req, res) {
   var view;
   view = new View("typing", res, {
@@ -258,6 +268,15 @@ dispatcher.onGet("/conversions", function(req, res) {
   var view;
   view = new View("conversions", res, {
     page: "conversions",
+    config: config
+  });
+  return view.render();
+});
+
+dispatcher.onGet("/about", function(req, res) {
+  var view;
+  view = new View("about", res, {
+    page: "about",
     config: config
   });
   return view.render();
