@@ -1121,3 +1121,9 @@ p.center_block {
   max-width: 100%;
   max-height: 100%;
 }
+.donate_button {
+  display: inline-block;
+}
+.donate_button.float_right {
+  float: right;
+}
