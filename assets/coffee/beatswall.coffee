@@ -24,6 +24,7 @@ class BeatsWall
     @container.on "click", ".week.on, .beat[data-beat_url]", (e) =>
       e.preventDefault()
       $el = $ e.currentTarget
+      @_playing_el = $el
 
       if $el.is ".playing"
         $el.removeClass "playing"
@@ -33,11 +34,10 @@ class BeatsWall
         @play $el.data("beat_url"), $el.find(".track_name").text()
 
     @container.on "audio:ended", =>
-      console.log @player_data
       if @player_data.autoadvance
-        $beat = @container.find(".beat.playing").removeClass("playing")
-        if $beat.next(".beat").length
-          $beat.next(".beat").click()
+        $beat = @_playing_el.removeClass("playing").next(".beat")
+        if $beat.length
+          $beat.click()
         else
           @container.trigger "playlist:ended"
 
