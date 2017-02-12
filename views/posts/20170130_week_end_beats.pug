@@ -1,0 +1,18 @@
+extends post_layout
+
+block title
+  | Week-End Beats
+
+block date
+  | 2017/01/30
+
+block content
+  p This past week was quite good to me as far as loop digging goes. So good, that I actually wrote four different beats! Each of them is a looped sample boom bap style track. I also had way too much fun putting 90's acapella's on them but I hear the lawyers find you fast when you put these up online. So, here's the instrumental versions of my prosperous weekend, enjoy.
+
+  p These beats were all sampled off vinyl and then written in Logic. There's a few software instruments thrown in, heavy use of DM1, EQ and a few software effect plugins. 
+
+  - beats_loc = "https://s3.amazonaws.com/lukestebner-blog/52beats2017/weekend170130/"
+  - beats_list = ["eveningbeat170126.mp3", "morningbeat170129.mp3", "eveningbeat170127_2.mp3", "morningbeat170126_3.mp3"]
+
+  for beat in beats_list
+    .player(data-song=beats_loc + beat)

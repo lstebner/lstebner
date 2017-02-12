@@ -776,6 +776,9 @@ a:visited:hover {
 .weeks .week.off .vinyl {
   background-image: url(/images/vinyl_off.png);
 }
+.weeks .week.current_week {
+  color: #0dbb43;
+}
 #roasts2017 .weeks .week {
   width: 150px;
   height: 150px;

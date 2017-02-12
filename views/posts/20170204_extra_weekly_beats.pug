@@ -1,0 +1,16 @@
+extends post_layout
+
+block title
+  | Extra Credit Beats
+
+block date
+  | 2017/02/04
+
+block content
+  p Similar to last week, I had a ton of fun making beats again and I've been digging up a bunch of great loops. My favorite beat I wrote got posted in the 52 beats 2017 project for week 5, but I also created these that are pretty fun. Enjoy.
+
+  - beats_loc = "https://s3.amazonaws.com/lukestebner-blog/52beats2017/weekend170204/"
+  - beats_list = ["eveningbeat170130_2.mp3", "afternoonbeat170203.mp3", "morningbeat170203.mp3", "morningbeat170204.mp3", "morningbeat170202_1.mp3"]
+
+  for beat in beats_list
+    .player(data-song=beats_loc + beat)
