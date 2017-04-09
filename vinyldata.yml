@@ -1,0 +1,456 @@
+---
+export_fields: ["year", "artist", "album_title", "ripped", "genre", "id"]
+default_fields: ["year", "artist", "album_title", "genre", "country", "id", "cover_image", "ripped"]
+collection: 
+  - 
+    year: 1970
+    artist: Danny Kaye And Various
+    album_title: Two By Two (Original Broadway Cast)
+    genre: Musical
+    country: US
+    id: S 30338
+    ripped: y
+  -
+    year: 1965
+    artist: 101 Strings
+    album_title: Hits From The Warner Bros. Production Of My Fair Lady
+    genre: Musical
+    country: US
+    id: SF-22100
+    ripped: y
+  -
+    year: 1969
+    artist: 101 Strings
+    album_title: Gold Award Hits
+    genre: Classical
+    country: US
+    id: S-5161
+    ripped: y
+  - 
+    year: 1967
+    artist: Johnny Maddox
+    album_title: The Alley Cat & Other Piano Roll Favorites
+    genre: Pop
+    country: US
+    id: S-5161
+  - 
+    year: 1960
+    artist: Various
+    album_title: Pepe - Original Soundtrack Album
+    genre: Soundtrack
+    country: US
+    id: CP 507
+    ripped: y
+  - 
+    year: 1957
+    artist: Various
+    album_title: Kismet
+    genre: Soundtrack
+    country: UK
+    id: 2353057
+    ripped: y
+  -
+    year: 1982
+    artist: Maury Yeston, Raul Julia
+    album_title: Nine - Original Broadway Cast Recording
+    genre: Stage & Screen
+    country: US
+    id: JS 38325
+    ripped: y
+  - 
+    year: 1970
+    artist: John Green
+    album_title: "They Shoot Horses, Don't They?"
+    genre: Soundtrack
+    country: US
+    id: ABCS-OC-10
+    ripped: y
+  -
+    year: 1960
+    artist: The Fantastic Strings Of Felix Slatkin
+    album_title: Paradise Found
+    country: US
+    id: LMM-13001
+    genre: Folk
+    ripped: y
+  -
+    year: 1966
+    artist: Riz Ortolani
+    album_title: Maya
+    country: US
+    id: E 4376
+    genre: Soundtrack
+    ripped: y
+  - 
+    year: 1975
+    artist: War
+    album_title: Why Can't We Be Friends?
+    country: US
+    id: UA-LA441-G
+    genre: Funk
+    ripped: y
+  - 
+    year: 1983
+    artist: Tatsuro Yamashita
+    album_title: Melodies
+    country: Japan
+    id: MOON-28008
+    genre: Electronic
+    ripped: y
+  -
+    year: 1957
+    artist: Morton Gould And His Orchestra
+    album_title: Jungle Drums
+    country: US
+    id: F2RP-7993
+    genre: Jazz
+    ripped: y
+  -
+    year: 1962
+    artist: Earl Grant
+    album_title: Beyond The Reef And Other Instrumental Favorites
+    country: US
+    id: DL 74231
+    genre: Jazz
+    ripped: y
+  -
+    year: 1962
+    artist: Bob Sharples
+    album_title: Pass In Review    
+    country: UK
+    id: P 54001
+    genre: Brass
+    ripped: y
+  -
+    year: 1978
+    artist: Various
+    album_title: Reconstructions of Lost Solo Concertos
+    country: Switzerland
+    id: HNH2-4065
+    genre: Classical
+    ripped: y
+  -
+    year: 1981
+    artist: Sly & Robbie
+    album_title: The 60's, 70's Into The 80's = Taxi
+    country: UK
+    id: ILPS 9668
+    genre: Ska
+    ripped: y
+  -
+    year: 1968
+    artist: Willie Mitchell
+    album_title: Soul Serenade
+    country: US
+    id: SHL-32039
+    genre: Soul
+    ripped: y
+  -
+    year: 1978
+    artist: Nino Rota
+    album_title: Agatha Christie's Death On The Nile (Original Motion Picture Soundtrack)
+    country: Japan
+    id: EMS-81124
+    genre: Soundtrack
+    ripped: y
+  -
+    year: 1977
+    artist: Floyd Cramer & The Keyboard Kick Band
+    album_title: Floyd Cramer & The Keyboard Kick Band
+    country: US
+    id: APL1-2278
+    genre: Jazz
+    ripped: y
+  -
+    year: 1969
+    artist: Bernard Herrmann / London Philharmonic Orchestra
+    album_title: Music From The Great Movie Thrillers
+    country: US
+    id: SP 44126
+    genre: Classical
+    ripped: y
+  -
+    year: 1989
+    artist: Nelson Riddle
+    album_title: Batman (Exclusive Original Television Soundtrack Album)
+    country: Europe
+    id: 834 908-1
+    genre: Soundtrack
+    ripped: y
+  - 
+    year: 1974
+    artist: Ross
+    album_title: Ross
+    country: US
+    id: SO 878
+    genre: Rock
+    ripped: y
+  -
+    year: 1957
+    artist: Michael Flanders And Donald Swann
+    album_title: At The Drop Of A Hat
+    country: US
+    id: S-35797
+    genre: Novelty
+    ripped: y
+  -
+    year: 1979
+    artist: Stix Hooper
+    album_title: The World Within
+    country: US
+    id: MCA-3180
+    genre: Jazz
+    ripped: y
+  - 
+    year: 1969
+    artist: The Copper Plated Integrated Circuit
+    album_title: Plugged In Pop
+    country: US
+    id: COM 945 S
+    genre: Electronic
+  - 
+    year: 1973
+    artist: Ocho
+    album_title: Ocho II
+    country: US
+    id: LT-LA065-D
+    genre: Jazz
+    ripped: y
+  -
+    year: 1974
+    artist: The Modern Jazz Quartet
+    album_title: In Memoriam
+    country: US
+    id: LD 3001
+    genre: Jazz
+    ripped: y
+  -
+    year: 2016
+    artist: Cortijo
+    album_title: The Ansonia Years 1969-1971
+    country: Spain
+    id: vampi 166
+    genre: Soul
+    ripped: y
+  -
+    year: 1976
+    artist: Thomas Morris Past Jazz Masters / Clarence Williams' Blue Five
+    album_title: "Thomas Morris With His Past Jazz Masters And Clarence Williams' Blue 5: Complete Set Of 1923 Recordings"
+    id: FJ-113
+    genre: Jazz
+    ripped: y
+  -
+    year: 1987
+    artist: Azuma
+    album_title: Azuma
+    country: US
+    id: 2020-1-P 
+    genre: Electronic
+    ripped: y
+  -
+    year: 1979
+    artist: Paul Humphrey, Shelly Manne, Willie Bobo, Louis Bellson
+    album_title: The Drum Session
+    country: US
+    id: IC-6051
+    genre: Breaks
+    ripped: y
+  -
+    year: 1979
+    artist: Tiny Moore And Jethro Burns
+    album_title: Back to Back
+    country: US
+    id: F-9
+    genre: Folk
+    ripped: y
+  -
+    year: 2001
+    artist: Moreno + 2 
+    album_title: Music Typewriter
+    country: US
+    id: HNCD 1456
+    genre: Electronic
+  -
+    year: 1982
+    artist: Jack Reilly
+    album_title: The Brinksman
+    country: US
+    id: rev 36
+    genre: Jazz
+    ripped: y
+  - 
+    year: 1964
+    artist: Dick Ruedebusch
+    album_title: The Happy Horn
+    country: US
+    id: AM 13017
+    genre: Jazz
+    ripped: y
+  -
+    year: 1982
+    artist: Zim Zemarel And His Orchestra
+    album_title: More Swazze
+    country: US
+    id: FE 38111
+    genre: Jazz
+    ripped: y
+  -
+    year: 1978
+    artist: Fats Waller
+    album_title: "Ain't Misbehavin': The New Fats Waller Musical Show"
+    country: US
+    id: CBL2-2965
+    genre: Ragtime
+    ripped: y
+  -
+    year: 1984
+    artist: Stumptown Jazz
+    album_title: Stumptown 1857
+    country: US
+    id: sj 2
+    genre: Jazz
+    ripped: y
+  -
+    year: 1987
+    artist: Peter Moffit
+    album_title: Zoe's Song
+    country: US
+    id: 3020-1
+    genre: Jazz
+    ripped: y
+  -
+    artist: MJT+3
+    album_title: Branching Out
+    country: US
+    id: TLX-5025
+    genre: Jazz
+  - 
+    year: 1976
+    artist: Stephen Jay
+    album_title: Africa - Drum, Chant & Instrumental Music
+    country: US
+    id: H-72073
+    genre: Folk
+    ripped: y
+  - 
+    year: 1988
+    artist: Machito And His Orchestra
+    album_title: Kenya - Afro Cuban Jazz With Machito
+    country: Spain
+    id: PLP-104
+    genre: Jazz
+    ripped: y
+  -
+    year: 1982
+    artist: Fats Waller
+    album_title: Just Fats
+    country: US
+    id: IM-316
+    genre: Jazz
+    ripped: y
+  -
+    year: 1974
+    artist: Charles Earland
+    album_title: Charles Earland
+    country: US
+    id: TLP-5004
+    genre: Jazz
+    ripped: y
+  -
+    year: 1963
+    artist: Various
+    album_title: "Great Songs Of The 60's Volume 1"
+    country: US
+    id: CSP 129
+    genre: Pop
+    ripped: y
+  -
+    artist: Bill Snyder
+    album_title: Cafe Rendezvous
+    country: US
+    id: DL 8367
+    genre: Jazz
+    ripped: y
+  -
+    year: 1963
+    artist: Sadao Watanabe
+    album_title: Fill Up The Night
+    country: US
+    id: 60297-1
+    genre: Jazz
+    ripped: n
+  -
+    year: 1979
+    artist: Tom Scott
+    album_title: Street Beat
+    country: US
+    id: JC 36137
+    genre: Jazz
+    ripped: n
+  -
+    year: 1973
+    artist: "Grover Washington, Jr."
+    album_title: Soul Box Vol. 2
+    country: US
+    id: KU 13
+    genre: Jazz
+    ripped: n
+  -
+    year: 1981
+    artist: Sadao Watanabe
+    album_title: Orange Express
+    country: Europe
+    id: FC37433
+    genre: Jazz
+    ripped: n
+  -
+    year: 1974
+    artist: Wade Denning
+    album_title: Sounds To Make You Shiver
+    country: US
+    id: SPC-5101
+    genre: Sound Effects
+    ripped: n
+  -
+    year: 1972
+    artist: Various
+    album_title: "Themes Like Old Times - 90 Of The Most Famous Original Radio Themes"
+    country: US
+    id: V-36018
+    genre: Jazz
+    ripped: n
+  -
+    year: 1969
+    artist: No Artist
+    album_title: "Environments (Totally New Concepts In Sound - Disc 1)"
+    country: Canada
+    id: SD 66001
+    genre: Field Recording
+    ripped: n
+  -
+    year: 1974
+    artist: No Artist
+    album_title: "Environments (Totally New Concepts In Sound • Disc 6 / Dawn And Dusk In The Okefenokee Swamp)"
+    country: US
+    id: SD 66006
+    genre: Field Recording
+    ripped: n
+  -
+    year: 1968
+    artist: Paul Whiteman
+    album_title: Paul Whiteman, Volume 1
+    country: US
+    id: LPV-555
+    genre: Pop
+    ripped: n
+  -
+    year: 1970
+    artist: Various
+    album_title: "Bande Originale Du Film \"Popsy Pop\""
+    country: France
+    id: 30 T 106
+    genre: Jazz
+    ripped: n
+  -
+    id: R8073
+    album_title: The Exotic Guitars

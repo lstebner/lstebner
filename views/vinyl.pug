@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  p hello, vinyl (#{vinyldata.length} in collection)
+
+  if vinyldata.length
+    table.vinyldata
+      thead
+        tr
+          th ID
+          th Year
+          th Genre
+          th Artist
+          th Album Title          
+          th Country
+          th Ripped?
+
+      for album in vinyldata
+        tr
+          td= album.id
+          td= album.year
+          td= album.genre
+          td= album.artist
+          td= album.album_title
+          td= album.country
+          - is_ripped = album.ripped == 'y'
+          td(class=(is_ripped ? '' : 'red'))= (is_ripped ? 'yes' : 'no')
+  else
+    p nothing here yet.
+
