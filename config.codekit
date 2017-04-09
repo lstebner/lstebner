@@ -587,17 +587,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/coffee\/beats.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/coffee\/beats.js",
-		"outputAbbreviatedPath": "\/assets\/coffee\/min\/beats-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/assets\/coffee\/beatswall.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
@@ -609,17 +598,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/coffee\/beatswall.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/coffee\/beatswall.js",
-		"outputAbbreviatedPath": "\/assets\/coffee\/min\/beatswall-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/coffee\/conversions.coffee": {
@@ -646,17 +624,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/coffee\/jukebox.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/coffee\/jukebox.js",
-		"outputAbbreviatedPath": "\/assets\/coffee\/min\/jukebox-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/coffee\/main.coffee": {
@@ -707,17 +674,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/coffee\/popout_player.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/coffee\/popout_player.js",
-		"outputAbbreviatedPath": "\/assets\/coffee\/min\/popout_player-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/coffee\/quiz.coffee": {
