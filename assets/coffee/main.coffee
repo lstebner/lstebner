@@ -6,6 +6,9 @@
 # {{insert:roasts2017}}
 # {{insert:waveform}}
 # {{insert:conversions}}
+# {{insert:jukebox}}
+# {{insert:popout_player}}
+# {{insert:solitaire}}
 
 class LazyBackgrounds
   @load: (container) ->

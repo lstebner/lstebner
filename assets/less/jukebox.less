@@ -1,0 +1,109 @@
+#jukebox {
+  .fun_msg {
+  }
+
+  .playlists {
+    list-style-type: none;
+    margin-top: 24px;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      border: 1px solid #d8d8d8;
+      border-radius: 4px;
+      padding: 5px 12px;
+      margin: 7px;
+      transition: background-color .2s, color .2s;
+      -webkit-transition: background-color .2s, color .2s;
+      -moz-transition: background-color .2s, color .2s;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover, &.selected {
+        background-color: #d8d8d8;
+      }
+    }
+  }
+
+  .beats_list {
+    position: relative;
+    height: 60vh;
+    overflow-y: auto;
+    border: 1px solid #777;
+
+    .beat {    
+      position: relative;
+      cursor: pointer;
+
+      &:nth-child(odd) {
+        background-color: #fafafa;
+      }
+
+      &:hover:not(.header) {
+        background-color: #eee;
+      }
+    }
+
+    .header {
+      top: 0;
+      cursor: default;
+      padding-left: 28px;
+      z-index: 1;
+
+      div {
+        display: inline-block;
+      }
+    }
+  }
+
+  .beat {
+    padding: 12px 8px;
+    border: 1px solid transparent;
+
+    &.hide {
+      display: none;
+    }
+
+    &.playing, &.selected {
+      border-color: #d8d8d8;
+      font-weight: 500;
+    }
+
+    .index {
+      &::after {
+        content: ". ";
+        margin-right: 6px;
+      }
+    }
+
+    .track_name {
+      display: inline-block;
+      min-width: 240px;
+    }
+
+    .tag {
+      background-color: #fff;
+      margin: 0 8px;
+      padding: 0 3px;
+      display: inline-block;
+    }
+  }
+
+  .shuffle_actions {
+    padding: 6px 0;
+    
+    a {
+      margin-right: 12px;
+    }
+  }
+}

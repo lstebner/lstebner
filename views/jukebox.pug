@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  .full_width.playlist.jukebox#jukebox
+    - donate_btn_classes = "float_right"
+    include partials/donate_button
+
+    .player(data-autoadvance="true")
+      span.now_playing_title
+      audio(controls, preload="auto", autobuffer=true)
+        source(src="", type="audio/mpeg")
+
+    .playlists
+      p Categories (click to filter songs)
+      ul 
+        for list in jukebox.playlists
+          li(data-key=list.key).playlist
+            a(href="#")= list.name
+
+    .shuffle_actions
+      a(href="/jukebox?shuffle=1") Shuffle Songs
+      if shuffled
+        a(href="/jukebox") Unshuffle
+
+    .beats_list
+      .beat.header
+        .track_name Track Name
+        span.tag Tagged
+      for beat, num in jukebox.songs
+        .beat(data-beat_url= config.jukebox_root_loc + beat.filename, data-tags=beat.tags)
+          - name = beat.name.length ? beat.name : beat.filename
+          span.index= (num + 1)
+          a(href="#" + beat.filename).track_name= name
+          for tag in beat.tags
+            span.tag= tag
+          if beat.notes.length
+            p= beat.notes
+
+block jsblock
+  script(type="text/javascript").
+    $(function(){
+      document.jukebox = new document.Jukebox("#jukebox");
+    });

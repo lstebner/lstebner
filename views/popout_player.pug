@@ -1,0 +1,74 @@
+extends layout_bare
+
+block content
+  #popout_player
+    .playlist.jukebox
+      .player(data-autoadvance="true")
+        audio(controls, preload="auto", autobuffer=true)
+          source(src="", type="audio/mpeg")
+
+      .player_header
+        span Lukebox
+        a(href="/lukebox" + (shuffled ? "" : "?shuffle=1"), class=(shuffled ? 'shuffled' : '')).icon-shuffle
+          include icons/shuffle
+
+      .playlists
+        for list in jukebox.playlists
+          div(data-key=list.key).playlist_pill
+            a(href="#")= list.name
+
+      .beats_list
+        for beat, num in jukebox.songs
+          .beat(data-beat_url= config.jukebox_root_loc + beat.filename, data-tags=beat.tags, data-id=beat.id)
+            - name = beat.name.length ? beat.name : beat.filename
+            .icon-play
+              include icons/play
+            .icon-pause
+              include icons/pause
+            a(href="#" + beat.filename).track_name= name
+            span.duration 3:47
+            for tag in beat.tags
+              span.tag= tag
+
+    .now_playing_bar
+      .shadow
+      .icon-play
+        include icons/play
+      .icon-pause
+        include icons/pause
+
+      a(href="#").toggle_control hide
+
+      .now_playing_label Now Playing
+      .metadata
+      .progress_bar
+        .track
+        .fill
+        .handle
+
+block jsblock
+  - song_data = JSON.stringify(jukebox.songs)
+  script(type="text/javascript").
+    $(function(){
+      document.jukebox = new document.PopoutPlayer("#popout_player", {
+        song_data: !{song_data}
+      });
+    });
+
+  script(type="text/template")#now_playing_metadata_template
+    .track_name {{title}}
+    .progress_label
+      span.cur_progress {{progress}}
+      |&nbsp;&middot;&nbsp;
+      span.duration {{duration}}
+    span.tag {{tags}}
+
+  script(type="text/template")#beat_list_item_template
+    .beat(data-beat_url="{{path}}", data-tags="{{tags}}", data-id="{{id}}")
+      .icon-play
+        include icons/play
+      .icon-pause
+        include icons/pause
+      a(href="#\{\{path}}").track_name {{name}}
+      span.duration {{duration}}
+      span.tag {{tags}}
