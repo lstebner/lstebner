@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  #solitaire
+    .deck
+      .draw_pile
+        .reset_btn Reset
+      .discard_pile
+    .foundations
+      - suits = ["hearts", "spades", "diamonds", "clubs"]
+      for i in [1, 2, 3, 4]
+        .foundation(data-id="foundation." + i, class=suits[i-1])
+    .columns
+      for i in [1, 2, 3, 4, 5, 6, 7]
+        .column(data-id="column." + i)
+          .card.empty
+
+block templates
+  script(type="text/template")#card_template
+    .card(data-id="{{id}}")
+      .suit.top-left(class="{{suit}}")
+      .face.top-right(class="{{face}}") {{face}}
+
+  script(type="text/template")#foundation_template
+    .suit.top-left(class="{{suit}}")
+    .face.top-right
+
+
+block jsblock
+  script(type="text/javascript").
+    document.solitaire = new document.Solitaire("#solitaire")

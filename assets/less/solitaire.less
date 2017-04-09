@@ -1,0 +1,178 @@
+#solitaire {
+  @default_card_width: 60px;
+  @default_card_height: 100px;
+  @card_margin: 14px;
+
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+
+  .cardify (@width: @default_card_width, @height: @default_card_height) {
+    position: relative;
+    display: inline-block;
+    margin-right: @card_margin;
+    margin-bottom: @card_margin;
+    width: @width;
+    height: @height;
+    border: 1px solid #888;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &.moving {
+      position: absolute;
+      display: block;
+      opacity: .3;
+    }
+  }
+
+  .card {
+    .cardify();
+  }
+
+  .face, .suit {
+    position: absolute;
+    position: absolute;
+    display: inline-block;
+
+    &.top-right {
+      top: 5px;
+      right: 5px;
+    }
+
+    &.bottom-right {
+      right: 5px;
+      bottom: 5px;
+    }
+
+    &.bottom-left {
+      left: 5px;
+      bottom: 5px;
+    }
+
+    &.top-left {
+      top: 5px;
+      left: 5px;
+    }
+  }
+
+  .face {
+    top: 50%;
+    left: 50%;
+  }
+
+  .suit {
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    line-height: 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: middle;
+
+    .suit_icon(@name, @color) {
+      background-color: @color;
+      -webkit-mask-image: url(@name);
+      mask-image: url(@name);
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-position: middle;
+      -webkit-mask-position: middle;
+    }
+
+    &.clubs {
+      .suit_icon("/images/solitaire/clubs.svg", #000);
+      // background-image: url("/images/solitaire/clubs.svg");
+    }
+    &.spades {
+      .suit_icon("/images/solitaire/spades.svg", #000);
+      // background-image: url("/images/solitaire/spades.svg");
+    }
+    &.hearts {
+      .suit_icon("/images/solitaire/hearts.svg", #c00);
+      // background-image: url("/images/solitaire/hearts.svg");
+    }
+    &.diamonds {
+      .suit_icon("/images/solitaire/diamonds.svg", #c00);
+      // background-image: url("/images/solitaire/diamonds.svg");
+    }
+  }
+
+  .deck {
+    display: inline-block;
+
+    .draw_pile {
+      .cardify;
+      margin-right: 20px;
+
+      .reset_btn {
+        display: none;
+        text-align: center;
+      }
+
+      &.reset {
+        .reset_btn {
+          display: block;
+        }
+      }
+    }
+
+    .discard_pile {
+      .cardify;
+
+      .card {
+        position: absolute;
+      }
+    }
+  }
+
+  .foundations {
+    float: right;
+
+    .foundation {
+      .cardify;
+
+      &:hover {
+        border-color: #333;
+      }
+    }
+  }
+
+  .columns {
+    clear: both;
+    
+    .column {
+      position: relative;
+      display: inline-block;
+      width: @default_card_width;
+      margin-right: 30px;
+
+      .card{
+        border-color: #999;
+        position: absolute;
+        left: 0;
+
+        &:hover {
+          border-color: #333;
+        }
+
+        &.hidden {
+          .face, .suit {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .empty {
+    opacity: .5;
+  }
+}
