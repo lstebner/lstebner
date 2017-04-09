@@ -11,6 +11,7 @@ Conversion = require("./class/conversion.js")
 yaml = require("js-yaml")
 colors = require("colors")
 fs = require("fs")
+react = require("react")
 port = 3020
 
 class JsonView 

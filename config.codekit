@@ -676,6 +676,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/coffee\/popout_player.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/coffee\/popout_player.js",
+		"outputAbbreviatedPath": "\/assets\/coffee\/min\/popout_player-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/coffee\/quiz.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
@@ -3155,6 +3166,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/lib\/jquery-1.7.min.js",
 		"outputAbbreviatedPath": "\/assets\/lib\/min\/jquery-1.7.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/lib\/react-dom.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/lib\/react-dom.js",
+		"outputAbbreviatedPath": "\/assets\/lib\/min\/react-dom-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/lib\/react-with-addons.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/lib\/react-with-addons.js",
+		"outputAbbreviatedPath": "\/assets\/lib\/min\/react-with-addons-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

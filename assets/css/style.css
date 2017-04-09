@@ -27,6 +27,10 @@ form {
   overflow: auto;
   padding: 30px;
 }
+#react_root {
+  position: absolute;
+  z-index: 1;
+}
 #sidebar,
 #body_content.has_sidebar {
   position: fixed;

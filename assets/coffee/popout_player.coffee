@@ -1,4 +1,21 @@
-class Toast
+{div, a} = React.DOM
+
+class ReactBase
+  @root: -> $("#react_root")
+
+  constructor: (@opts={}) ->
+    @container = $ "<div></div>"
+    @content = []
+    ReactBase.root().append @container
+
+  render: ->
+    ReactDOM.render(
+      div
+        children: @content
+        className: "react_container"
+    , @container[0])
+
+class Toast extends ReactBase
   @register_toast: (toast) ->
     @_toasts ||= []
     for t in @_toasts
@@ -7,23 +24,25 @@ class Toast
     @_toasts.push toast
 
   constructor: (@msg, @color="#66a1ee", show=true, hide_after=3000) ->
-    @setup()
+    super
+
     if show
       @render(hide_after)
 
-  setup: ->
-    @$html = $ "<div class='toast' style='background-color: #{@color};'>#{@msg}</div>"
-
-    @$html.on "click", (e) =>
-      @hide()
-
   hide: (remove=true) ->
     clearTimeout(@_timeout) if @_timeout?
-    @$html.fadeOut =>
-      @$html.remove() if remove
+    @container.remove() if remove
 
   render: (hide_after=0) ->
-    $(document.body).append @$html.fadeIn()
+    @content = [
+      div
+        className: "toast"
+        style: { backgroundColor: "#{@color}" }
+        onClick: (=> @hide())
+        , "#{@msg}"
+    ]
+    super
+
     Toast.register_toast @
 
     if hide_after > 0
@@ -31,9 +50,47 @@ class Toast
         @hide()
       , hide_after
 
+class PlayerHeader extends ReactBase
+  render: ->
+    @content = [
+      div className: "player_header", children: [
+        span {}, "Lukebox"
+        a
+          href: "/lukebox"
+          className: "icon-shuffle"
+      ]      
+    ]
+
+class PlaylistsNav extends ReactBase
+  render: ->
+    @content = [
+      div className: "playlists", children: [
+        for list in @playlists
+          div
+            "data-key": list.key
+            className: "playlist_pill"
+            children: [
+              a href:"#", list.name
+            ]
+      ]
+    ]
+
+class ReactPlayer extends ReactBase
+  render: ->
+    @content = [
+      @render_header()
+      @render_playlists()
+      @render_tracks()
+      @render_now_playing()
+    ]
+
 class PopoutPlayer extends Jukebox
   constructor: (container, @opts={}) ->
     super
+    
+    # mustache style templates
+    _.templateSettings = 
+      interpolate: /\{\{(.+?)\}\}/g
 
     @song_data = if @opts.song_data? then @opts.song_data else []
     @$now_playing = @container.find(".now_playing_bar")
@@ -95,6 +152,23 @@ class PopoutPlayer extends Jukebox
           keys_str += key.replace(/_/g, " ")
 
       new Toast keys_str
+
+    @container.on "click", ".shuffle_btn", (e) =>
+      e.preventDefault()
+      $el = $(e.currentTarget)
+      $el.toggleClass "shuffled"
+      $beats = @container.find(".beat").remove()
+      $beats = if $el.hasClass("shuffled")
+        _.shuffle $beats
+      else
+        $beats.sort (a, b) ->
+          if $(a).data("id") > $(b).data("id")
+            1
+          else
+            -1
+
+      for b in $beats
+        @container.find(".beats_list").append b
 
     $(window).on "orientationchange", => setTimeout (=>@container.trigger "playlist:reshape"), 100
 

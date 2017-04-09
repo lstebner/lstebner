@@ -9,7 +9,7 @@ block content
 
       .player_header
         span Lukebox
-        a(href="/lukebox" + (shuffled ? "" : "?shuffle=1"), class=(shuffled ? 'shuffled' : '')).icon-shuffle
+        a(href="/lukebox" + (shuffled ? "" : "?shuffle=1"), class=(shuffled ? 'shuffled' : '')).icon-shuffle.shuffle_btn
           include icons/shuffle
 
       .playlists

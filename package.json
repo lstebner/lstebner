@@ -9,15 +9,17 @@
   },
   "dependencies": {
     "coffee-script": "*",
+    "colors": "*",
     "express": "^4.14.0",
     "httpdispatcher": "*",
-    "less": "*",
-    "pug": "2.0.0-beta6",
-    "underscore": "*",
-    "underscore.string": "*",
     "js-yaml": "*",
+    "less": "*",
     "marked": "*",
-    "colors": "*"
+    "pug": "2.0.0-beta6",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
+    "underscore": "*",
+    "underscore.string": "*"
   },
   "devDependencies": {
     "mocha": "^3.2.0",

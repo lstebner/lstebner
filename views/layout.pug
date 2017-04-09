@@ -34,11 +34,15 @@ html
                     include topbar
 
             #body_content(class=body_classes.join(" "))
+                #react-root
                 block content
+
 
         block templates
 
         script(type="text/javascript", src="/lib/jquery-1.7.min.js")
         script(type="text/javascript", src="/lib/underscore.js")
+        script(type="text/javascript", src="/lib/react-with-addons.js")
+        script(type="text/javascript", src="/lib/react-dom.js")
         script(type="text/javascript", src="/coffee/main.js")
         block jsblock
