@@ -151,6 +151,11 @@ class PopoutPlayer extends Jukebox
             keys_str += ", "
           keys_str += key.replace(/_/g, " ")
 
+      # mini-hack to fix iOS not un-focusing after a click to remove a filter
+      # this fixes DOM state of all pills
+      $playlists = @container.find(".playlists").clone()
+      @container.find(".playlists").replaceWith $playlists
+
       new Toast keys_str
 
     @container.on "click", ".shuffle_btn", (e) =>
