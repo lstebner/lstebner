@@ -193,8 +193,18 @@ body {
       font-size: 10px;
       padding: 2px 6px;
       position: absolute;
-      top: 4px;
-      right: 4px;
+      top: 0;
+      right: 0;
+
+      svg {
+        width: 22px;
+        height: 22px;
+        fill: #8b8b8b;
+      }
+
+      .icon-expand_less {
+        display: none;
+      }
     }
 
     &.shrunk {
@@ -203,6 +213,16 @@ body {
 
       .icon-play, .icon-pause {
         visibility: hidden; 
+      }
+
+      .toggle_control {
+        .icon-expand_more {
+          display: none;
+        }
+
+        .icon-expand_less {
+          display: block;
+        }
       }
     }
 

@@ -1663,8 +1663,16 @@ body {
   font-size: 10px;
   padding: 2px 6px;
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 0;
+  right: 0;
+}
+#popout_player .now_playing_bar .toggle_control svg {
+  width: 22px;
+  height: 22px;
+  fill: #8b8b8b;
+}
+#popout_player .now_playing_bar .toggle_control .icon-expand_less {
+  display: none;
 }
 #popout_player .now_playing_bar.shrunk {
   height: 0px;
@@ -1673,6 +1681,12 @@ body {
 #popout_player .now_playing_bar.shrunk .icon-play,
 #popout_player .now_playing_bar.shrunk .icon-pause {
   visibility: hidden;
+}
+#popout_player .now_playing_bar.shrunk .toggle_control .icon-expand_more {
+  display: none;
+}
+#popout_player .now_playing_bar.shrunk .toggle_control .icon-expand_less {
+  display: block;
 }
 #popout_player .now_playing_bar .icon-pause,
 #popout_player .now_playing_bar .icon-play {

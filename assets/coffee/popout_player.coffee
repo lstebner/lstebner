@@ -125,13 +125,7 @@ class PopoutPlayer extends Jukebox
 
     @container.on "click", ".toggle_control", (e) =>
       e.preventDefault()
-      @$now_playing.toggleClass "shrunk"
-      if @$now_playing.hasClass "shrunk"
-        $(e.currentTarget).text "show"
-      else
-        $(e.currentTarget).text "hide"
-
-      @container.trigger "playlist:reshape"
+      @$now_playing.toggleClass("shrunk").trigger("playlist:reshape")
 
     @container.on "playlist:reshape", =>
       if @$now_playing.is(":visible")
