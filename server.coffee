@@ -9,6 +9,7 @@ Dictionary = require("./class/dictionary.js")
 MathGenerator = require("./class/math_generator.js")
 Conversion = require("./class/conversion.js")
 yaml = require("js-yaml")
+colors = require("colors")
 fs = require("fs")
 port = 3020
 
@@ -25,7 +26,7 @@ try
   sitedata = yaml.safeLoad fs.readFileSync "#{__dirname}/sitedata.yml", "utf8"
   console.log "sitedata loaded"#, sitedata
 catch e
-  console.log "YAML error loading sitedata.yml", e
+  console.log "YAML error loading sitedata.yml".red, e
 
 config = sitedata.config
 
@@ -41,7 +42,7 @@ handleRequest = (req, res) ->
     return asset_server.serve_coffeescript url
   else if url.match(/lib\/[a-zA-Z\/\.\-_0-9]+\.js/)
     return asset_server.serve_javascript url
-  else if url.match(/images\/[a-zA-Z\/\.\-_0-9]+\.(jpg|png)/)
+  else if url.match(/images\/[a-zA-Z\/\.\-_0-9]+\.(jpg|png|svg)/)
     return asset_server.serve_image url
   else if url.match(/audio\/[a-zA-Z\/\.\-_0-9]+\.(aiff|mp3|wav)/) && config.audio_assets_enabled
     return asset_server.serve_audio url
@@ -73,7 +74,7 @@ dispatcher.onGet "/roasts2017", (req, res) ->
   view.render()
 
 dispatcher.onGet "/weekly_beats_2016", (req, res) ->
-  view = new View "weeklybeats2016", res, page: "weeklybeats2016", config: config, beats: sitedata.weeklybeats2016data
+  view = new View "weeklybeats2016", res, page: "weeklybeats2016", config: config, beats: sitedata.weeklybeats2016data.reverse()
   view.render()
 
 dispatcher.onGet "/posts", (req, res) ->
@@ -146,8 +147,116 @@ dispatcher.onGet "/bsides", (req, res) ->
   view = new View "bsides", res, page: "bsides", config: config, beats: sitedata.bsides_beats
   view.render()
 
+dispatcher.onGet "/solitaire", (req, res) ->
+  view = new View "solitaire", res, page: "solitaire", config: config
+  view.render()
+
 dispatcher.onGet "/alternate_history", (req, res) ->
   view = new View "alternate_history", res, page: "alternate_history", config: config, beats: sitedata.alternatehistory_beats
+  view.render()
+
+dispatcher.onGet "/jukebox", (req, res) ->
+  {shuffle} = req.params
+  jukeboxdata = {
+    songs: []
+    playlists: []
+  }
+  playlist_keys = []
+
+  try
+    jukeboxdata_raw = yaml.safeLoad fs.readFileSync "#{__dirname}/jukeboxdata.yml", "utf8"
+
+    add_playlist = (key) ->
+      unless playlist_keys.indexOf(key) > -1
+        playlist_keys.push key
+        jukeboxdata.playlists.push
+          key: key
+          name: key.replace(/_/g, ' ')
+
+    add_song = (key, songdata) ->
+      add_playlist key
+      song =
+        name: songdata.name || songdata.filepath
+        filename: "#{key}/#{songdata.filepath}"
+        tags: [key].concat(songdata.tags || [])
+        notes: ""
+
+      jukeboxdata.songs.push song
+
+    for key, songs of jukeboxdata_raw.songs
+      for song in songs
+        add_song(key, song)
+
+    if shuffle?
+      songs_clone = []
+      for song, i in jukeboxdata.songs
+        idx = Math.floor Math.random() * jukeboxdata.songs.length
+        swp = jukeboxdata.songs[idx]
+        jukeboxdata.songs[idx] = song
+        jukeboxdata.songs[i] = swp
+
+  catch e
+    console.log "error loading jukebox data".red
+
+  view = new View "jukebox", res, page: "jukebox", config: config, jukebox: jukeboxdata, shuffled: shuffle?
+  view.render()
+
+dispatcher.onGet "/lukebox", (req, res) ->
+  {shuffle} = req.params
+  jukeboxdata = {
+    songs: []
+    playlists: []
+  }
+  playlist_keys = []
+
+  try
+    jukeboxdata_raw = yaml.safeLoad fs.readFileSync "#{__dirname}/jukeboxdata.yml", "utf8"
+
+    next_id = ->
+      @_next_id ||= 0
+      @_next_id++
+
+    add_playlist = (key) ->
+      unless playlist_keys.indexOf(key) > -1
+        playlist_keys.push key
+        jukeboxdata.playlists.push
+          key: key
+          name: key.replace(/_/g, ' ')
+
+    add_song = (key, songdata) ->
+      add_playlist key
+      song =
+        id: next_id()
+        name: songdata.name || songdata.filepath
+        filename: "#{key}/#{songdata.filepath}"
+        tags: [key].concat(songdata.tags || [])
+        notes: ""
+
+      jukeboxdata.songs.push song
+
+    for key, songs of jukeboxdata_raw.songs
+      for song in songs
+        add_song(key, song)
+
+    if shuffle?
+      songs_clone = []
+      for song, i in jukeboxdata.songs
+        idx = Math.floor Math.random() * jukeboxdata.songs.length
+        swp = jukeboxdata.songs[idx]
+        jukeboxdata.songs[idx] = song
+        jukeboxdata.songs[i] = swp
+
+  catch e
+    console.log "error loading jukebox data".red
+
+  viewdata =
+    page: "jukebox_popout"
+    config: config
+    jukebox: jukeboxdata
+    shuffled: shuffle?
+    body_classes: ["popout_player"]
+
+  view = new View "popout_player", res, viewdata
   view.render()
 
 # dispatcher.onGet "/beatmaker", (req, res) ->
@@ -165,6 +274,30 @@ dispatcher.onGet "/conversions", (req, res) ->
 dispatcher.onGet "/about", (req, res) ->
   view = new View "about", res, page: "about", config: config
   view.render()
+
+dispatcher.onGet "/vinyl", (req, res) ->
+  view = new View "vinyl", res, page: "vinyl", config: config
+  viewdata = vinyldata: []
+  try
+    vinyldata = yaml.safeLoad fs.readFileSync "#{__dirname}/vinyldata.yml", "utf8"
+    vinyldata = vinyldata.collection
+    rippedvinyls = []
+    unrippedvinyls = []
+    for vinyl in vinyldata
+      if vinyl.ripped == 'y'
+        rippedvinyls.push vinyl
+      else
+        unrippedvinyls.push vinyl
+
+    isrippedsort = (a, b) ->
+      if a.ripped == 'y' && b.ripped != 'y' then 1 else -1
+
+    # viewdata.vinyldata = unrippedvinyls.concat rippedvinyls
+    viewdata.vinyldata = vinyldata.sort isrippedsort
+  catch e
+    console.log "error loading vinyldata.yml".red
+
+  view.render(viewdata)
 
 dispatcher.onPost "/ok/convert", (req, res) ->
   {input, type} = req.params

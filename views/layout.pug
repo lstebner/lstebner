@@ -18,25 +18,27 @@ html
                 ga('send', 'pageview');
 
     body
-        - body_classes = []
+        block body
+            if typeof body_classes == "undefined"
+                - body_classes = []
 
-        if config.sidebar_enabled
-            - body_classes.push("has_sidebar")
-            #sidebar
-                block sidebar
-                    include sidebar
+            if config.sidebar_enabled
+                - body_classes.push("has_sidebar")
+                #sidebar
+                    block sidebar
+                        include sidebar
 
-        if config.topbar_enabled
-            - body_classes.push("has_topbar")
-            block topbar 
-                include topbar
+            if config.topbar_enabled
+                - body_classes.push("has_topbar")
+                block topbar 
+                    include topbar
 
-        #body_content(class=body_classes.join(" "))
-            block content
+            #body_content(class=body_classes.join(" "))
+                block content
 
         block templates
 
         script(type="text/javascript", src="/lib/jquery-1.7.min.js")
-        script(type="text/javascript", src="/lib/underscore-1.3.3.js")
+        script(type="text/javascript", src="/lib/underscore.js")
         script(type="text/javascript", src="/coffee/main.js")
         block jsblock

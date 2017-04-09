@@ -3,7 +3,7 @@ config:
   audio_assets_enabled: false
   sidebar_enabled: true 
   topbar_enabled: false 
-  beats52_week: 5
+  beats52_week: 11
   roasts52_week: 2
   52beats_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52beats2017/"
   weeklybeats2016_loc_root: "https://s3.amazonaws.com/lukestebner-blog/weekly_beats_2016/2016-ahhsumx_weeklybeats-2016_"
@@ -11,12 +11,19 @@ config:
   alternate_history_loc_root: "https://s3.amazonaws.com/lukestebner-blog/alternate_history/"
   roasts_img_loc_root: "https://s3.amazonaws.com/lukestebner-blog/52roasts2017/"
   photostream_loc_root: "https://s3.amazonaws.com/lukestebner-blog/photostream/"
+  jukebox_root_loc: "https://s3.amazonaws.com/lukestebner-blog/jukebox/"
 52beatsdata:
   - "mpcbeat170107.mp3"
   - "mpcbeat170112_1.mp3"
   - "mpcbeat170122_1.mp3"
   - "morningbeat170126_1.mp3"
   - "ftc132beat_2.mp3"
+  - "eveningbeat170129.wav"
+  - week07-morningbeat170203.wav
+  - week08-eveningbeat170213_1.wav
+  - week09-morningbeat171218_5.wav
+  - mpcbeat171226_3.wav
+  - morningbeat170308_3.wav
 52roastsdata:
   - 
     - "20170107_roast_nicaragua"
@@ -25,6 +32,10 @@ config:
     - "20170115_roast_nicaragua_2"
     - "weeklyroasts17_02-roasted.jpg"
 alternatehistory_beats:
+  -
+    filename: eveningbeat170129ftaes.wav
+    name: "Another dark night"
+    notes: "ft Aesop Rock"
   -
     filename: afternoonbeat170203fteminem_1.mp3
     name: "Closet"
@@ -46,7 +57,7 @@ alternatehistory_beats:
     name: "Rewind"
     notes: "ft Lil Wayne"
   -
-    filename: ftc132beatftbigandmeth_2.mp3
+    filename: ftc132beatftbigandmeth_3.wav
     name: "Ame"
     notes: "ft Method Man and Notorious B.I.G."
   -
@@ -66,7 +77,7 @@ alternatehistory_beats:
     name: "Alleys"
     notes: "ft Big Pun"
   -
-    filename: morningbeat170203fttribe_1.mp3
+    filename: morningbeat170203fttribe_2.wav
     name: "On Point"
     notes: "ft A Tribe Called Quest"
   -
@@ -178,7 +189,7 @@ weeklybeats2016data:
     - "Mallows"
     - "43_mallows"
   - 
-    - "Try not to attrack attention"
+    - "Try not to attract attention"
     - "46_try-not-to-attract-attention"
   - 
     - "Single"
@@ -198,12 +209,6 @@ weeklybeats2016data:
   - 
     - "Closing Out"
     - "53_closing-out"
-  -
-    - "20170107_roast_nicaragua"
-    - "weeklyroasts17_01-roasted.jpg"
-  - 
-    - "20170115_roast_nicaragua_2"
-    - "weeklyroasts17_02-roasted.jpg"
 photostreamdata:
   -  
     - "Archer and Yuma Set Sail"

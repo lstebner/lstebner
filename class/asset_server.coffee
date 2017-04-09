@@ -51,12 +51,19 @@ module.exports = class AssetServer
 
   serve_image: (path) ->
     console.log "AssetServer::image #{path}" unless process.env.NODE_ENV == "test"
-    @res.writeHead "200", "Content-Type: text/#{path.substr(path.lastIndexOf('.') + 1)}"
+
+    content_type = path.substr(path.lastIndexOf('.') + 1)
+    if content_type == "svg"
+      content_type = "image/svg+xml"
+    else
+      content_type = "image/#{content_type}"
+
+    @res.writeHead "200", {"Content-Type": content_type}
     try
       contents = fs.readFileSync "#{@root_dir}#{path}"
     catch e
       # ...
-      console.log "AssetServer::image #{path} !! file not found" unless process.env.NODE_ENV == "test"
+      console.error "AssetServer::image #{path} !! file not found" unless process.env.NODE_ENV == "test"
       return @do404()
     
     @res.end contents || false

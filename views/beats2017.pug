@@ -25,7 +25,7 @@ block content
         if i == config.beats52_week
           - classes.push("current_week")
 
-        li(data-week=i, data-beat_url=href, class=classes.join(" ")).week week #{i}
+        li(data-week=i, data-beat_url=href, class=classes.join(" ")).week.beat week #{i}
           span.vinyl
             a(href="#").play_btn
 

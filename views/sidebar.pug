@@ -14,21 +14,6 @@ ul.nav
             | 52 Beats 2017
 
     li
-        a(href="/roasts2017").nav_link
-            span.icon &gt;
-            | 52 Roasts 2017
-
-    li
-        a(href="/weekly_beats_2016").nav_link
-            span.icon &gt;
-            | Weekly Beats 2016
-
-    //- li
-    //-     a(href="/bsides").nav_link
-    //-         span.icon &gt;
-    //-         | B-Sides
-
-    li
         a(href="/alternate_history").nav_link
             span.icon &gt;
             | Alternate History
@@ -37,11 +22,6 @@ ul.nav
         a(href="/recipes").nav_link
             span.icon &gt;
             | Recipes 
-
-    //- li
-    //-     a(href="/resume").nav_link
-    //-         span.icon &gt;
-    //-         | Resume
 
     li
         a(href="/vocab").nav_link
@@ -52,35 +32,11 @@ ul.nav
         a(href="/quiz").nav_link
             span.icon &gt;
             | Quiz
-    //- li
-        a(href="#latest_beats").nav_link
-            span.icon &gt; 
-            | Latest Beats
-
-        .audioplayer
-            ul.playlist
-                - playlist = [[1, "one"], [2, "two"]]
-                for beat in playlist
-                    - location = beat[0]
-                    - label = beat[1]
-                    li(data-beat=location).beat
-                        span.play play
-                        .label= label
-
-    //- li
-        a(href="#japan").nav_link
-            span.icon &gt; 
-            | Japan
 
     li
         a(href="/memoree").nav_link
             span.icon &gt; 
             | Memoree
-
-    //- li
-    //-     a(href="/beatmaker").nav_link
-    //-         span.icon &gt; 
-    //-         | Beatmaker
 
     li
         a(href="/typing").nav_link
@@ -91,6 +47,16 @@ ul.nav
         a(href="/math").nav_link
             span.icon &gt;
             | Math
+
+    //- li
+    //-     a(href="/roasts2017").nav_link
+    //-         span.icon &gt;
+    //-         | 52 Roasts 2017
+
+    li
+        a(href="/weekly_beats_2016").nav_link
+            span.icon &gt;
+            | Weekly Beats 2016
 
     li
         a(href="/photostream").nav_link

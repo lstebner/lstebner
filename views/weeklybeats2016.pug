@@ -19,7 +19,7 @@ block content
         - href = beat_src_base + beat[1] + beat_ext
         - title = beat[0]
 
-        li(data-week=i, data-beat_url=href, class=classes.join(" ")).week #{title}
+        li(data-week=i, data-beat_url=href, class=classes.join(" ")).week.beat #{title}
           span.vinyl
             a(href="#").play_btn
 
