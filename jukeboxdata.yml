@@ -7,6 +7,9 @@
 # name is not required, filepath can be used as the default.
 songs:
   alternate_history:
+    -
+      name: 170303 ft Evidence
+      filepath: morningbeat170303ftevidence.wav
     - 
       name: MPC Beat ft Xzibit
       filepath: mpcbeat171226ftxzibit_1.wav
@@ -21,10 +24,10 @@ songs:
       filepath: eveningbeat170126redandmeth_2.wav
     -
       name: Coupes
-      filepath: eveningbeat170127withbig_2.mp3
+      filepath: eveningbeat170127_6-withbig.wav
     -
       name: Another Dark Night
-      filepath: eveningbeat170129ftaes.wav
+      filepath: eveningbeat170129ftaes_1.wav
     -
       name: Rewind
       filepath: eveningbeat170130withwayne_2.mp3
@@ -57,9 +60,9 @@ songs:
     -
       filepath: eveningbeat170126_3.wav
     -
-      filepath: eveningbeat170127_5.wav
+      filepath: eveningbeat170127_6.wav
     -
-      filepath: eveningbeat170129.wav
+      filepath: eveningbeat170129_1.wav
     -
       filepath: eveningbeat170130_5.wav
     -
@@ -75,14 +78,16 @@ songs:
     -
       filepath: morningbeat170205_3.wav
     -
-      filepath: morningbeat170216_3.wav
+      filepath: morningbeat170216_4.wav
     -
       filepath: mpcbeat171226_2.wav
   chopshop_beats:
     -
-      filepath: afternoonbeat061116_2.mp3
+      filepath: morningbeat170303_1.wav
     -
-      filepath: afternoonbeat171218_4.wav
+      filepath: eveningbeat170428_3.wav
+    -
+      filepath: afternoonbeat061116_2.mp3
     -
       filepath: cassbeat_1.mp3
     -
@@ -98,7 +103,7 @@ songs:
     -
       filepath: morningbeat170120_1.mp3
     -
-      filepath: morningbeat171218_5.wav
+      filepath: morningbeat171218_7.wav
     -
       filepath: mpcbeat101216_5.wav
     -
@@ -131,7 +136,7 @@ songs:
       filepath: qroshbeat102016_5.wav
   extended_cuts:
     -
-      filepath: eveningbeat170213_1.wav
+      filepath: eveningbeat170213_4.wav
     -
       filepath: morningbeat170203.wav
     -

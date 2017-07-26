@@ -19,19 +19,23 @@ afterEach ->
 describe "AssetServer", ->
   it "serves a stylesheet", ->
     server.serve_stylesheet "style.less"
-    assert res.writeHead.calledWith "200", "Content-Type: text/css"
+    assert res.writeHead.calledWith "200", {"Content-Type": "text/css"}
 
   it "serves a coffeescript", ->
     server.serve_coffeescript "main.coffee"
-    assert res.writeHead.calledWith "200", "Content-Type: text/javascript"
+    assert res.writeHead.calledWith "200", {"Content-Type": "text/javascript"}
 
   it "serves a javascript", ->
     server.serve_javascript "test.js"
-    assert res.writeHead.calledWith "200", "Content-Type: text/javascript"
+    assert res.writeHead.calledWith "200", {"Content-Type": "text/javascript"}
 
   it "serves an image", ->
     server.serve_image "test.png"
-    assert res.writeHead.calledWith "200", "Content-Type: text/png"
+    assert res.writeHead.calledWith "200", {"Content-Type": "image/png"}
+
+  it "can serve svg", ->
+    server.serve_image "test_icon.svg"
+    assert res.writeHead.calledWith "200", {"Content-Type": "image/svg+xml"}
 
   it "404's when an asset is not found", ->
     server.serve_javascript "whackfilename.js"

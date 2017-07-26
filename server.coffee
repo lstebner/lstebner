@@ -123,6 +123,7 @@ all_quiz_data = ->
   "genki.3": QuizBuilder.build "genki_3"
   "genki.4": QuizBuilder.build "genki_4"
   "genki.5": QuizBuilder.build "genki_5"
+  "katakana_misc": QuizBuilder.build "katakana_misc"
   "addition_basic": QuizBuilder.build("addition_basic")
   "subtraction_basic": QuizBuilder.build("subtraction_basic")
   "multiplication": QuizBuilder.build("multiplication")

@@ -147,8 +147,10 @@ class PopoutPlayer extends Jukebox
 
       # mini-hack to fix iOS not un-focusing after a click to remove a filter
       # this fixes DOM state of all pills
+      redo_scroll_pos = @container.find(".playlists").scrollLeft()
       $playlists = @container.find(".playlists").clone()
       @container.find(".playlists").replaceWith $playlists
+      $playlists.scrollLeft(redo_scroll_pos)
 
       new Toast keys_str
 
@@ -157,7 +159,8 @@ class PopoutPlayer extends Jukebox
       $el = $(e.currentTarget)
       $el.toggleClass "shuffled"
       $beats = @container.find(".beat").remove()
-      $beats = if $el.hasClass("shuffled")
+      is_shuffled = $el.hasClass("shuffled")
+      $beats = if is_shuffled
         _.shuffle $beats
       else
         $beats.sort (a, b) ->
@@ -168,6 +171,11 @@ class PopoutPlayer extends Jukebox
 
       for b in $beats
         @container.find(".beats_list").append b
+
+      if is_shuffled
+        new Toast "Playlist shuffled"
+      else
+        new Toast "Playlist unshuffled"
 
     $(window).on "orientationchange", => setTimeout (=>@container.trigger "playlist:reshape"), 100
 

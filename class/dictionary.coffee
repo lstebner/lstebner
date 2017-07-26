@@ -18,6 +18,7 @@ try
 
   japanese_characters = yml_load("japanese_characters")
   genki = yml_load("genki_vocab")
+  katakana_misc = yml_load("katakana_misc")
 
   internal_dictionary =
     "characters.hiragana": japanese_characters.hiragana
@@ -46,6 +47,7 @@ try
     genki_3: genki.genki_3
     genki_4: genki.genki_4
     genki_5: genki.genki_5
+    katakana_misc: katakana_misc
     japanese_numbers: JapaneseNumber.batch(100)
     addition_basic: get_math_problems("addition_basic")
     subtraction_basic: get_math_problems("subtraction_basic")

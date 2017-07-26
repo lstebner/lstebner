@@ -102,7 +102,31 @@ class Quiz
       false
 
   check_answer: (ans) ->
-    ans.toString() == @cur_question().answer.toString()
+    ans = ans.toLowerCase().toString().trim()
+
+    # recall format is a bit more lenient with acceptable answers
+    if @opts.format == "recall"
+      real_answer = @cur_question().answer.toString().trim()
+      answers = []
+      # semi-colon denotes multiple answers could be accepted
+      if real_answer.indexOf(";") > -1
+        sp = real_answer.split(";")
+        for piece in sp
+          answers.push piece.trim()
+      # parenthesis give context, but not required as part of recall answer
+      else if real_answer.indexOf("(") > -1
+        answers.push real_answer.substr(0, real_answer.indexOf("(")).trim()
+      # plain text answer
+      else
+        answers.push real_answer
+
+      for a in answers
+        if ans == a.toLowerCase()
+          return true
+
+      return false
+    else
+      ans.toString().trim() == @cur_question().answer.toLowerCase().toString().trim()
 
   cur_question: ->
     @data.quiz_data.questions[@data.question_idx]

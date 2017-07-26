@@ -31,6 +31,8 @@ class Typing
   reset_test_data: ->
     paragraph = TypingParagraphs.gimme()
     paragraph_words = paragraph.split(/\s/)
+    
+    @test_complete = false
 
     @test_data =
       paragraph: paragraph
@@ -55,6 +57,27 @@ class Typing
     @test.find(".input").focus()
     @test.find(".paragraph span:first").addClass("highlight")
 
+  end_test: ->
+    return if @test_complete
+    @test_complete = true
+
+    @test_data.finish_time = Date.now()
+    @test_data.time_elapsed = (@test_data.finish_time - @test_data.start_time) / 1000
+    @test_data.time_elapsed_formatted = if @test_data.time_elapsed < 60
+      "#{@test_data.time_elapsed}s"
+    else
+      "#{Math.floor @test_data.time_elapsed / 60}m #{Math.round(@test_data.time_elapsed) % 60}s"
+    @test_data.accuracy = (@test_data.num_letters - @test_data.missed_strokes) / @test_data.num_letters * 100
+    @test_data.wpm = Math.round @test_data.num_words / (@test_data.time_elapsed / 60) * (@test_data.accuracy / 100)
+    stats_text = [
+      "WPM: #{@test_data.wpm}"
+      "Keystrokes: #{@test_data.keystrokes}"
+      "Words: #{@test_data.num_words}"
+      "Accuracy: #{@test_data.accuracy.toFixed(2)}%"
+      "Time: #{@test_data.time_elapsed_formatted}"
+    ]
+    @test.find(".score").html "Your results...  #{stats_text.join('<br>')}"
+
   get_char_at: (idx) ->
     return false if idx < 0 || idx > @test_data.paragraph.length - 1
     @test_data.paragraph[idx]
@@ -68,7 +91,7 @@ class Typing
     return unless _.indexOf([8, 13, 32, 188, 190, 191, 222], keyCode) > -1 || (keyCode > 47 && keyCode < 91)
     if !@test_data.start_time
       @test_data.start_time = Date.now()
-    console.log "keycode", keyCode, key
+
     cur_word = @get_cur_word()
     classes = ["highlight"]
 
@@ -91,7 +114,6 @@ class Typing
       user_input = @test.find(".input").val().trim()
       @test_data.user_inputs[@test_data.cur_word] = user_input
       is_correct = user_input == @get_cur_word()
-      console.log 'is correct', is_correct, user_input, @get_cur_word()
 
       if is_correct
         classes.push "correct"
@@ -108,22 +130,7 @@ class Typing
 
       # test finished
       if @test_data.cur_word >= @test_data.num_words
-        @test_data.finish_time = Date.now()
-        @test_data.time_elapsed = (@test_data.finish_time - @test_data.start_time) / 1000
-        @test_data.time_elapsed_formatted = if @test_data.time_elapsed < 60
-          "#{@test_data.time_elapsed}s"
-        else
-          "#{Math.floor @test_data.time_elapsed / 60}m #{Math.round(@test_data.time_elapsed) % 60}s"
-        @test_data.accuracy = (@test_data.num_letters - @test_data.missed_strokes) / @test_data.num_letters * 100
-        @test_data.wpm = Math.round @test_data.num_words / (@test_data.time_elapsed / 60) * (@test_data.accuracy / 100)
-        stats_text = [
-          "WPM: #{@test_data.wpm}"
-          "Keystrokes: #{@test_data.keystrokes}"
-          "Words: #{@test_data.num_words}"
-          "Accuracy: #{@test_data.accuracy.toFixed(2)}%"
-          "Time: #{@test_data.time_elapsed_formatted}"
-        ]
-        @test.find(".score").html "Your results...  #{stats_text.join('<br>')}"
+        @end_test()
     else
       is_correct = key == cur_word[@test_data.cur_letter]
       unless is_correct

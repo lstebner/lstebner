@@ -2,7 +2,7 @@ assert = require("assert")
 sinon = require("sinon")
 Quiz = require("./../class/quiz.js")
 
-describe "Quiz", ->
+describe "Quiz (backend)", ->
   afterEach ->
     # this is ugly with the uncertainty that either needs done... reconsider
     Quiz.prototype.setup.restore?()

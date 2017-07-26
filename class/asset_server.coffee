@@ -10,7 +10,7 @@ module.exports = class AssetServer
   serve_stylesheet: (path, path_is_raw_less=false) ->
     console.log "AssetServer::stylesheet #{path}" unless process.env.NODE_ENV == "test"
     path = path.replace /css/g, "less"
-    @res.writeHead "200", "Content-Type: text/css"
+    @res.writeHead "200", {"Content-Type": "text/css"}
     
     if path_is_raw_less
       return @res.end path
@@ -26,7 +26,7 @@ module.exports = class AssetServer
   serve_coffeescript: (path) ->
     console.log "AssetServer::coffeescript #{path}" unless process.env.NODE_ENV == "test"
     path = path.replace /\.js/, ".coffee"
-    @res.writeHead "200", "Content-Type: text/javascript"
+    @res.writeHead "200", {"Content-Type": "text/javascript"}
     try
       contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
     catch err
@@ -42,7 +42,7 @@ module.exports = class AssetServer
 
   serve_javascript: (path) ->
     console.log "AssetServer::javascript #{path}" unless process.env.NODE_ENV == "test"
-    @res.writeHead "200", "Content-Type: text/javascript"
+    @res.writeHead "200", {"Content-Type": "text/javascript"}
     try
       contents = fs.readFileSync "#{@root_dir}#{path}", "UTF-8"
     catch e
@@ -70,7 +70,7 @@ module.exports = class AssetServer
 
   serve_audio: (path) ->
     console.log "AssetServer::audio #{path}" unless process.env.NODE_ENV == "test"
-    @res.writeHead "200", "Content-Type: audio/mpeg"
+    @res.writeHead "200", {"Content-Type": "audio/mpeg"}
     try
       contents = fs.readFileSync "#{@root_dir}#{path}"
     catch e
@@ -78,7 +78,7 @@ module.exports = class AssetServer
     @res.end contents
 
   do404: ->
-    @res.writeHead "404", "Content-Type: text/plain"
+    @res.writeHead "404", {"Content-Type": "text/plain"}
     @res.end "your classic 404, not found"
 
   process_replacements: (contents) ->

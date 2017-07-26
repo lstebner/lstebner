@@ -70,7 +70,7 @@ class BeatsWall
       audio.play()
     # load the track
     else
-      audio.pause()
+      audio.pause() if @state == "playing"
       source.prop("src", url)
       audio.onplay = =>
         play_id = @container.find(".beat[data-beat_url='#{url}']").addClass("playing").data("id")
