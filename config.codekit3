@@ -1,0 +1,6332 @@
+{
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "07FEB265-F8CA-4F74-97A8-7F3194C2341B"
+		}
+	],
+"creatorBuild": "25900",
+"files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/almanac\/combining.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/combining.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/directory.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/directory.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/_images\/blueberry.jpg": {
+		"ft": 16384,
+		"iS": 483714,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/_images\/blueberry.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/almanac\/fruits\/_images\/blueberry_bush.jpg": {
+		"ft": 16384,
+		"iS": 216268,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/_images\/blueberry_bush.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/almanac\/fruits\/apple.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/apple.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/banana.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/banana.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/blackberry.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/blackberry.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/blueberry.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/blueberry.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/cherry.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/cherry.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/cranberry.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/cranberry.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/grape.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/grape.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/grapefruit.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/grapefruit.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/mango.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/mango.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/orange.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/orange.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/papaya.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/papaya.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/pear.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/pear.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/pineapple.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/pineapple.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/raisin.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/raisin.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/raspberry.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/raspberry.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/strawberry.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/strawberry.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/fruits\/watermelon.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/fruits\/watermelon.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/nuts\/almond.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/nuts\/almond.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/nuts\/pecan.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/nuts\/pecan.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/almanac\/nuts\/walnut.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/almanac\/nuts\/walnut.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/assets\/audio\/52beats2017\/mpcbeat170107.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/audio\/52beats2017\/mpcbeat170107.mp3",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/01_kick.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/01_kick.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/02_kick.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/02_kick.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/03_lid.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/03_lid.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/04_lid.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/04_lid.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/05_lid_open.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/05_lid_open.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU1.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU1.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU2.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU2.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU3.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU3.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU4.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU4.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU5.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_PERCU5.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_RIDE1.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_RIDE1.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_SD1.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_SD1.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_SD2.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_SD2.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_SHAKER1.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_SHAKER1.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/drums\/BWASO_SHAKER2.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/drums\/BWASO_SHAKER2.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/metronome\/clack.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/metronome\/clack.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/metronome\/click.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/metronome\/click.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/bell_ringing.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/bell_ringing.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/cowbell.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/cowbell.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/high.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/high.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/ill_see_what_i_can_do.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/ill_see_what_i_can_do.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/ive_seen_this_before.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/ive_seen_this_before.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/lets_have_it.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/lets_have_it.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/listen_mentok.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/listen_mentok.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/mentok_as_sig.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/mentok_as_sig.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/mentok_as_sig0.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/mentok_as_sig0.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/mentok_laugh.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/mentok_laugh.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/nope_hippo.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/nope_hippo.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/now_mentok.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/now_mentok.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/old_timey_loop_girl_laugh.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/old_timey_loop_girl_laugh.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/pageturn.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/pageturn.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/profiling.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/profiling.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/so_you_mean_to_tell_me_they_werent.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/so_you_mean_to_tell_me_they_werent.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/tok_the_mi_with_trumpets.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/tok_the_mi_with_trumpets.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/twirly_squeaky_noise.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/twirly_squeaky_noise.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/when_youre_ready_to_rap.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/when_youre_ready_to_rap.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/when_youre_really_ready.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/harvey_birdman\/when_youre_really_ready.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/1122_personal_note.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/1122_personal_note.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/11_22.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/11_22.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/44.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/44.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/amazing.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/amazing.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/i_never_saw_that_before.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/i_never_saw_that_before.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/old_man_singing.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/old_man_singing.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/old_man_singing_short.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/old_man_singing_short.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/personal_note.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/personal_note.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/singing_i_dont_mind_if_were_in.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/singing_i_dont_mind_if_were_in.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/singing_stars.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/singing_stars.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/sitar_slow_2note.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/sitar_slow_2note.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/sitar_twangs.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/sitar_twangs.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/sonar_tick_noise.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/sonar_tick_noise.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/thats_kind_of_interesting.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/thats_kind_of_interesting.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/what_do_you_do.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/what_do_you_do.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/wow.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/wow.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/you_were_so_close.wav": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/beatmaker\/audio\/soundpacks\/pi_movie\/you_were_so_close.wav",
+		"oF": 0
+		},
+	"\/assets\/beatmaker\/coffee\/main.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/beatmaker\/coffee\/main.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/beatmaker\/coffee\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/assets\/beatmaker\/coffee\/min\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/beatmaker\/coffee\/sound_library.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/assets\/beatmaker\/coffee\/sound_library.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/beatmaker\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/beatmaker\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/beatmaker\/less\/style.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/beatmaker\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/beatmaker\/lib\/jquery-1.7.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/beatmaker\/lib\/min\/jquery-1.7.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/beatmaker\/lib\/underscore-1.3.3.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/beatmaker\/lib\/min\/underscore-1.3.3-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/coffee\/beats.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/beats.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/beatswall.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/beatswall.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/conversions.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/conversions.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/jukebox.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/jukebox.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/main.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/main.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/assets\/coffee\/min\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/coffee\/nav.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/nav.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/popout_player.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/popout_player.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/quiz.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/quiz.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/roasts2017.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/roasts2017.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/solitaire.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/solitaire.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/timeline.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/timeline.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/typing.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/typing.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/coffee\/waveform.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/coffee\/waveform.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/css\/animation.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/animation-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/audioplayer.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/audioplayer-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/print.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/print-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/roasts2017.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/roasts2017-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/less\/alternate_history.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/alternate_history.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/animation.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/animation.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/audioplayer.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/audioplayer.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/beats.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/beats.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/beatswall.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/beatswall.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/conversions.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/conversions.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/index.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/index.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/jukebox.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/jukebox.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/lightbox.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/lightbox.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/mixins.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/photostream.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/photostream.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/popout_player.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/popout_player.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/posts.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/posts.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/projects.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/projects.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/quiz.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/quiz.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/reset.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/reset.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/roasts2017.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/roasts2017.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/sidebar.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/sidebar.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/solitaire.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/solitaire.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/style.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/topbar.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/topbar.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/typing.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/typing.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/vars.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/vars.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/less\/vinyl.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/vinyl.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/lib\/jquery-1.7.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/lib\/min\/jquery-1.7.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/lib\/react-dom.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/lib\/min\/react-dom-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/lib\/react-with-addons.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/lib\/min\/react-with-addons-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/lib\/underscore-1.3.3.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/lib\/min\/underscore-1.3.3-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/lib\/underscore.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/lib\/min\/underscore-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/lib\/wavesurfer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/lib\/min\/wavesurfer-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/memoree\/coffee\/dictionary.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/memoree\/coffee\/dictionary.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/memoree\/coffee\/memoree.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/memoree\/coffee\/memoree.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/assets\/memoree\/coffee\/memoree.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/assets\/memoree\/coffee\/min\/memoree-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/memoree\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/memoree\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/memoree\/images\/asanoha-400px.png": {
+		"ft": 32768,
+		"iS": 16366,
+		"oA": 0,
+		"oAP": "\/assets\/memoree\/images\/asanoha-400px.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/memoree\/images\/sayagata-400px.png": {
+		"ft": 32768,
+		"iS": 17147,
+		"oA": 0,
+		"oAP": "\/assets\/memoree\/images\/sayagata-400px.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/memoree\/less\/style.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/memoree\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/memoree\/lib\/jquery-1.7.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/memoree\/lib\/min\/jquery-1.7.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/memoree\/lib\/underscore-1.3.3.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/memoree\/lib\/min\/underscore-1.3.3-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/asset_server.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/asset_server.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/asset_server.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/min\/asset_server-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/conversion.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/conversion.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/conversion.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/min\/conversion-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/dictionary.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/dictionary.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/dictionary.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/min\/dictionary-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/japanese_number.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/japanese_number.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/japanese_number.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/class\/min\/japanese_number-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/math_generator.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/math_generator.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/math_generator.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/class\/min\/math_generator-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/quiz.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/quiz.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/quiz.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/class\/min\/quiz-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/quiz_builder.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/quiz_builder.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/quiz_builder.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/class\/min\/quiz_builder-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/class\/view.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/class\/view.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/class\/view.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/class\/min\/view-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dictionary\/english_frequent.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dictionary\/english_frequent.yml",
+		"oF": 0
+		},
+	"\/dictionary\/genki_vocab.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dictionary\/genki_vocab.yml",
+		"oF": 0
+		},
+	"\/dictionary\/hiragana_misc.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dictionary\/hiragana_misc.yml",
+		"oF": 0
+		},
+	"\/dictionary\/japanese_characters.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dictionary\/japanese_characters.yml",
+		"oF": 0
+		},
+	"\/dictionary\/katakana_misc.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dictionary\/katakana_misc.yml",
+		"oF": 0
+		},
+	"\/jukeboxdata.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/jukeboxdata.yml",
+		"oF": 0
+		},
+	"\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/node_modules",
+		"oF": 0
+		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/server.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/server.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/server.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/min\/server-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/site\/app.es6": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/site\/app.js",
+		"oF": 2,
+		"sC": 0,
+		"tS": 1
+		},
+	"\/site\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/site\/min\/app-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/site\/bin\/www": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/site\/bin\/www",
+		"oF": 0
+		},
+	"\/site\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/site\/node_modules",
+		"oF": 0
+		},
+	"\/site\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/site\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/site\/public\/images\/archercat.jpg": {
+		"ft": 16384,
+		"iS": 323204,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/archercat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/avatar.jpg": {
+		"ft": 16384,
+		"iS": 124153,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/avatar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/babywatermelon.jpg": {
+		"ft": 16384,
+		"iS": 66851,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/babywatermelon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/beats\/placeholder_259673304.jpg": {
+		"ft": 16384,
+		"iS": 136927,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/beats\/placeholder_259673304.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/beats\/placeholder_260659062.jpg": {
+		"ft": 16384,
+		"iS": 115516,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/beats\/placeholder_260659062.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/beats\/placeholder_261876252.jpg": {
+		"ft": 16384,
+		"iS": 131454,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/beats\/placeholder_261876252.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/beats\/placeholder_262953898.jpg": {
+		"ft": 16384,
+		"iS": 112075,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/beats\/placeholder_262953898.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/beats\/placeholder_263968031.jpg": {
+		"ft": 16384,
+		"iS": 125190,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/beats\/placeholder_263968031.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/beats\/placeholder_265351033.jpg": {
+		"ft": 16384,
+		"iS": 132766,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/beats\/placeholder_265351033.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/beats\/placeholder_266619722.jpg": {
+		"ft": 16384,
+		"iS": 124379,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/beats\/placeholder_266619722.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/icons\/ic_autorenew_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_autorenew_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_error_outline_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_error_outline_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_expand_less_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "\/site\/public\/images\/icons\/ic_expand_less_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_expand_more_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "\/site\/public\/images\/icons\/ic_expand_more_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_favorite_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_favorite_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_favorite_border_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_favorite_border_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_loop_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_loop_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_music_note_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_music_note_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_pause_circle_outline_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "\/site\/public\/images\/icons\/ic_pause_circle_outline_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_play_circle_outline_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "\/site\/public\/images\/icons\/ic_play_circle_outline_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_shuffle_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "\/site\/public\/images\/icons\/ic_shuffle_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_skip_next_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_skip_next_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_skip_previous_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_skip_previous_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_star_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_star_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_star_border_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_star_border_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_volume_down_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_volume_down_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_volume_mute_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_volume_mute_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_volume_off_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_volume_off_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_volume_up_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_volume_up_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/icons\/ic_whatshot_black_24px.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/icons\/ic_whatshot_black_24px.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/lighthouse.jpg": {
+		"ft": 16384,
+		"iS": 416176,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/lighthouse.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/archer_and_yuma.jpg": {
+		"ft": 16384,
+		"iS": 487290,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/archer_and_yuma.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/archer_and_yuma_set_sail.jpg": {
+		"ft": 16384,
+		"iS": 303139,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/archer_and_yuma_set_sail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/archer_cat_sunbathing.jpg": {
+		"ft": 16384,
+		"iS": 417908,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/archer_cat_sunbathing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/archer_cat_sunbathing2.jpg": {
+		"ft": 16384,
+		"iS": 452440,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/archer_cat_sunbathing2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/archer_on_back_of_chair.jpg": {
+		"ft": 16384,
+		"iS": 295052,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/archer_on_back_of_chair.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/archercat_as_a_gift.jpg": {
+		"ft": 16384,
+		"iS": 436187,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/archercat_as_a_gift.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/archercat_world_too_big.jpg": {
+		"ft": 16384,
+		"iS": 342913,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/archercat_world_too_big.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/bluest_blueberries_ever.jpg": {
+		"ft": 16384,
+		"iS": 379504,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/bluest_blueberries_ever.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/caltrain_san_mateo.jpg": {
+		"ft": 16384,
+		"iS": 434637,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/caltrain_san_mateo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/cats_in_trees.jpg": {
+		"ft": 16384,
+		"iS": 333923,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/cats_in_trees.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/cats_together_(rAre).jpg": {
+		"ft": 16384,
+		"iS": 321833,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/cats_together_(rAre).jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/dehydrator.jpg": {
+		"ft": 16384,
+		"iS": 305479,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/dehydrator.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/epic_grapes.jpg": {
+		"ft": 16384,
+		"iS": 505111,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/epic_grapes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/found_potato.jpg": {
+		"ft": 16384,
+		"iS": 542821,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/found_potato.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/fresh_green_figs.jpg": {
+		"ft": 16384,
+		"iS": 270998,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/fresh_green_figs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/fresh_peaches.jpg": {
+		"ft": 16384,
+		"iS": 323515,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/fresh_peaches.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/fresh_strawberries.jpg": {
+		"ft": 16384,
+		"iS": 434339,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/fresh_strawberries.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/fried_potato.jpg": {
+		"ft": 16384,
+		"iS": 724715,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/fried_potato.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/fujisan_from_shinkansen.jpg": {
+		"ft": 16384,
+		"iS": 257375,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/fujisan_from_shinkansen.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/how_i_eat_watermelons.jpg": {
+		"ft": 16384,
+		"iS": 329770,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/how_i_eat_watermelons.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/its_tvs_fault.jpg": {
+		"ft": 16384,
+		"iS": 279625,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/its_tvs_fault.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/japan_train.jpg": {
+		"ft": 16384,
+		"iS": 595658,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/japan_train.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/juices.jpg": {
+		"ft": 16384,
+		"iS": 449621,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/juices.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/jumping_lying_down.jpg": {
+		"ft": 16384,
+		"iS": 377091,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/jumping_lying_down.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/lazy_archercat.jpg": {
+		"ft": 16384,
+		"iS": 801537,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/lazy_archercat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/livin_room_couch.jpg": {
+		"ft": 16384,
+		"iS": 418856,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/livin_room_couch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/meatless_meal.jpg": {
+		"ft": 16384,
+		"iS": 322105,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/meatless_meal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/mpc1000_and_sp202.jpg": {
+		"ft": 16384,
+		"iS": 354809,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/mpc1000_and_sp202.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/mt_diablo_rock.jpg": {
+		"ft": 16384,
+		"iS": 492855,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/mt_diablo_rock.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/mt_diablo_view.jpg": {
+		"ft": 16384,
+		"iS": 273122,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/mt_diablo_view.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/my_secret_weapon.jpg": {
+		"ft": 16384,
+		"iS": 236185,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/my_secret_weapon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/nagano_japan.jpg": {
+		"ft": 16384,
+		"iS": 503169,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/nagano_japan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/pumpkin_gnome.jpg": {
+		"ft": 16384,
+		"iS": 386779,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/pumpkin_gnome.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/purple_grapes.jpg": {
+		"ft": 16384,
+		"iS": 305570,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/purple_grapes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/shinkansen.jpg": {
+		"ft": 16384,
+		"iS": 359414,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/shinkansen.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/tape_reader_speaker.jpg": {
+		"ft": 16384,
+		"iS": 251050,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/tape_reader_speaker.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/tent_city_people_have_my_couch.jpg": {
+		"ft": 16384,
+		"iS": 261337,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/tent_city_people_have_my_couch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/vegan_ramen_japan.jpg": {
+		"ft": 16384,
+		"iS": 400859,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/vegan_ramen_japan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/vegan_zucchini_pasta.jpg": {
+		"ft": 16384,
+		"iS": 344834,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/vegan_zucchini_pasta.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/vinyl_ripping_station.jpg": {
+		"ft": 16384,
+		"iS": 327153,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/vinyl_ripping_station.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/welsch_cookies.jpg": {
+		"ft": 16384,
+		"iS": 351659,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/welsch_cookies.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/what_a_sky.jpg": {
+		"ft": 16384,
+		"iS": 212361,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/what_a_sky.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yuma_and_archercat.jpg": {
+		"ft": 16384,
+		"iS": 335511,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yuma_and_archercat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yuma_cat2.jpg": {
+		"ft": 16384,
+		"iS": 348388,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yuma_cat2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yuma_cat_sunbathing.jpg": {
+		"ft": 16384,
+		"iS": 546844,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yuma_cat_sunbathing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yuma_hangin_on.jpg": {
+		"ft": 16384,
+		"iS": 302817,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yuma_hangin_on.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yuma_in_box.jpg": {
+		"ft": 16384,
+		"iS": 260208,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yuma_in_box.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yuma_on_couch.jpg": {
+		"ft": 16384,
+		"iS": 341722,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yuma_on_couch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yumacat_in_window.jpg": {
+		"ft": 16384,
+		"iS": 357387,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yumacat_in_window.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/photostream\/yumacat_on_lovesca.jpg": {
+		"ft": 16384,
+		"iS": 309294,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/photostream\/yumacat_on_lovesca.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/10g-article-footer.jpg": {
+		"ft": 16384,
+		"iS": 205644,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/10g-article-footer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/10g-cover.jpg": {
+		"ft": 16384,
+		"iS": 55737,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/10g-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/10g-review1.jpg": {
+		"ft": 16384,
+		"iS": 297894,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/10g-review1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/10g-review2.jpg": {
+		"ft": 16384,
+		"iS": 399661,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/10g-review2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/10g-search-results.jpg": {
+		"ft": 16384,
+		"iS": 202756,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/10g-search-results.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/10g.jpg": {
+		"ft": 16384,
+		"iS": 343375,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/10g.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/arethegiantsplayingtoday-cover.jpg": {
+		"ft": 16384,
+		"iS": 41391,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/arethegiantsplayingtoday-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/arethegiantsplayingtoday-yes-already-over.jpg": {
+		"ft": 16384,
+		"iS": 175274,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/arethegiantsplayingtoday-yes-already-over.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/arethegiantsplayingtoday-yes-now.jpg": {
+		"ft": 16384,
+		"iS": 164203,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/arethegiantsplayingtoday-yes-now.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/arethegiantsplayingtoday.jpg": {
+		"ft": 16384,
+		"iS": 267260,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/arethegiantsplayingtoday.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/beansandhops-cover.jpg": {
+		"ft": 16384,
+		"iS": 252420,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/beansandhops-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/beansandhops-post.jpg": {
+		"ft": 16384,
+		"iS": 233391,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/beansandhops-post.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/beansandhops.jpg": {
+		"ft": 16384,
+		"iS": 274420,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/beansandhops.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/brightgauge-cover.jpg": {
+		"ft": 16384,
+		"iS": 89229,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/brightgauge-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/imgverse-cover.jpg": {
+		"ft": 16384,
+		"iS": 45585,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/imgverse-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/imgverse-detail.jpg": {
+		"ft": 16384,
+		"iS": 142173,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/imgverse-detail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/imgverse-upload-filled-out.jpg": {
+		"ft": 16384,
+		"iS": 375198,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/imgverse-upload-filled-out.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/imgverse-upload.jpg": {
+		"ft": 16384,
+		"iS": 377403,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/imgverse-upload.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/imgverse.jpg": {
+		"ft": 16384,
+		"iS": 289813,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/imgverse.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/insure-cover.jpg": {
+		"ft": 16384,
+		"iS": 105116,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/insure-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/insure.jpg": {
+		"ft": 16384,
+		"iS": 473748,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/insure.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/insure2.jpg": {
+		"ft": 16384,
+		"iS": 449164,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/insure2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/insure3.jpg": {
+		"ft": 16384,
+		"iS": 533109,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/insure3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/insure4.jpg": {
+		"ft": 16384,
+		"iS": 279673,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/insure4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/itagt-pirates-yes-over.jpg": {
+		"ft": 16384,
+		"iS": 405247,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/itagt-pirates-yes-over.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/itagt-sfgiants-spring-training.jpg": {
+		"ft": 16384,
+		"iS": 241131,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/itagt-sfgiants-spring-training.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/itagt-sfgiants-yes-now.jpg": {
+		"ft": 16384,
+		"iS": 233723,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/itagt-sfgiants-yes-now.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/itagt-yankees-yes-later.jpg": {
+		"ft": 16384,
+		"iS": 903017,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/itagt-yankees-yes-later.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/jrule-cover.jpg": {
+		"ft": 16384,
+		"iS": 98989,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/jrule-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/jrule.jpg": {
+		"ft": 16384,
+		"iS": 98989,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/jrule.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/kanyeipsum-cover.jpg": {
+		"ft": 16384,
+		"iS": 168022,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/kanyeipsum-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/kanyeipsum.jpg": {
+		"ft": 16384,
+		"iS": 201503,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/kanyeipsum.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/lukeandtiffany-aboutus.jpg": {
+		"ft": 16384,
+		"iS": 604839,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/lukeandtiffany-aboutus.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/lukeandtiffany-cover.jpg": {
+		"ft": 16384,
+		"iS": 286729,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/lukeandtiffany-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/lukeandtiffany-hotels.jpg": {
+		"ft": 16384,
+		"iS": 307870,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/lukeandtiffany-hotels.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/lukeandtiffany.jpg": {
+		"ft": 16384,
+		"iS": 472701,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/lukeandtiffany.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/mbb-cover.jpg": {
+		"ft": 16384,
+		"iS": 65873,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/mbb-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/mbb.jpg": {
+		"ft": 16384,
+		"iS": 296349,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/mbb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/mbb2.jpg": {
+		"ft": 16384,
+		"iS": 409781,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/mbb2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/mbb3.jpg": {
+		"ft": 16384,
+		"iS": 367551,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/mbb3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/merchantcircle-cover.jpg": {
+		"ft": 16384,
+		"iS": 320531,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/merchantcircle-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/10g-old.jpg": {
+		"ft": 16384,
+		"iS": 140389,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/10g-old.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/10g.jpg": {
+		"ft": 16384,
+		"iS": 225546,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/10g.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/arethegiantsplayingtoday.jpg": {
+		"ft": 16384,
+		"iS": 163482,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/arethegiantsplayingtoday.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/bello.jpg": {
+		"ft": 16384,
+		"iS": 100305,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/bello.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/brightgauge.jpg": {
+		"ft": 16384,
+		"iS": 89229,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/brightgauge.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/imgverse.jpg": {
+		"ft": 16384,
+		"iS": 234948,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/imgverse.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/kanye.jpg": {
+		"ft": 16384,
+		"iS": 277448,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/kanye.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/mbb.jpg": {
+		"ft": 16384,
+		"iS": 169180,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/mbb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/omletapi.jpg": {
+		"ft": 16384,
+		"iS": 1159670,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/omletapi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/selectvids.jpg": {
+		"ft": 16384,
+		"iS": 82250,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/selectvids.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/old\/trackagoal.jpg": {
+		"ft": 16384,
+		"iS": 128150,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/old\/trackagoal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/omletapi-cover.jpg": {
+		"ft": 16384,
+		"iS": 69931,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/omletapi-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/omletapi.jpg": {
+		"ft": 16384,
+		"iS": 332485,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/omletapi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/10g-article-footer.png": {
+		"ft": 32768,
+		"iS": 918063,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/10g-article-footer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/10g-review1.png": {
+		"ft": 32768,
+		"iS": 1525920,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/10g-review1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/10g-review2.png": {
+		"ft": 32768,
+		"iS": 3673490,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/10g-review2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/10g-search-results.png": {
+		"ft": 32768,
+		"iS": 1871980,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/10g-search-results.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/10g.png": {
+		"ft": 32768,
+		"iS": 4216990,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/10g.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/arethegiantsplayingtoday-yes-already-over.png": {
+		"ft": 32768,
+		"iS": 4871910,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/arethegiantsplayingtoday-yes-already-over.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/arethegiantsplayingtoday-yes-now.png": {
+		"ft": 32768,
+		"iS": 4886570,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/arethegiantsplayingtoday-yes-now.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/arethegiantsplayingtoday.png": {
+		"ft": 32768,
+		"iS": 5185880,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/arethegiantsplayingtoday.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/beansandhops-post.png": {
+		"ft": 32768,
+		"iS": 562872,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/beansandhops-post.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/beansandhops.png": {
+		"ft": 32768,
+		"iS": 1415850,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/beansandhops.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/brightgauge.png": {
+		"ft": 32768,
+		"iS": 89229,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/brightgauge.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/imgverse-detail.png": {
+		"ft": 32768,
+		"iS": 2898020,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/imgverse-detail.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/imgverse-upload-filled-out.png": {
+		"ft": 32768,
+		"iS": 2722500,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/imgverse-upload-filled-out.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/imgverse-upload.png": {
+		"ft": 32768,
+		"iS": 3197610,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/imgverse-upload.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/imgverse.png": {
+		"ft": 32768,
+		"iS": 4869390,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/imgverse.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/insure.png": {
+		"ft": 32768,
+		"iS": 1391290,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/insure.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/insure2.png": {
+		"ft": 32768,
+		"iS": 1188480,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/insure2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/insure3.png": {
+		"ft": 32768,
+		"iS": 1199120,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/insure3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/insure4.png": {
+		"ft": 32768,
+		"iS": 676095,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/insure4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/kanye.png": {
+		"ft": 32768,
+		"iS": 277448,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/kanye.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/mbb.png": {
+		"ft": 32768,
+		"iS": 2999700,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/mbb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/mbb2.png": {
+		"ft": 32768,
+		"iS": 4385880,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/mbb2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/mbb3.png": {
+		"ft": 32768,
+		"iS": 1848210,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/mbb3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/omletapi-main.png": {
+		"ft": 32768,
+		"iS": 179262,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/omletapi-main.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/omletapi.png": {
+		"ft": 32768,
+		"iS": 2052870,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/omletapi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/scribd-read.png": {
+		"ft": 32768,
+		"iS": 1823500,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/scribd-read.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/scribd.png": {
+		"ft": 32768,
+		"iS": 4591760,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/scribd.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/scribd2.png": {
+		"ft": 32768,
+		"iS": 4296160,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/scribd2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/scribd3.png": {
+		"ft": 32768,
+		"iS": 5138710,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/scribd3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/selectvids.jpg": {
+		"ft": 16384,
+		"iS": 82250,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/selectvids.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/screenshots\/trackagoal.jpg": {
+		"ft": 16384,
+		"iS": 128150,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/screenshots\/trackagoal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-audiobook-toc.jpg": {
+		"ft": 16384,
+		"iS": 91716,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-audiobook-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-audiobook.jpg": {
+		"ft": 16384,
+		"iS": 127039,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-audiobook.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-cover.jpg": {
+		"ft": 16384,
+		"iS": 248714,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-highlight.jpg": {
+		"ft": 16384,
+		"iS": 140477,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-highlight.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-home-old.jpg": {
+		"ft": 16384,
+		"iS": 152921,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-home-old.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-home.jpg": {
+		"ft": 16384,
+		"iS": 343338,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-home.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-home2.jpg": {
+		"ft": 16384,
+		"iS": 494826,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-home2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-leave-note.jpg": {
+		"ft": 16384,
+		"iS": 145110,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-leave-note.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-loggedin-home.jpg": {
+		"ft": 16384,
+		"iS": 367583,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-loggedin-home.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-login.jpg": {
+		"ft": 16384,
+		"iS": 201321,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-login.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-read-old.jpg": {
+		"ft": 16384,
+		"iS": 181309,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-read-old.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-read-options.jpg": {
+		"ft": 16384,
+		"iS": 336749,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-read-options.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd-read.jpg": {
+		"ft": 16384,
+		"iS": 298583,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd-read.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd2-old.jpg": {
+		"ft": 16384,
+		"iS": 373385,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd2-old.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/scribd3-old.jpg": {
+		"ft": 16384,
+		"iS": 422228,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/scribd3-old.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/selectvids-cover.jpg": {
+		"ft": 16384,
+		"iS": 48983,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/selectvids-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/projects\/selectvids.jpg": {
+		"ft": 16384,
+		"iS": 125879,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/projects\/selectvids.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/roasts2017\/weeklyroasts17_01-green.jpg": {
+		"ft": 16384,
+		"iS": 233325,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/roasts2017\/weeklyroasts17_01-green.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/roasts2017\/weeklyroasts17_01-roasted.jpg": {
+		"ft": 16384,
+		"iS": 266931,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/roasts2017\/weeklyroasts17_01-roasted.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/roasts2017\/weeklyroasts17_02-roasted.jpg": {
+		"ft": 16384,
+		"iS": 251767,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/roasts2017\/weeklyroasts17_02-roasted.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/roasts2017\/weeklyroasts17_default.jpg": {
+		"ft": 16384,
+		"iS": 488335,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/roasts2017\/weeklyroasts17_default.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/site\/public\/images\/solitaire\/clubs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/solitaire\/clubs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/solitaire\/diamonds.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/solitaire\/diamonds.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/solitaire\/hearts.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/solitaire\/hearts.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/solitaire\/spades.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/site\/public\/images\/solitaire\/spades.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/site\/public\/images\/vinyl_off.png": {
+		"ft": 32768,
+		"iS": 567765,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/vinyl_off.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/images\/vinyl_on.png": {
+		"ft": 32768,
+		"iS": 567821,
+		"oA": 0,
+		"oAP": "\/site\/public\/images\/vinyl_on.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/public\/stylesheets\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/site\/public\/stylesheets\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/site\/routes\/index.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/site\/routes\/min\/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/site\/views\/error.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/site\/views\/error.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/site\/views\/index.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/site\/views\/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/site\/views\/layout.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/site\/views\/layout.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/sitedata.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sitedata.yml",
+		"oF": 0
+		},
+	"\/stuff.todo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/stuff.todo",
+		"oF": 0
+		},
+	"\/test\/asset_server_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/asset_server_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/asset_server_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/min\/asset_server_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/assets\/coffee\/append.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/assets\/coffee\/append.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/assets\/coffee\/insert.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/assets\/coffee\/insert.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/assets\/coffee\/prepend.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/assets\/coffee\/prepend.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/assets\/main.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/assets\/main.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/assets\/replacements.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/assets\/replacements.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/assets\/style.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/test\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/test\/assets\/test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/assets\/min\/test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/assets\/test.png": {
+		"ft": 32768,
+		"iS": 567821,
+		"oA": 0,
+		"oAP": "\/test\/assets\/test.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/test\/assets\/test_icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/test\/assets\/test_icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/test\/conversion_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/conversion_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/conversion_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/test\/min\/conversion_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/dictionary_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/dictionary_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/dictionary_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/test\/min\/dictionary_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/japanese_number_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/japanese_number_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/japanese_number_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/test\/min\/japanese_number_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/math_generator_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/math_generator_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/math_generator_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/test\/min\/math_generator_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/quiz_builder_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/quiz_builder_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/quiz_builder_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/test\/min\/quiz_builder_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/quiz_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/quiz_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/quiz_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/min\/quiz_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/test\/view_test.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/test\/view_test.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/test\/view_test.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/test\/min\/view_test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/views": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/views",
+		"oF": 0
+		},
+	"\/vinyldata.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/vinyldata.yml",
+		"oF": 0
+		}
+	},
+"hooks": [
+	],
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"creationDate": 522772279,
+	"displayValue": "lukestebner",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "meme-archer"
+	},
+"projectSettings": {
+	"abortBuildOnError": 1,
+	"alwaysUseExternalServer": 0,
+	"animateCSSInjections": 1,
+	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"babelAuxiliaryCommentAfter": "",
+	"babelAuxiliaryCommentBefore": "",
+	"babelConfigFileHandlingType": 0,
+	"babelCustomPluginsList": "",
+	"babelCustomPresetsList": "",
+	"babelInsertModuleIDs": 0,
+	"babelModuleID": "",
+	"babelNoComments": 0,
+	"babelPlugins": {
+		"async-generator-functions": {
+			"active": 0
+			},
+		"async-to-generator": {
+			"active": 0
+			},
+		"async-to-module-method": {
+			"active": 0
+			},
+		"class-properties": {
+			"active": 0
+			},
+		"decorators": {
+			"active": 0
+			},
+		"decorators-legacy": {
+			"active": 0
+			},
+		"do-expressions": {
+			"active": 0
+			},
+		"es2015-arrow-functions": {
+			"active": 0
+			},
+		"es2015-block-scoped-functions": {
+			"active": 0
+			},
+		"es2015-block-scoping": {
+			"active": 0
+			},
+		"es2015-classes": {
+			"active": 0
+			},
+		"es2015-computed-properties": {
+			"active": 0
+			},
+		"es2015-constants": {
+			"active": 0
+			},
+		"es2015-destructuring": {
+			"active": 0
+			},
+		"es2015-duplicate-keys": {
+			"active": 0
+			},
+		"es2015-for-of": {
+			"active": 0
+			},
+		"es2015-function-name": {
+			"active": 0
+			},
+		"es2015-literals": {
+			"active": 0
+			},
+		"es2015-modules-amd": {
+			"active": 0
+			},
+		"es2015-modules-commonjs": {
+			"active": 0
+			},
+		"es2015-modules-systemjs": {
+			"active": 0
+			},
+		"es2015-modules-umd": {
+			"active": 0
+			},
+		"es2015-object-super": {
+			"active": 0
+			},
+		"es2015-parameters": {
+			"active": 0
+			},
+		"es2015-shorthand-properties": {
+			"active": 0
+			},
+		"es2015-spread": {
+			"active": 0
+			},
+		"es2015-sticky-regex": {
+			"active": 0
+			},
+		"es2015-template-literals": {
+			"active": 0
+			},
+		"es2015-typeof-symbol": {
+			"active": 0
+			},
+		"es2015-unicode-regex": {
+			"active": 0
+			},
+		"es3-member-expression-literals": {
+			"active": 0
+			},
+		"es3-property-literals": {
+			"active": 0
+			},
+		"es5-property-mutators": {
+			"active": 0
+			},
+		"eval": {
+			"active": 0
+			},
+		"exponentiation-operator": {
+			"active": 0
+			},
+		"export-extensions": {
+			"active": 0
+			},
+		"external-helpers": {
+			"active": 0
+			},
+		"flow-comments": {
+			"active": 0
+			},
+		"flow-strip-types": {
+			"active": 0
+			},
+		"function-bind": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
+		"jscript": {
+			"active": 0
+			},
+		"member-expression-literals": {
+			"active": 0
+			},
+		"merge-sibling-variables": {
+			"active": 0
+			},
+		"minify-booleans": {
+			"active": 0
+			},
+		"node-env-inline": {
+			"active": 0
+			},
+		"object-assign": {
+			"active": 0
+			},
+		"object-rest-spread": {
+			"active": 0
+			},
+		"object-set-prototype-of-to-assign": {
+			"active": 0
+			},
+		"property-literals": {
+			"active": 0
+			},
+		"proto-to-assign": {
+			"active": 0
+			},
+		"react-constant-elements": {
+			"active": 0
+			},
+		"react-display-name": {
+			"active": 0
+			},
+		"react-inline-elements": {
+			"active": 0
+			},
+		"react-jsx": {
+			"active": 0
+			},
+		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
+			"active": 0
+			},
+		"react-jsx-source": {
+			"active": 0
+			},
+		"regenerator": {
+			"active": 0
+			},
+		"remove-console": {
+			"active": 0
+			},
+		"remove-debugger": {
+			"active": 0
+			},
+		"runtime": {
+			"active": 0
+			},
+		"simplify-comparison-operators": {
+			"active": 0
+			},
+		"strict-mode": {
+			"active": 0
+			},
+		"syntax-async-generators": {
+			"active": 0
+			},
+		"syntax-class-properties": {
+			"active": 0
+			},
+		"syntax-decorators": {
+			"active": 0
+			},
+		"syntax-do-expressions": {
+			"active": 0
+			},
+		"syntax-export-extensions": {
+			"active": 0
+			},
+		"syntax-flow": {
+			"active": 0
+			},
+		"syntax-function-bind": {
+			"active": 0
+			},
+		"syntax-function-sent": {
+			"active": 0
+			},
+		"syntax-jsx": {
+			"active": 0
+			},
+		"syntax-object-rest-spread": {
+			"active": 0
+			},
+		"undeclared-variables-check": {
+			"active": 0
+			},
+		"undefined-to-void": {
+			"active": 0
+			}
+		},
+	"babelPresetType": 227,
+	"babelRetainLines": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerAutoCreateInfoFile": 1,
+	"bowerInstallDevDependencies": 0,
+	"bowerSaveDependencies": 1,
+	"bowerSaveDevDependencies": 0,
+	"bowerUseExactVersion": 0,
+	"browserRefreshDelay": 0,
+	"buildFolderActive": 0,
+	"buildFolderName": "build",
+	"cleanBuild": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"esLintConfigFileHandlingType": 0,
+	"esLintECMAVersion": 7,
+	"esLintEnvironmentsMask": 1,
+	"esLintRules": {
+		"accessor-pairs": {
+			"active": 0,
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
+		"array-bracket-spacing": {
+			"active": 0,
+			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
+			},
+		"array-callback-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-body-style": {
+			"active": 0,
+			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
+			},
+		"arrow-parens": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true}"
+			},
+		"block-scoped-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"block-spacing": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"brace-style": {
+			"active": 0,
+			"optionString": "'1tbs', {'allowSingleLine': true}"
+			},
+		"callback-return": {
+			"active": 0,
+			"optionString": "['callback', 'cb', 'next']"
+			},
+		"camelcase": {
+			"active": 0,
+			"optionString": "{'properties': 'always'}"
+			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
+		"class-methods-use-this": {
+			"active": 0,
+			"optionString": "{'exceptMethods': []}"
+			},
+		"comma-dangle": {
+			"active": 1,
+			"optionString": "'never'"
+			},
+		"comma-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"comma-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"complexity": {
+			"active": 0,
+			"optionString": "20"
+			},
+		"computed-property-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"consistent-return": {
+			"active": 0,
+			"optionString": "{'treatUndefinedAsUnspecified': false}"
+			},
+		"consistent-this": {
+			"active": 0,
+			"optionString": "'that'"
+			},
+		"constructor-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"curly": {
+			"active": 0,
+			"optionString": "'all'"
+			},
+		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"dot-location": {
+			"active": 0,
+			"optionString": "'object'"
+			},
+		"dot-notation": {
+			"active": 0,
+			"optionString": "{'allowKeywords': false}"
+			},
+		"eol-last": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"eqeqeq": {
+			"active": 0,
+			"optionString": "'always', {'null': 'always'}"
+			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
+		"func-call-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"func-name-matching": {
+			"active": 0,
+			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			},
+		"func-names": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"func-style": {
+			"active": 0,
+			"optionString": "'expression'"
+			},
+		"generator-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
+			},
+		"global-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"guard-for-in": {
+			"active": 0,
+			"optionString": ""
+			},
+		"handle-callback-err": {
+			"active": 0,
+			"optionString": "'err'"
+			},
+		"id-blacklist": {
+			"active": 0,
+			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			},
+		"id-length": {
+			"active": 0,
+			"optionString": "{'min': 2, 'max': 1000, 'properties': 'always', 'exceptions': ['x', 'i', 'y']}"
+			},
+		"id-match": {
+			"active": 0,
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"indent": {
+			"active": 0,
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			},
+		"init-declarations": {
+			"active": 0,
+			"optionString": "'always',  {'ignoreForLoopInit': true}"
+			},
+		"jsx-quotes": {
+			"active": 0,
+			"optionString": "'prefer-double'"
+			},
+		"key-spacing": {
+			"active": 0,
+			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			},
+		"keyword-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true, 'overrides': {}}"
+			},
+		"line-comment-position": {
+			"active": 0,
+			"optionString": "{'position': 'above'}"
+			},
+		"linebreak-style": {
+			"active": 0,
+			"optionString": "'unix'"
+			},
+		"lines-around-comment": {
+			"active": 0,
+			"optionString": "{'beforeBlockComment': true}"
+			},
+		"lines-around-directive": {
+			"active": 0,
+			"optionString": "{'before': 'always', 'after': 'always'}"
+			},
+		"max-depth": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-len": {
+			"active": 0,
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-nested-callbacks": {
+			"active": 0,
+			"optionString": "{'max': 10}"
+			},
+		"max-params": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-statements": {
+			"active": 0,
+			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"new-cap": {
+			"active": 0,
+			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
+			},
+		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-after-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"newline-before-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-per-chained-call": {
+			"active": 0,
+			"optionString": "{'ignoreChainWithDepth': 2}"
+			},
+		"no-alert": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-bitwise": {
+			"active": 0,
+			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-caller": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-case-declarations": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-class-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-cond-assign": {
+			"active": 1,
+			"optionString": "'except-parens'"
+			},
+		"no-confusing-arrow": {
+			"active": 0,
+			"optionString": "{'allowParens': false}"
+			},
+		"no-console": {
+			"active": 1,
+			"optionString": "{'allow': ['warn', 'error']}"
+			},
+		"no-const-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-constant-condition": {
+			"active": 1,
+			"optionString": "{'checkLoops': true}"
+			},
+		"no-continue": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-control-regex": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-debugger": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-delete-var": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-div-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-dupe-args": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-keys": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-duplicate-imports": {
+			"active": 0,
+			"optionString": "{'includeExports': false}"
+			},
+		"no-else-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-empty": {
+			"active": 1,
+			"optionString": "{'allowEmptyCatch': false}"
+			},
+		"no-empty-character-class": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-empty-function": {
+			"active": 0,
+			"optionString": "{'allow': []}"
+			},
+		"no-empty-pattern": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-eq-null": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-eval": {
+			"active": 0,
+			"optionString": "{'allowIndirect': false}"
+			},
+		"no-ex-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extend-native": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-extra-bind": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-boolean-cast": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extra-labels": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-parens": {
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none'}"
+			},
+		"no-extra-semi": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-fallthrough": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-floating-decimal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-func-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-global-assign": {
+			"active": 1,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-implicit-coercion": {
+			"active": 0,
+			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+			},
+		"no-implicit-globals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-implied-eval": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inline-comments": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inner-declarations": {
+			"active": 1,
+			"optionString": "'functions'"
+			},
+		"no-invalid-regexp": {
+			"active": 1,
+			"optionString": "{'allowConstructorFlags': ['u', 'y']}"
+			},
+		"no-invalid-this": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-irregular-whitespace": {
+			"active": 1,
+			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
+			},
+		"no-iterator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-label-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-labels": {
+			"active": 0,
+			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
+			},
+		"no-lone-blocks": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-lonely-if": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-magic-numbers": {
+			"active": 0,
+			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			},
+		"no-mixed-requires": {
+			"active": 0,
+			"optionString": "{'grouping': false, 'allowCall': false }"
+			},
+		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-spaces": {
+			"active": 0,
+			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
+			},
+		"no-multi-str": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multiple-empty-lines": {
+			"active": 0,
+			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
+			},
+		"no-negated-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-nested-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-object": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-symbol": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-new-wrappers": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-obj-calls": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-param-reassign": {
+			"active": 0,
+			"optionString": "{'props': false}"
+			},
+		"no-path-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-plusplus": {
+			"active": 0,
+			"optionString": "{'allowForLoopAfterthoughts': false}"
+			},
+		"no-process-env": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-process-exit": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-redeclare": {
+			"active": 1,
+			"optionString": "{'builtinGlobals': false}"
+			},
+		"no-regex-spaces": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-restricted-globals": {
+			"active": 0,
+			"optionString": "'event', 'fdescribe'"
+			},
+		"no-restricted-imports": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-modules": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-properties": {
+			"active": 0,
+			"optionString": "[{'object': 'disallowedObjectName', 'property': 'disallowedPropertyName'}, {'object': 'disallowedObjectName', 'property': 'anotherDisallowedPropertyName', 'message': 'Please use allowedObjectName.allowedPropertyName.'}]"
+			},
+		"no-restricted-syntax": {
+			"active": 0,
+			"optionString": "'FunctionExpression', 'WithStatement'"
+			},
+		"no-return-assign": {
+			"active": 0,
+			"optionString": "'except-parens'"
+			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-script-url": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-self-assign": {
+			"active": 1,
+			"optionString": "{'props': false}"
+			},
+		"no-self-compare": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sequences": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-shadow": {
+			"active": 0,
+			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+			},
+		"no-shadow-restricted-names": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sparse-arrays": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sync": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-template-curly-in-string": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-this-before-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-throw-literal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-trailing-spaces": {
+			"active": 0,
+			"optionString": "{'skipBlankLines': false}"
+			},
+		"no-undef": {
+			"active": 1,
+			"optionString": "{'typeof': false}"
+			},
+		"no-undef-init": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-undefined": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-underscore-dangle": {
+			"active": 0,
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false}"
+			},
+		"no-unexpected-multiline": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unmodified-loop-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unneeded-ternary": {
+			"active": 0,
+			"optionString": "{'defaultAssignment': true}"
+			},
+		"no-unreachable": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-finally": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-negation": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-expressions": {
+			"active": 0,
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+			},
+		"no-unused-labels": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-vars": {
+			"active": 1,
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
+			},
+		"no-use-before-define": {
+			"active": 0,
+			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-call": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-computed-key": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
+		"no-useless-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-void": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-warning-comments": {
+			"active": 0,
+			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
+			},
+		"no-whitespace-before-property": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-with": {
+			"active": 0,
+			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			},
+		"object-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"object-property-newline": {
+			"active": 0,
+			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			},
+		"object-shorthand": {
+			"active": 0,
+			"optionString": "'always', {'avoidQuotes': false, 'ignoreConstructors': false}"
+			},
+		"one-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"one-var-declaration-per-line": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-assignment": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-linebreak": {
+			"active": 0,
+			"optionString": "'after', {'overrides': {'?': 'after', '+=': 'none'}}"
+			},
+		"padded-blocks": {
+			"active": 0,
+			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
+		"prefer-arrow-callback": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-const": {
+			"active": 0,
+			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-numeric-literals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-rest-params": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-template": {
+			"active": 0,
+			"optionString": ""
+			},
+		"quote-props": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"quotes": {
+			"active": 0,
+			"optionString": "'double', {'avoidEscape': true, 'allowTemplateLiterals': true}"
+			},
+		"radix": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-jsdoc": {
+			"active": 0,
+			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-yield": {
+			"active": 1,
+			"optionString": ""
+			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"semi": {
+			"active": 0,
+			"optionString": "'always', {'omitLastInOneLineBlock': false}"
+			},
+		"semi-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"sort-imports": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			},
+		"sort-keys": {
+			"active": 0,
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			},
+		"sort-vars": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false}"
+			},
+		"space-before-blocks": {
+			"active": 0,
+			"optionString": "{'functions': 'always', 'keywords': 'always', 'classes': 'always'}"
+			},
+		"space-before-function-paren": {
+			"active": 0,
+			"optionString": "{'anonymous': 'always', 'named': 'never'}"
+			},
+		"space-in-parens": {
+			"active": 0,
+			"optionString": "'never', {'exceptions': []}"
+			},
+		"space-infix-ops": {
+			"active": 0,
+			"optionString": "{'int32Hint': false}"
+			},
+		"space-unary-ops": {
+			"active": 0,
+			"optionString": "{'words': true, 'nonwords': false, 'overrides': {}}"
+			},
+		"spaced-comment": {
+			"active": 0,
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			},
+		"strict": {
+			"active": 0,
+			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
+			},
+		"symbol-description": {
+			"active": 0,
+			"optionString": ""
+			},
+		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"use-isnan": {
+			"active": 1,
+			"optionString": ""
+			},
+		"valid-jsdoc": {
+			"active": 0,
+			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
+			},
+		"valid-typeof": {
+			"active": 1,
+			"optionString": "{'requireStringLiterals': true}"
+			},
+		"vars-on-top": {
+			"active": 0,
+			"optionString": ""
+			},
+		"wrap-iife": {
+			"active": 0,
+			"optionString": "'outside'"
+			},
+		"wrap-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"yield-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"yoda": {
+			"active": 0,
+			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
+			}
+		},
+	"esLintSourceType": 0,
+	"externalServerAddress": "http:\/\/localhost:8888",
+	"gitIgnoreBuildFolder": 1,
+	"hideConfigFile": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"languageDefaultsCOFFEE": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"languageDefaultsCSS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsGIF": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.gif",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsHAML": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"escapeHTMLCharacters": 0,
+		"noEscapeInAttributes": 0,
+		"outputFormat": 2,
+		"outputStyle": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"languageDefaultsJPG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.jpg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"quality": 100
+		},
+	"languageDefaultsJS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 2,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 0
+		},
+	"languageDefaultsJSON": {
+		"autoOutputAction": 1,
+		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"orderOutput": 0,
+		"outputStyle": 1
+		},
+	"languageDefaultsKIT": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsLESS": {
+		"allowInsecureImports": 0,
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "less",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 2,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"ieCompatibility": 1,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"languageDefaultsMARKDOWN": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"maskEmailAddresses": 1,
+		"outputFormat": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"languageDefaultsOTHER": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.*",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsPNG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.png",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
+		},
+	"languageDefaultsPUG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileDebug": 1,
+		"outputStyle": 0
+		},
+	"languageDefaultsSASS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 2,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"languageDefaultsSLIM": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileOnly": 0,
+		"logicless": 0,
+		"outputFormat": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"languageDefaultsSTYLUS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "stylus",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 2,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"importCSS": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsSVG": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.svg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"pluginMask": 3758088159
+		},
+	"languageDefaultsTS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 2,
+		"createDeclarationFile": 0,
+		"createSourceMap": 0,
+		"jsxMode": 0,
+		"minifyOutput": 0,
+		"moduleResolutionType": 0,
+		"moduleType": 0,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
+		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
+		"targetECMAVersion": 0
+		},
+	"languageDefaultsUserDefined": [
+		],
+	"overrideExternalServerCSS": 0,
+	"previewPathAddition": "",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/views",
+	"sourceFolderName": "source",
+	"susyVersion": 3,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "3"
+}
