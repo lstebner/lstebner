@@ -22,8 +22,9 @@
     "underscore.string": "*"
   },
   "devDependencies": {
+    "expect.js": "*",
     "mocha": "^3.2.0",
     "sinon": "*",
-    "expect.js": "*"
+    "supervisor": "^0.12.0"
   }
 }

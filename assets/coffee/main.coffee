@@ -4,7 +4,6 @@
 # {{insert:typing}}
 # {{insert:beatswall}}
 # {{insert:roasts2017}}
-# {{insert:waveform}}
 # {{insert:conversions}}
 # {{insert:jukebox}}
 # {{insert:popout_player}}
@@ -18,6 +17,9 @@ class LazyBackgrounds
         backgroundSize: "cover"
         backgroundRepeat: "no-repeat"
       }
+
+render_component(component, props={}, root="root") ->
+  ReactDOM.render(React.createElement(component, props), document.getElementById(root))
 
 $ ->
   document.nav = new Nav("#sidebar")
